@@ -1,10 +1,6 @@
 # M-Cypher: A GQL Supporting Motifs
 This repository contains codes and datasets used in [M-Cypher: A GQL Supporting Motifs].
 
-## Authors 
-
-- Anonymous during paper review
-
 ## Usage 
 
 Open `codes\webpage\mcypher.html` for local view.

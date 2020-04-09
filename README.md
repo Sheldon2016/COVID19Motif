@@ -9,6 +9,12 @@ This repository contains codes and datasets used in [M-Cypher: A GQL Supporting 
 
 Open `codes\webpage\mcypher.html` for local view.
 
+Components to be added:
+- Motif input [Matin];
+- Output visulization [Matin];
+- M-Cypher parser [Xiaodong];
+- 4-page paper [Xiaodong].
+
 ## Dependencies
 ### Neo4j 
 - Install [neo4j-desktop](https://neo4j.com/developer/neo4j-desktop/).

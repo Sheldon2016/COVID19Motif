@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+ <body>
+
+<p id="demo1">This is the 1st text.</p>
+
+<p id="demo2">This is the 2nd text.</p>
+
+<p id="demo3">This is the 3rd text.</p>
+
+<p id="demo4">This is the 4th text.</p>
+
+<button onclick="myFunction()">Click me</button>
+<script src="https://unpkg.com/neo4j-driver"></script>
+<script>
+function myFunction() {
+  var hw = "Hello World";
+  document.getElementById("demo4").innerHTML = hw;
+  var driver = neo4j.driver('neo4j://localhost', neo4j.auth.basic('neo4j', '1qaz'));
+  var session = driver.session();
+  session.run('create (alice:Person {name : "Bob"}) RETURN alice.name AS name').subscribe({
+    onKeys: keys => {
+document.getElementById("demo1").innerHTML = keys;
+      console.log(keys)
+    },
+    onNext: record => {
+document.getElementById("demo2").innerHTML = record.get('name');
+      console.log(record.get('name'))
+    },
+    onCompleted: () => {
+      session.close() // returns a Promise
+    },
+    onError: error => {
+      console.log(error)
+    }
+  });
+  // on application exit:
+  //await driver.close();
+  //document.getElementById("demo4").innerHTML = hw;
+}
+
+</script>
+
+</body>
+</html>
+

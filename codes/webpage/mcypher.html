@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="http://js2neo.org/cdn/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <title>m-cypher</title>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="http://js2neo.org/cdn/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="http://js2neo.org/cdn/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="http://js2neo.org/cdn/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="http://js2neo.org/dist/js2neo.js"></script>
+    <script src="http://js2neo.org/sizes.js"></script>
+
+    <!-- noppa/text-security -->
+    <link rel="stylesheet" type="text/css" href="http://js2neo.org/cdn/text-security.css">
+
+      <style>
+          h2 {
+              margin: 2rem 0 1rem 0;
+          }
+
+          textarea {
+              font-family: monospace
+          }
+
+          .text-security {
+              font-family: "text-security-disc"
+          }
+
+          code {
+              font-size: 1rem;
+          }
+
+          pre {
+              padding: .5rem .8rem;
+              font-size: 1rem;
+              line-height: 1.5;
+              border-radius: .3rem;
+              background-color: #F0F0EC;
+          }
+
+      </style>
+  </head>
+
+ <body style="overflow-y:scroll">
+
+  <div class="container">
+
+      <h1 style="text-align: center;padding: 3rem 0">
+          <img src="https://i.cs.hku.hk/~xdli/papers/logo.png" width="20%">
+      </h1>
+
+      <p>
+          The <strong>M-Cypher</strong> project is a graph query language (GQL) supporting motif-related queries. It is based on Neo4j and JavaScript, with a parser to integrate typical Cypher queries with motif-related queries, as well as several popular motif-related algorithms and visualizations.
+      </p>
+
+<form id="connection-form">
+            <div class="form-group row">
+                <div class="col">
+                    <label for="host">Host</label>
+                    <input class="form-control" id="host" placeholder="Enter the server host name or IP address" value="localhost">
+                </div>
+                <div class="col">
+                    <label for="port">Port</label>
+                    <input type="number" class="form-control" id="port" placeholder="Enter the server port number" value="7687">
+                </div>
+                <div class="col">
+                    <label for="host">User</label>
+                    <input class="form-control" id="user" placeholder="Enter your user name" value="neo4j">
+                </div>
+                <div class="col" id="password-here">
+                    <label for="password">Password</label>
+                    <input type="text" class="form-control text-security" id="password">
+                </div>
+            </div>
+            <div class="form-group">
+            </div>
+            <div class="form-group row">
+                <div class="col-12">
+                    <label for="cypher">The m-Cypher query:</label>
+                    <textarea class="form-control" id="cypher" style="width:100%;height:7.5rem" title="Cypher query">MATCH (a:Person)--(c:Movie)--(b:Person) 
+MATCH (a:Person)--(b:Person) 
+RETURN a.name AS Person_A, b.name AS Person_B, c.title AS Movie</textarea>
+                </div>
+                <!--<div class="col-4">-->
+                    <!--<label for="params">Parameters</label>-->
+                    <!--<select id="params" class="custom-select" size="3" style="height:7.5rem">-->
+                    <!--</select>-->
+                <!--</div>-->
+            </div>
+            <div class="form-group">
+                <button id="connect-button" type="button" class="btn btn-primary" onclick="connect()">Connect</button>
+                <button id="disconnect-button" type="button" class="btn btn-primary" onclick="disconnect()" disabled="disabled">Disconnect
+                </button>
+                <button id="run-button" type="button" class="btn btn-primary" onclick="run($(&quot;#cypher&quot;).val())" disabled="disabled">Run
+                </button>
+            </div>
+            <div class="form-group" id="connection-management-status">
+            </div>
+            <table id="result" class="result table table-hover">
+                <thead id="result-head" class="thead-dark"></thead>
+                <tbody id="result-body"></tbody>
+                <tfoot id="result-foot" class="thead-dark"></tfoot>
+            </table>
+        </form>
+
+      <div style="margin:1.5rem 0; text-align: center">
+          <a class="btn btn-success btn-lg" href="#"
+             style="text-align: left;margin-right:1rem;padding-right:6rem">
+              <div style="font-size:250%;float:left;padding-right:1rem;">⇩</div>
+              <div style="font-size:150%">Download <strong>query result</strong></div>
+              <small><em>
+                  (<script>document.write(sizes["js2neo.min.js"])</script> bytes,
+                   <script>document.write(sizes["js2neo.min.js.gz"])</script> bytes gzipped)</em></small>
+          </a>
+          <a class="btn btn-secondary btn-lg" href="#"
+             style="text-align: left;margin-right:1rem;padding-right:8rem">
+              <div style="font-size:250%;float:left;padding-right:1rem;">⌨</div>
+              <div style="font-size:150%">Get the code</div>
+              <small><em>https://github.com/xxx</em></small>
+          </a>
+      </div>
+	  
+	  <div class="py-3 text-center">
+          &copy; 2020, the University of Hong Kong.
+      </div>
+</div>
+
+<script src="https://unpkg.com/neo4j-driver"></script>
+<script>
+        $("#result-form").hide();
+
+        var pub = {};
+
+        function setConnectionManagementStatus(level, message) {
+            var status = document.getElementById("connection-management-status"),
+                div = document.createElement("div"),
+                text = document.createTextNode(message);
+            while (status.firstChild) status.removeChild(status.firstChild);
+            if (level) {
+                div.setAttribute("class", "alert alert-" + level);
+                div.setAttribute("role", "alert");
+                status.appendChild(div);
+                div.appendChild(text);
+            }
+        }
+
+        function setConnected(connected) {
+            if (connected) {
+                $("#run-button").removeAttr("disabled");
+                $("#connect-button").attr("disabled", "disabled");
+                $("#disconnect-button").removeAttr("disabled");
+            } else {
+                $("#run-button").attr("disabled", "disabled");
+                $("#connect-button").removeAttr("disabled");
+                $("#disconnect-button").attr("disabled", "disabled");
+            }
+        }
+		
+		var driver;
+		var host;
+		var port;
+		var user;
+        function connect() {
+			host = 'neo4j://'+document.getElementById("host").value;
+			port = parseInt(document.getElementById("port").value);
+			user = document.getElementById("user").value;
+			password = document.getElementById("password").value;
+			driver = neo4j.driver(host, neo4j.auth.basic(user, password));
+			setConnectionManagementStatus("success", "Connected" + " to " + host + " on port " + port + " as user " + user);
+			setConnected(true);
+        }
+</script>
+<script>
+       function disconnect() {
+			setConnectionManagementStatus("success", "Disconnected" + " from " + host + " on port " + port + " as user " + user);
+            //await driver.close();
+			//setConnected(false);
+		}
+</script>
+
+<script>
+        function nodeValue(container, id, labels, properties) {
+            var card = document.createElement("div"),
+                cardHeader = document.createElement("h5"),
+                cardBody = document.createElement("div");
+            card.setAttribute("class", "card");
+            cardHeader.setAttribute("class", "card-header");
+            cardHeader.appendChild(document.createTextNode("#" + id + " " + labels));
+            cardBody.setAttribute("class", "card-body");
+            cardBody.appendChild(document.createTextNode(JSON.stringify(properties)));
+            card.appendChild(cardHeader);
+            card.appendChild(cardBody);
+            return card;
+        }
+        function run(cypher) {
+		    // Clear any existing result
+            var head = document.getElementById("result-head"),
+                body = document.getElementById("result-body"),
+                foot = document.getElementById("result-foot");
+            while (head.firstChild) head.removeChild(head.firstChild);
+            while (body.firstChild) body.removeChild(body.firstChild);
+            while (foot.firstChild) foot.removeChild(foot.firstChild);
+            var fields = [];
+            var t0 = new Date();
+			
+			var icount = 1;
+
+			$("#result-form").show();
+			
+			var session1 = driver.session();	
+			session1.run(cypher).subscribe({
+				onKeys: keys => {
+					var tr = document.createElement("tr");
+					for (var j = 0; j < keys.length; j++) {
+						var key = keys[j];
+						fields.push(key);
+                        var th = document.createElement("th");
+                        th.appendChild(document.createTextNode(key));
+                        tr.appendChild(th);
+						//document.getElementById("demo"+j).innerHTML = key;
+						//console.log(keys)
+					}
+					head.appendChild(tr);
+				},
+				onCompleted: () => {
+					session1.close() // returns a Promise
+				},
+				onError: error => {
+					console.log(error)
+				}
+			});	
+			
+			var count = 0;
+			var session = driver.session();
+			session.run(cypher).then(result => {			
+				result.records.forEach(record => {			
+				var str = "";
+				count = count + 1;
+				//document.getElementById("demo"+icount).innerHTML = count;
+				icount = icount + 1;
+				var tr = document.createElement("tr");
+				for (var j = 0; j < record.length; j++) {
+					var value = record.get(j);
+					if (value === null) {
+						content = undefined;
+                    }
+					
+					var td = document.createElement("td");
+					var div = document.createElement("div");
+					//var value = fields[i], content;
+					if (value === null) {
+						content = undefined;
+					}else if (typeof value === "string") {
+                            content = document.createTextNode(value);
+					}else if (typeof value === "object" && !Array.isArray(value)) {
+						var type = value.constructor.name;
+						switch (type) {
+                        case "Node":
+                            content = nodeValue(div, value.id, value.labels, value.properties);
+                            break;
+                        default:
+                            div.setAttribute("style", "white-space: pre");
+                            content = document.createTextNode(type + "(" + JSON.stringify(value, null, "  ") + ")");
+						}
+					}else {
+						content = document.createTextNode(JSON.stringify(value));
+					}
+					if (content !== undefined)
+						div.appendChild(content);
+					td.appendChild(div);
+					tr.appendChild(td);						
+					
+					str = str + value + "-";
+					
+				}
+				body.appendChild(tr);
+				//document.getElementById("demo"+i).innerHTML = tr;
+				//i = i + 1;				
+				});
+				var time = new Date() - t0;
+				//var tr = document.createElement("tr");
+				//var th = document.createElement("th");
+				//th.setAttribute("colspan", "" + fields.length);
+				var server = user + "@" + host + ":" + port;
+				//document.getElementById("demo0").innerHTML = 100;
+				var counter = count;
+				//th.appendChild(document.createTextNode(counter  + " record" + (counter === 1 ? "" : "s") + " received from " + server + " in " + time + "ms"));
+				//tr.appendChild(th);
+				//foot.appendChild(tr);
+				setConnectionManagementStatus("success", counter  + " record" + (counter === 1 ? "" : "s") + " received from " + server + " in " + time + "ms");//console.log(str);
+								
+				}
+			).catch(error => {console.log(error)}).then(() => session.close());			
+			//document.getElementById("demo"+i).innerHTML = strk;
+	
+        }		
+</script>
+
+<script>
+function todoe(){
+			
+
+            var tr = document.createElement("tr");
+            for (var i = 0; i < fields.length; i++) {
+            var td = document.createElement("td");
+                        var div = document.createElement("div");
+                        var value = fields[i], content;
+                        if (value === null) {
+                            content = undefined;
+                        }
+                        else if (typeof value === "string") {
+                            content = document.createTextNode(value);
+                        }
+                        else if (typeof value === "object" && !Array.isArray(value)) {
+                            var type = value.constructor.name;
+                            switch (type) {
+                                case "Node":
+                                    content = nodeValue(div, value.id, value.labels, value.properties);
+                                    break;
+                                default:
+                                    div.setAttribute("style", "white-space: pre");
+                                    content = document.createTextNode(type + "(" + JSON.stringify(value, null, "  ") + ")");
+                            }
+                        }
+                        else {
+                            content = document.createTextNode(JSON.stringify(value));
+                        }
+                        if (content !== undefined)
+                            div.appendChild(content);
+                        td.appendChild(div);
+                        tr.appendChild(td);
+                    }
+                    body.appendChild(tr)
+}
+</script>
+
+
+</body>
+</html>
+

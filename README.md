@@ -5,6 +5,10 @@ This repository contains codes and datasets used in [M-Cypher: A GQL Supporting 
 
 - Anonymous during paper review
 
+## Usage 
+
+Open `codes\webpage\mcypher.html` for local view.
+
 ## Dependencies
 ### Neo4j 
 - Install [neo4j-desktop](https://neo4j.com/developer/neo4j-desktop/).

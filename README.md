@@ -6,6 +6,7 @@ This repository contains codes and datasets used in [M-Cypher: A GQL Supporting 
 - Anonymous during paper review
 
 ## Dependencies
+### Neo4j 
 #### Install [neo4j-desktop](https://neo4j.com/developer/neo4j-desktop/)
 #### Put data into `<neo4j-home>/import`
 For example, `C:\Users\<user>\.Neo4jDesktop\neo4jDatabases\<database>\installation-<version>\import` in windows.
@@ -47,6 +48,16 @@ LOAD CSV FROM 'file:///edges' AS line
 MATCH (n:Virus {id:toInteger(line[0])}), (m:VirusProtein{id:toInteger(line[1])})
 FOREACH ( ignoreMe in CASE WHEN line[2]='4' THEN [1] ELSE [] END | MERGE (n)-[:Produce]->(m))
 ```
+### MC-Explorer 
+#### [Motif-clique explorer system](http://motif.cs.hku.hk/)
+#### [Format of graph for MC-explorer](http://motif.cs.hku.hk/file/readme.txt)
+#### Codes 
+- See `codes\mc-explorer`.
+- About motif input:
+-- `codes\mc-explorer/platform\WebContent\js\graphM.js`
+-- `codes\mc-explorer/platform\WebContent\js\utilities.js`
+-- `codes\mc-explorer\platform\WebContent\js\graphResult.js`
+- About graph visualization: [cytoscape](https://cytoscape.org/).
 
 ## Datasets
 The code takes the **edge list** of the graph. Every row indicates an edge between two nodes separated by a comma. The datasets used in the paper are included in the  `data/` directory.
@@ -56,7 +67,7 @@ The code takes the **edge list** of the graph. Every row indicates an edge betwe
 `nodeID1,nodeID2,edgeLabelID`
 #### labels
 Labels for nodes `nodeLabelID:nodeLabel` and edges `edgeLabelID:edgeLabel`
-#### (COVID19 VLDB demo video)[https://www.dropbox.com/s/xhpczwsv7m4cut1/covid_19_vldb_demo_%20compression.mp4?dl=0]. Please keep it confidential.
-#### (COVID19 datasource)[https://mp.weixin.qq.com/s/eHbkrMtYpg-oEmWS92970w]. Chinese version only
+#### [COVID19 VLDB demo video](https://www.dropbox.com/s/xhpczwsv7m4cut1/covid_19_vldb_demo_%20compression.mp4?dl=0). Please keep it confidential.
+#### [COVID19 datasource](https://mp.weixin.qq.com/s/eHbkrMtYpg-oEmWS92970w). Chinese version only.
 
 

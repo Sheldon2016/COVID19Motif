@@ -60,7 +60,7 @@ FOREACH ( ignoreMe in CASE WHEN line[2]='4' THEN [1] ELSE [] END | MERGE (n)-[:P
 #### Codes 
 - See `codes\mc-explorer`.
 - About motif input:
-see`codes\mc-explorer/platform\WebContent\js\graphM.js`, `codes\mc-explorer/platform\WebContent\js\utilities.js`
+see`codes\mc-explorer\platform\WebContent\js\graphM.js`, `codes\mc-explorer\platform\WebContent\js\utilities.js`
 and `codes\mc-explorer\platform\WebContent\js\graphResult.js`.
 - About graph visualization: [cytoscape](https://cytoscape.org/).
 

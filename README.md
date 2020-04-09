@@ -6,9 +6,9 @@ This repository contains codes and datasets used in [M-Cypher: A GQL Supporting 
 - Anonymous during paper review
 
 ## Dependencies
-### Install [neo4j-desktop](https://neo4j.com/developer/neo4j-desktop/)
-### Put data into `<neo4j-home>/import`
-### Import COVID19 data into neo4j
+#### Install [neo4j-desktop](https://neo4j.com/developer/neo4j-desktop/)
+#### Put data into `<neo4j-home>/import`
+#### Import COVID19 data into neo4j
 ```
 #put 'nodes' and 'edges' in '<neo4j-home>/import' beforehand
 LOAD CSV FROM 'file:///nodes' AS line

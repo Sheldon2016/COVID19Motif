@@ -8,6 +8,7 @@ This repository contains codes and datasets used in [M-Cypher: A GQL Supporting 
 ## Dependencies
 #### Install [neo4j-desktop](https://neo4j.com/developer/neo4j-desktop/)
 #### Put data into `<neo4j-home>/import`
+For example, `C:\Users\<user>\.Neo4jDesktop\neo4jDatabases\<database>\installation-<version>\import` in windows.
 #### Import COVID19 data into neo4j
 ```
 #put 'nodes' and 'edges' in '<neo4j-home>/import' beforehand
@@ -49,5 +50,13 @@ FOREACH ( ignoreMe in CASE WHEN line[2]='4' THEN [1] ELSE [] END | MERGE (n)-[:P
 
 ## Datasets
 The code takes the **edge list** of the graph. Every row indicates an edge between two nodes separated by a comma. The datasets used in the paper are included in the  `data/` directory.
+#### nodes
+`nodeID,nodeLabelID,nodeName`
+#### edges
+`nodeID1,nodeID2,edgeLabelID`
+#### labels
+Labels for nodes `nodeLabelID:nodeLabel` and edges `edgeLabelID:edgeLabel`
+#### (COVID19 VLDB demo video)[https://www.dropbox.com/s/xhpczwsv7m4cut1/covid_19_vldb_demo_%20compression.mp4?dl=0]. Please keep it confidential.
+#### (COVID19 datasource)[https://mp.weixin.qq.com/s/eHbkrMtYpg-oEmWS92970w]. Chinese version only
 
 

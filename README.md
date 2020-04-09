@@ -7,10 +7,10 @@ This repository contains codes and datasets used in [M-Cypher: A GQL Supporting 
 
 ## Dependencies
 ### Neo4j 
-- Install [neo4j-desktop](https://neo4j.com/developer/neo4j-desktop/)
+- Install [neo4j-desktop](https://neo4j.com/developer/neo4j-desktop/).
 - Put data into `<neo4j-home>/import`. 
 For example, `C:\Users\<user>\.Neo4jDesktop\neo4jDatabases\<database>\installation-<version>\import` in windows.
-- Import COVID19 data into neo4j
+- Import COVID19 data into neo4j.
 ```
 #put 'nodes' and 'edges' in '<neo4j-home>/import' beforehand
 LOAD CSV FROM 'file:///nodes' AS line

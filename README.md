@@ -34,7 +34,6 @@ In the following query examples, we demonstrate by motif `M: (:Country)<-[:from_
 #### Q2: How virus mutates when spreading from country a to country b?
 * cypher:	NA
 * m-cypher:	`MATCH (a:Country{name:a})-[m:M*]->(b:Country{name:b})`
-#### Q3: 
 
 <p align="center">
   <img width="800" src="motifM.PNG">

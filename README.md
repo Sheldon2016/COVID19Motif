@@ -13,7 +13,7 @@ Labels for nodes `nodeLabelID:nodeLabel` and edges `edgeLabelID:edgeLabel`
   <img width="800" src="covid19.png">
 </p>
 <p align="center">
-  <img width="800" src="knowledgeGraph.PNG">
+  <img width="600" src="knowledgeGraph.PNG">
 </p>
 
 ## Usage 
@@ -26,7 +26,7 @@ Labels for nodes `nodeLabelID:nodeLabel` and edges `edgeLabelID:edgeLabel`
 - M-Cypher parser [Xiaodong];
 - 4-page paper [Xiaodong].
 
-### Usacases
+### Use cases
 In the following query examples, we demonstrate by motif `#user input motif M: (:Country)<-[:from_country]-(:Strain)-[:mutate_from_branch]->(:Branch)`.
 #### Q1: What is the significance of motif pattern M?
 - cypher:	`MATCH p=(:Country)<-[:from_country]-(:Strain)-[:mutate_from_branch]->(:Branch) COUNT (p)`

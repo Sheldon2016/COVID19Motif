@@ -18,20 +18,22 @@ Labels for nodes `nodeLabelID:nodeLabel` and edges `edgeLabelID:edgeLabel`
 ### Open `codes\webpage\mcypher.html` for local view.
 
 ### Components to be added:
-- Motif input [Matin];
-- Output visulization [Matin];
-- M-Cypher parser [Xiaodong];
-- 4-page paper [Xiaodong].
+* Motif input [Matin];
+* Output visulization [Matin];
+* M-Cypher parser [Xiaodong];
+* 4-page paper [Xiaodong].
 
 ### Use cases
 In the following query examples, we demonstrate by motif `M: (:Country)<-[:from_country]-(:Strain)-[:mutate_from_branch]->(:Branch)`.
 #### Q1: What is the significance of motif pattern M?
-- cypher:	`MATCH p=(:Country)<-[:from_country]-(:Strain)-[:mutate_from_branch]->(:Branch) COUNT (p)`
-- m-cypher:	`MATCH (m:M) COUNT (m)`
-- What if M is a large motif? Almost impossible to describe M by path pattern queries in cypher! Even so, there will be many duplicates!
+* cypher:	`MATCH p=(:Country)<-[:from_country]-(:Strain)-[:mutate_from_branch]->(:Branch) COUNT (p)`
+* m-cypher:	`MATCH (m:M) COUNT (m)`
+* What if M is a large motif? 
+	* Almost impossible to describe M by path pattern queries in cypher! 
+	* Even so, there will be many duplicates!
 #### Q2: How virus mutates when spreading from country a to country b?
-- cypher:	NA
-- m-cypher:	`MATCH (a:Country{name:a})-[m:M*]->(b:Country{name:b})`
+* cypher:	NA
+* m-cypher:	`MATCH (a:Country{name:a})-[m:M*]->(b:Country{name:b})`
 #### Q3: 
 
 <p align="center">
@@ -40,10 +42,10 @@ In the following query examples, we demonstrate by motif `M: (:Country)<-[:from_
 
 ## Dependencies
 ### Neo4j 
-- Install [neo4j-desktop](https://neo4j.com/developer/neo4j-desktop/).
-- Put data into `<neo4j-home>/import`. 
+* Install [neo4j-desktop](https://neo4j.com/developer/neo4j-desktop/).
+* Put data into `<neo4j-home>/import`. 
 For example, `C:\Users\<user>\.Neo4jDesktop\neo4jDatabases\<database>\installation-<version>\import` in windows.
-- Import COVID19 data into neo4j.
+* Import COVID19 data into neo4j.
 ```
 #put 'nodes' and 'edges' in '<neo4j-home>/import' beforehand
 LOAD CSV FROM 'file:///nodes' AS line
@@ -85,11 +87,11 @@ FOREACH ( ignoreMe in CASE WHEN line[2]='4' THEN [1] ELSE [] END | MERGE (n)-[:P
 #### [Motif-clique explorer system](http://motif.cs.hku.hk/)
 #### [Format of graph for MC-explorer](http://motif.cs.hku.hk/file/readme.txt)
 #### Codes 
-- See `codes\mc-explorer`.
-- About motif input:
+* See `codes\mc-explorer`.
+* About motif input:
 see`codes\mc-explorer\platform\WebContent\js\graphM.js`, `codes\mc-explorer\platform\WebContent\js\utilities.js`
 and `codes\mc-explorer\platform\WebContent\js\graphResult.js`.
-- About graph visualization: [cytoscape](https://cytoscape.org/).
+* About graph visualization: [cytoscape](https://cytoscape.org/).
 
 #### [COVID19 VLDB demo video](https://www.dropbox.com/s/xhpczwsv7m4cut1/covid_19_vldb_demo_%20compression.mp4?dl=0). 
 #### [COVID19 datasource](https://mp.weixin.qq.com/s/eHbkrMtYpg-oEmWS92970w). Chinese version only.

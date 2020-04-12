@@ -12,9 +12,6 @@ Labels for nodes `nodeLabelID:nodeLabel` and edges `edgeLabelID:edgeLabel`
 <p align="center">
   <img width="800" src="covid19.png">
 </p>
-<p align="center">
-  <img width="600" src="knowledgeGraph.PNG">
-</p>
 
 ## Usage 
 

@@ -28,7 +28,7 @@ In the following query examples, we demonstrate by motif `M: (:Country)<-[:from_
 #### Q1: What is the significance of motif pattern M?
 - cypher:	`MATCH p=(:Country)<-[:from_country]-(:Strain)-[:mutate_from_branch]->(:Branch) COUNT (p)`
 - m-cypher:	`MATCH (m:M) COUNT (m)`
-- `! What if M is a large motif? Almost impossible to describe M by path pattern queries in cypher and many duplicates!`
+- What if M is a large motif? Almost impossible to describe M by path pattern queries in cypher! Even so, there will be many duplicates!
 #### Q2: How virus mutates when spreading from country a to country b?
 - cypher:	NA
 - m-cypher:	`MATCH (a:Country{name:a})-[m:M*]->(b:Country{name:b})`

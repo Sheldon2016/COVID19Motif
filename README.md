@@ -72,6 +72,10 @@ The code takes the **edge list** of the graph. Every row indicates an edge betwe
 `nodeID1,nodeID2,edgeLabelID`
 #### labels
 Labels for nodes `nodeLabelID:nodeLabel` and edges `edgeLabelID:edgeLabel`
+<p align="center">
+  <img width="800" src="covid19.png">
+</p>
+
 #### [COVID19 VLDB demo video](https://www.dropbox.com/s/xhpczwsv7m4cut1/covid_19_vldb_demo_%20compression.mp4?dl=0). Please keep it confidential.
 #### [COVID19 datasource](https://mp.weixin.qq.com/s/eHbkrMtYpg-oEmWS92970w). Chinese version only.
 

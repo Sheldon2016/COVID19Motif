@@ -12,16 +12,33 @@ Labels for nodes `nodeLabelID:nodeLabel` and edges `edgeLabelID:edgeLabel`
 <p align="center">
   <img width="800" src="covid19.png">
 </p>
+<p align="center">
+  <img width="800" src="knowledgeGraph.PNG">
+</p>
 
 ## Usage 
 
-Open `codes\webpage\mcypher.html` for local view.
+### Open `codes\webpage\mcypher.html` for local view.
 
-Components to be added:
+### Components to be added:
 - Motif input [Matin];
 - Output visulization [Matin];
 - M-Cypher parser [Xiaodong];
 - 4-page paper [Xiaodong].
+
+### Usacases
+In the following query examples, we demonstrate by motif `#user input motif M: (:Country)<-[:from_country]-(:Strain)-[:mutate_from_branch]->(:Branch)`.
+#### Q1: What is the significance of motif pattern M?
+- cypher:	`MATCH p=(:Country)<-[:from_country]-(:Strain)-[:mutate_from_branch]->(:Branch) COUNT (p)`
+- m-cypher:	`MATCH (m:M) COUNT (m)`
+#### Q2: How virus mutates when spreading from country a to country b?
+- cypher:	NA
+- m-cypher:	`MATCH (a:Country{name:a})-[m:M*]->(b:Country{name:b})`
+#### Q3: 
+
+<p align="center">
+  <img width="800" src="motifM.PNG">
+</p>
 
 ## Dependencies
 ### Neo4j 

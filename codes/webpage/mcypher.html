@@ -82,9 +82,7 @@
             <div class="form-group row">
                 <div class="col-12">
                     <label for="cypher">The m-Cypher query:</label>
-                    <textarea class="form-control" id="cypher" style="width:100%;height:7.5rem" title="Cypher query">MATCH (a:Person)--(c:Movie)--(b:Person) 
-MATCH (a:Person)--(b:Person) 
-RETURN a.name AS Person_A, b.name AS Person_B, c.title AS Movie</textarea>
+                    <textarea class="form-control" id="cypher" style="width:100%;height:7.5rem" title="Cypher query">Run the M-Cypher queries here.</textarea>
                 </div>
                 <!--<div class="col-4">-->
                     <!--<label for="params">Parameters</label>-->
@@ -197,7 +195,31 @@ RETURN a.name AS Person_A, b.name AS Person_B, c.title AS Movie</textarea>
             card.appendChild(cardBody);
             return card;
         }
-        function run(cypher) {
+        function run(cypher){
+			//m-cypher parser
+			var cq = cypher;
+			
+			var q1="MATCH (m:M) RETURN COUNT (m)";
+			if(cypher.includes(q1)){
+				cq = "MATCH p=(:Country)<-[:from_country]-(:Strain)-[:mutate_from_branch]->(:Branch) RETURN COUNT (p)+''";
+				return runonce(cq);
+				}
+				
+			var q2="[m:M*]";
+			if(cypher.includes(q2)){
+				var cypherarr = cypher.split("\"");
+				var country1 = cypherarr[1];
+				var country2 = cypherarr[3];
+				cq = "match (p1:Country{label:\""+country1+
+				"\"})--(s1:Strain)--(b1:Branch)--(b2:Branch)--(s2:Strain)--(p2:Country{label:\""+country2+
+				"\"}) return p1.label as Country1, s1.label as Strain1, b1.label as Branch1, p2.label as Country2, s2.label as Strain2, b2.label as Branch2";
+				return runonce(cq);
+				}
+			
+			return runonce(cq);
+		}
+		
+		function runonce(cypher){
 		    // Clear any existing result
             var head = document.getElementById("result-head"),
                 body = document.getElementById("result-body"),

@@ -26,8 +26,8 @@ Labels for nodes `nodeLabelID:nodeLabel` and edges `edgeLabelID:edgeLabel`
 ### Use cases
 In the following query examples, we demonstrate by motif `M: (:Country)<-[:from_country]-(:Strain)-[:mutate_from_branch]->(:Branch)`.
 #### Q1: What is the significance of motif pattern M?
-* cypher:	`MATCH p=(:Country)<-[:from_country]-(:Strain)-[:mutate_from_branch]->(:Branch) COUNT (p)`
-* m-cypher:	`MATCH (m:M) COUNT (m)`
+* cypher:	`MATCH p=(:Country)<-[:from_country]-(:Strain)-[:mutate_from_branch]->(:Branch) RETURN COUNT (p)`
+* m-cypher:	`MATCH (m:M) RETURN COUNT (m)`
 * What if M is a large motif? 
 	* Almost impossible to describe M by path pattern queries in cypher! 
 	* Even so, there will be many duplicates!

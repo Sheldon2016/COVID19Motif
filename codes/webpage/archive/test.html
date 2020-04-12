@@ -10,13 +10,15 @@
 
 <script>
 function myFunction() {
-  var query="MATCH (n:Movie) RETURN n.released LIMIT {limit}";
-  var params={limit: 10};
-  var cb=function(err,data) { console.log(JSON.stringify(data)) };
-  var r=require("request");
-  var txUrl = "http://localhost:7474/db/data/transaction/commit";
-  r.post({uri:txUrl,json:{statements:[{statement:query,parameters:params}]}},function(err,res) { cb(err,res.body)})
-  document.getElementById("demo").innerHTML = r.post;
+  var query="MATCH (n:Movie{name:\"abc\"}) RETURN n.released LIMIT {limit}";
+  //var params={limit: 10};
+  //var cb=function(err,data) { console.log(JSON.stringify(data)) };
+  //var r=require("request");
+  //var txUrl = "http://localhost:7474/db/data/transaction/commit";
+  //r.post({uri:txUrl,json:{statements:[{statement:query,parameters:params}]}},function(err,res) { cb(err,res.body)})
+  //var res = r.post;
+  var res = query.split("\"");
+  document.getElementById("demo").innerHTML = res;
 }
 </script>
 

@@ -36,7 +36,7 @@ In the following query examples, we demonstrate by motif `M: (:Country)<-[:from_
 * m-cypher:	`MATCH (a:Country{name:a})-[m:M*]->(b:Country{name:b})`
 
 <p align="center">
-  <img width="800" src="motifM.PNG">
+  <img width="600" src="motifM.PNG">
 </p>
 
 ## Dependencies

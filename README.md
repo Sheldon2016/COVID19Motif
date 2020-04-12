@@ -1,5 +1,6 @@
 # M-Cypher: A GQL Supporting Motifs
 This repository contains codes and datasets used in [M-Cypher: A GQL Supporting Motifs].
+
 ## Datasets
 The code takes the **edge list** of the graph. Every row indicates an edge between two nodes separated by a comma. The datasets used in the paper are included in the  `data/` directory.
 #### nodes
@@ -11,6 +12,7 @@ Labels for nodes `nodeLabelID:nodeLabel` and edges `edgeLabelID:edgeLabel`
 <p align="center">
   <img width="800" src="covid19.png">
 </p>
+
 ## Usage 
 
 Open `codes\webpage\mcypher.html` for local view.

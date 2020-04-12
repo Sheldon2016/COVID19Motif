@@ -27,7 +27,7 @@ Labels for nodes `nodeLabelID:nodeLabel` and edges `edgeLabelID:edgeLabel`
 - 4-page paper [Xiaodong].
 
 ### Use cases
-In the following query examples, we demonstrate by motif `#user input motif M: (:Country)<-[:from_country]-(:Strain)-[:mutate_from_branch]->(:Branch)`.
+In the following query examples, we demonstrate by motif `M: (:Country)<-[:from_country]-(:Strain)-[:mutate_from_branch]->(:Branch)`.
 #### Q1: What is the significance of motif pattern M?
 - cypher:	`MATCH p=(:Country)<-[:from_country]-(:Strain)-[:mutate_from_branch]->(:Branch) COUNT (p)`
 - m-cypher:	`MATCH (m:M) COUNT (m)`

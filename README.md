@@ -1,5 +1,5 @@
 # M-Cypher: A GQL Supporting Motifs
-This repository contains codes and datasets used in [M-Cypher: A GQL Supporting Motifs].
+This repository contains codes and datasets used in [M-Cypher: A GQL Supporting Motifs], which is built on Cypher to support motif-related queries. 
 
 * To express a motif-related operation that is difficult to express declaratively with Cypher.
 	* To provide access to motif-related functionality that is not available in Cypher.

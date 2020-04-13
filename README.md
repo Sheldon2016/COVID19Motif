@@ -1,6 +1,13 @@
 # M-Cypher: A GQL Supporting Motifs
 This repository contains codes and datasets used in [M-Cypher: A GQL Supporting Motifs].
 
+* To express a motif-related operation that is difficult to express declaratively with Cypher.
+	* To provide access to motif-related functionality that is not available in Cypher.
+		* For example, subgraph matching and motif connectivity.
+	* To provide uniform interface to third party applications w.r.t. motifs.
+		* For example, proved better effectiveness for clustering, node ranking and link prediction.
+* To provide user-friendly input and output.
+
 ## Datasets
 The code takes the **edge list** of the graph. Every row indicates an edge between two nodes separated by a comma. The datasets used in the paper are included in the  `data/` directory.
 #### nodes

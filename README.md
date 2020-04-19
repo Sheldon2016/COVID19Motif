@@ -31,7 +31,7 @@ Labels for nodes `nodeLabelID:nodeLabel` and edges `edgeLabelID:edgeLabel`
 * 4-page paper [Xiaodong].
 
 ### Use cases
-In the following query examples, we demonstrate two use cases (Q1 and Q2) by motif `M: (:Country)<-[:from_country]-(:Strain)-[:mutate_from_branch]->(:Branch)`.
+In the following query examples, we demonstrate three use cases (Q1, Q2 and Q3) by motif M, which is predefined by the user in the GUI.
 #### Q1: What is the significance of motif pattern M?
 * cypher:	`MATCH p=(:Country)<-[:from_country]-(:Strain)-[:mutate_from_branch]->(:Branch) RETURN COUNT (p)`
 * m-cypher:	`MATCH (m:M) RETURN COUNT (m)`

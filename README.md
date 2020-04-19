@@ -38,9 +38,13 @@ In the following query examples, we demonstrate two use cases (Q1 and Q2) by mot
 * What if M is a large motif? 
 	* Almost impossible to describe M by path pattern queries in cypher! 
 	* Even so, there will be many duplicates!
-#### Q2: How virus mutates when spreading from country a to country b?
+#### Q2: What is the instances of motif pattern M?
+* cypher:	`MATCH (a:Location)<-[:from_location]-(b:Strain)-[c:mutate_from_branch]->(:Branch) RETURN a,b,c`
+* m-cypher:	`MATCH (m:M) RETURN m`
+* Same problems exists as Q1!
+#### Q3: How virus mutates when spreading from Location a to Location b?
 * cypher:	NA
-* m-cypher:	`MATCH (a:Country{name:a})-[m:M*]->(b:Country{name:b})`
+* m-cypher:	`MATCH (a:Location{name:a})-[m:M*]->(b:Location{name:b})`
 
 <p align="center">
   <img width="600" src="motifM.PNG">

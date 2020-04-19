@@ -22,7 +22,7 @@ Labels for nodes `nodeLabelID:nodeLabel` and edges `edgeLabelID:edgeLabel`
 
 ## Usage 
 
-### Open `codes\webpage\mcypher.html` for local view.
+### Open `codes/webpage/mcypher.html` for local view.
 
 ### Components to be added:
 * Motif input [Matin];
@@ -54,7 +54,7 @@ In the following query examples, we demonstrate three use cases (Q1, Q2 and Q3) 
 ### Neo4j 
 * Install [neo4j-desktop](https://neo4j.com/developer/neo4j-desktop/).
 * Put data into `<neo4j-home>/import`. 
-For example, `C:\Users\<user>\.Neo4jDesktop\neo4jDatabases\<database>\installation-<version>\import` in windows.
+For example, `C:/Users/<user>/.Neo4jDesktop/neo4jDatabases/<database>/installation-<version>/import` in windows.
 * Import COVID19 data into neo4j.
 ```
 #put 'nodes' and 'edges' in '<neo4j-home>/import' beforehand
@@ -97,10 +97,10 @@ FOREACH ( ignoreMe in CASE WHEN line[2]='4' THEN [1] ELSE [] END | MERGE (n)-[:P
 #### [Motif-clique explorer system](http://motif.cs.hku.hk/)
 #### [Format of graph for MC-explorer](http://motif.cs.hku.hk/file/readme.txt)
 #### Codes 
-* See `codes\mc-explorer`.
+* See `codes/mc-explorer`.
 * About motif input:
-see`codes\mc-explorer\platform\WebContent\js\graphM.js`, `codes\mc-explorer\platform\WebContent\js\utilities.js`
-and `codes\mc-explorer\platform\WebContent\js\graphResult.js`.
+see`codes/mc-explorer/platform/WebContent/js/graphM.js`, `codes/mc-explorer/platform/WebContent/js/utilities.js`
+and `codes/mc-explorer/platform/WebContent/js/graphResult.js`.
 * About graph visualization: [cytoscape](https://cytoscape.org/).
 
 #### [COVID19 VLDB demo video](https://www.dropbox.com/s/xhpczwsv7m4cut1/covid_19_vldb_demo_%20compression.mp4?dl=0). 

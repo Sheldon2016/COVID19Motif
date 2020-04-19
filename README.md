@@ -38,7 +38,7 @@ In the following query examples, we demonstrate three use cases (Q1, Q2 and Q3) 
 * What if M is a large motif? 
 	* Almost impossible to describe M by path pattern queries in cypher! 
 	* Even so, there will be many duplicates!
-#### Q2: What is the instances of motif pattern M?
+#### Q2: What are the instances of motif pattern M?
 * cypher:	`MATCH (a:Location)<-[:from_location]-(b:Strain)-[:mutate_from_branch]->(c:Branch) RETURN a,b,c`
 * m-cypher:	`MATCH (m:M) RETURN m`
 * Same problems exists as Q1!

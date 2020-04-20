@@ -6,6 +6,11 @@ This repository contains codes and datasets used in [M-Cypher: A GQL Supporting 
 		* For example, subgraph matching and motif connectivity.
 	* To provide uniform interface to third party applications w.r.t. motifs.
 		* For example, proved better effectiveness for clustering, node ranking and link prediction.
+		```
+		MATCH (A) WITH A, size((A)--()) as degree WHERE degree>4000
+		CALL algo.pageRank.stream(null, null, {iterations:20, dampingFactor:0.85, sourceNodes: [A]}) YIELD nodeId, score
+		RETURN algo.asNode(nodeId) AS page,score ORDER BY score DESC
+		```
 * To provide user-friendly input and output.
 
 ## Datasets

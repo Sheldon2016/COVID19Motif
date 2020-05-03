@@ -33,7 +33,18 @@ Labels for nodes `nodeLabelID:nodeLabel` and edges `edgeLabelID:edgeLabel`
 * Motif input [Matin];
 * Output visulization [Matin];
 * M-Cypher parser [Xiaodong];
-* 4-page paper [Xiaodong].
+* 4-page paper [Xiaodong];
+* Declarative functionalities [Xiaodong]:
+	* Motif counting (see Q1);
+	* Motif instance enumerating (a.k.a isomorphic subgraph detection, see Q2);
+	* Motif-paths finding (e.g., nodes reachable by triangle connectivities, see Q3);
+	* Motif-components finding (e.g., k-cliques);
+* Embedded API functionalities [Matin and Xiaodong]:
+	* Motif Page Rank for better node ranking;
+	* Motif conductance for better graph clustering;	
+	* Motif Discovery;
+	* Motif adjacency matrix calculation;
+	* Motif feature vectors for better link prediction.
 
 ### Use cases
 In the following query examples, we demonstrate three use cases (Q1, Q2 and Q3) by motif M, which is predefined by the user in the GUI.

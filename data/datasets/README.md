@@ -9,7 +9,7 @@ The datasets are maintaiend by groups like neo4j. The datasets are mainly from p
 
 #### scheme
 <p align="center">
-  <img width="800" src="neo4j-scheme.png">
+  <img width="900" src="neo4j-scheme.png">
 </p>
 The publication dataset and the gene dataset (marked in green) are linked by a "MENTIONS" link (marked in pink), which means the corresponding paper abstract mentions the gene symbol.
 
@@ -50,14 +50,14 @@ The datasets are maintained by several universities and companies from mainland,
 
 #### examples
 <p align="center">
-  <img width="800" src="openkg-city-strain-branch.png">
+  <img width="500" src="openkg-city-strain-branch.png">
 </p>
 <p align="center">
   <img width="800" src="openkg-host-virus-protein-1.svg">
 </p>
 <p align="center">
-  <img width="800" src="openkg-host-virus-protein-2.svg">
+  <img width="500" src="openkg-host-virus-protein-2.svg">
 </p>
 <p align="center">
-  <img width="800" src="openkg-virus-protein-gene.svg">
+  <img width="500" src="openkg-virus-protein-gene.svg">
 </p>

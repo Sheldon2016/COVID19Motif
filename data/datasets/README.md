@@ -11,7 +11,7 @@ The datasets are maintaiend by groups like neo4j. The datasets are mainly from p
 <p align="center">
   <img width="800" src="neo4j-scheme.png">
 </p>
-The publication dataset and the gene dataset (marked in blue) are linked by a "MENTIONS" link (marked in pink), which means the corresponding paper abstract mentions the gene symbol.
+The publication dataset and the gene dataset (marked in green) are linked by a "MENTIONS" link (marked in pink), which means the corresponding paper abstract mentions the gene symbol.
 
 #### examples
 <p align="center">

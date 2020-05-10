@@ -56,8 +56,8 @@ The datasets are maintained by several universities and companies from mainland,
   <img width="800" src="openkg-host-virus-protein-1.svg">
 </p>
 <p align="center">
-  <img width="500" src="openkg-host-virus-protein-2.svg">
+  <img width="300" src="openkg-host-virus-protein-2.svg">
 </p>
 <p align="center">
-  <img width="500" src="openkg-virus-protein-gene.svg">
+  <img width="300" src="openkg-virus-protein-gene.svg">
 </p>

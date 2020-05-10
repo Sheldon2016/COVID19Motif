@@ -52,12 +52,16 @@ The datasets are maintained by several universities and companies from mainland,
 <p align="center">
   <img width="500" src="openkg-city-strain-branch.png">
 </p>
+yellow: city, red: strain, pink: strain branch
 <p align="center">
   <img width="800" src="openkg-host-virus-protein-1.svg">
 </p>
+yellow: virus (covid-19), red: protein, blue: host
 <p align="center">
   <img width="300" src="openkg-host-virus-protein-2.svg">
 </p>
+yellow: virus (sars), red: protein, blue: host
 <p align="center">
   <img width="800" src="openkg-virus-protein-gene.svg">
 </p>
+yellow: virus (covid-19), red: protein, grey: gene

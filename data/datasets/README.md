@@ -25,7 +25,7 @@ The subgraphs around the gene "".
   <img width="800" src="neo4j-author.svg">
 </p>
 <p align="center">
-  <img width="400" src="neo4j-autohr-label.png">
+  <img width="400" src="neo4j-author-label.png">
 </p>
 The subgraphs around the authors in Hong Kong.
 <p align="center">

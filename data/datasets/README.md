@@ -6,11 +6,13 @@ The datasets are maintaiend by groups like neo4j. The datasets are mainly from p
 * [detailed describtion](https://covidgraph.org)
 * pros: easy to access.
 * cons: currently only gene and publication related information are available.
+
 #### scheme
 <p align="center">
   <img width="800" src="neo4j-scheme.png">
 </p>
-The publication dataset and the gene dataset are linked by a "MENTIONS" link, which means the corresponding paper abstract mentions the gene symbol.
+The publication dataset and the gene dataset (marked in blue) are linked by a "MENTIONS" link (marked in pink), which means the corresponding paper abstract mentions the gene symbol.
+
 #### examples
 <p align="center">
   <img width="800" src="neo4j-gene.svg">

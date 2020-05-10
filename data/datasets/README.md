@@ -2,13 +2,13 @@
 This repository contains codes and datasets for Covid-19 Knowledge Graph, which can be integrated from different data sources and domains.
 ## Neo4j Datasets
 The datasets are maintaiend by groups like neo4j. The datasets are mainly from publications and case statistics. 
-#### [url](http://www.odbms.org/2020/03/we-build-a-knowledge-graph-on-covid-19/)
-#### [detailed describtion](https://covidgraph.org)
-#### pros: easy to access.
-#### cons: currently only gene and publication related information are available.
+* [url](http://www.odbms.org/2020/03/we-build-a-knowledge-graph-on-covid-19/)
+* [detailed describtion](https://covidgraph.org)
+* pros: easy to access.
+* cons: currently only gene and publication related information are available.
 #### scheme
 <p align="center">
-  <img width="800" src="neo4j-scheme.svg">
+  <img width="800" src="neo4j-scheme.png">
 </p>
 The publication dataset and the gene dataset are linked by a "MENTIONS" link, which means the corresponding paper abstract mentions the gene symbol.
 #### examples
@@ -16,21 +16,21 @@ The publication dataset and the gene dataset are linked by a "MENTIONS" link, wh
   <img width="800" src="neo4j-gene.svg">
 </p>
 <p align="center">
-  <img width="400" src="neo4j-gene-label.svg">
+  <img width="400" src="neo4j-gene-label.png">
 </p>
 The subgraphs around the gene "".
 <p align="center">
   <img width="800" src="neo4j-author.svg">
 </p>
 <p align="center">
-  <img width="400" src="neo4j-autohr-label.svg">
+  <img width="400" src="neo4j-autohr-label.png">
 </p>
 The subgraphs around the authors in Hong Kong.
 <p align="center">
   <img width="800" src="neo4j-location.svg">
 </p>
 <p align="center">
-  <img width="400" src="neo4j-location-label.svg">
+  <img width="400" src="neo4j-location-label.png">
 </p>
 The subgraphs of the case statistics around Hong Kong.
 

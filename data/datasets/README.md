@@ -1,20 +1,20 @@
-# M-Cypher: A GQL Supporting Motifs
-This repository contains codes and datasets used in [M-Cypher: A GQL Supporting Motifs], which is built on Cypher to support motif-related queries. 
+# Datasets for Covid-19 Knowledge Graph
+This repository contains codes and datasets for Covid-19 Knowledge Graph, which can be integrated from different data sources and domains.
 
-* To express a motif-related operation that is difficult to express declaratively with Cypher.
-	* To provide access to motif-related functionality that is not available in Cypher.
-		* For example, subgraph matching and motif connectivity.
-	* To provide uniform interface to third party applications w.r.t. motifs.
-		* For example, proved better effectiveness for clustering, node ranking and link prediction.
-		```
-		MATCH (A) WITH A, size((A)--()) as degree WHERE degree>4000
-		CALL algo.pageRank.stream(null, null, {iterations:20, dampingFactor:0.85, sourceNodes: [A]}) YIELD nodeId, score
-		RETURN algo.asNode(nodeId) AS page,score ORDER BY score DESC
-		```
-* To provide user-friendly input and output.
-
-## Datasets
-The code takes the **edge list** of the graph. Every row indicates an edge between two nodes separated by a comma. The datasets used in the paper are included in the  `data/` directory.
+## OpenKG Datasets
+The datasets are maintained by several universities and companies from mainland, e.g., Tsinghua University and Huawei. The datsets are from different areas, and the datasets for research purposes include information about host, virus, drugs, gene and protein. Below please find the details.
+#### url [http://www.openkg.cn/dataset/covid-19-research]
+#### detailed describtion [https://mp.weixin.qq.com/s/eHbkrMtYpg-oEmWS92970w]
+#### pros: wide coverage with rich knowledge
+#### cons: need coding effords from original data sources in JSON.
+#### scheme
+<p align="center">
+  <img width="800" src="graph.svg">
+</p>
+--------------------------
+<p align="center">
+  <img width="800" src="graph.pdf">
+</p>
 #### nodes
 `nodeID,nodeLabelID,nodeName`
 #### edges
@@ -22,7 +22,7 @@ The code takes the **edge list** of the graph. Every row indicates an edge betwe
 #### labels
 Labels for nodes `nodeLabelID:nodeLabel` and edges `edgeLabelID:edgeLabel`
 <p align="center">
-  <img width="800" src="covid19.png">
+  <img width="600" src="covid19.png">
 </p>
 
 ## Usage 

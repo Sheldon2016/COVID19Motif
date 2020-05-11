@@ -12,6 +12,8 @@ This repository contains codes and datasets used in [M-Cypher: A GQL Supporting 
 		RETURN algo.asNode(nodeId) AS page,score ORDER BY score DESC
 		```
 * To provide user-friendly input and output.
+* To fullfill standard GQL protocals in theory.
+* To embed advanced features into the query, e.g., motif adjacency matrix, proximity (distance) matrix w.r.t. motifs.
 
 ## Datasets
 The code takes the **edge list** of the graph. Every row indicates an edge between two nodes separated by a comma. The datasets used in the paper are included in the  `data/` directory.

@@ -56,7 +56,7 @@ The datasets are maintained by several universities and companies from mainland,
 
 * yellow: city, red: strain, pink: strain branch
 <p align="center">
-  <img width="500" src="openkg-city-strain-branch.png">
+  <img width="500" src="openkg-city-strain-branch.svg">
 </p>
 
 * yellow: virus (covid-19), red: protein, blue: host

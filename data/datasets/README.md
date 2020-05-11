@@ -15,7 +15,7 @@ The publication dataset and the gene dataset (marked in green) are linked by a "
 
 #### examples
 
-* The subgraphs around the gene "".
+* The subgraphs around the gene "CD191|CKR-1|CKR1|CMKBR1|HM145|MIP1aR|SCYAR1".
 <p align="center">
   <img width="800" src="neo4j-gene.svg">
 </p>

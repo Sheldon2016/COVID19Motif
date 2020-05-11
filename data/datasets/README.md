@@ -14,6 +14,7 @@ The datasets are maintaiend by groups like neo4j. The datasets are mainly from p
 The publication dataset and the gene dataset (marked in green) are linked by a "MENTIONS" link (marked in pink), which means the corresponding paper abstract mentions the gene symbol.
 
 #### examples
+
 * The subgraphs around the gene "".
 <p align="center">
   <img width="800" src="neo4j-gene.svg">
@@ -21,6 +22,7 @@ The publication dataset and the gene dataset (marked in green) are linked by a "
 <p align="center">
   <img width="400" src="neo4j-gene-label.png">
 </p>
+
 * The subgraphs around the authors in Hong Kong.
 <p align="center">
   <img width="800" src="neo4j-author.svg">
@@ -28,6 +30,7 @@ The publication dataset and the gene dataset (marked in green) are linked by a "
 <p align="center">
   <img width="400" src="neo4j-author-label.png">
 </p>
+
 * The subgraphs of the case statistics around Hong Kong.
 <p align="center">
   <img width="800" src="neo4j-location.svg">
@@ -50,18 +53,22 @@ The datasets are maintained by several universities and companies from mainland,
 </p>
 
 #### examples
+
 * yellow: city, red: strain, pink: strain branch
 <p align="center">
   <img width="500" src="openkg-city-strain-branch.png">
 </p>
+
 * yellow: virus (covid-19), red: protein, blue: host
 <p align="center">
   <img width="800" src="openkg-host-virus-protein-1.svg">
 </p>
+
 * yellow: virus (sars), red: protein, blue: host
 <p align="center">
   <img width="300" src="openkg-host-virus-protein-2.svg">
 </p>
+
 * yellow: virus (covid-19), red: protein, grey: gene
 <p align="center">
   <img width="800" src="openkg-virus-protein-gene.svg">

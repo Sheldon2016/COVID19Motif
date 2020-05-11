@@ -65,3 +65,6 @@ yellow: virus (sars), red: protein, blue: host
   <img width="800" src="openkg-virus-protein-gene.svg">
 </p>
 yellow: virus (covid-19), red: protein, grey: gene
+
+## Virus-Protein-Drug network
+* [describtion](https://www.nature.com/articles/s41421-020-0153-3.pdf)

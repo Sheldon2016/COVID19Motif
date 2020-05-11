@@ -67,4 +67,8 @@ yellow: virus (sars), red: protein, blue: host
 yellow: virus (covid-19), red: protein, grey: gene
 
 ## Virus-Protein-Drug network
+The datasets are released in the science paper published in Cell Discovery 2020. In the human PPI network, they analyzed human proteins that functionally associate with Covid-19 viral infection and proteins that serve as drug targets. 
+* [url](https://github.com/ChengF-Lab/GPSnet)
 * [describtion](https://www.nature.com/articles/s41421-020-0153-3.pdf)
+* pros: proved data for potential drug discovery.
+* cons: domain knowledge needed to integrate the data.

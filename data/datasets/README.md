@@ -28,7 +28,7 @@ The publication dataset and the gene dataset (marked in green) are linked by a "
   <img width="800" src="neo4j-author.svg">
 </p>
 <p align="center">
-  <img width="400" src="neo4j-author-label.png">
+  <img width="500" src="neo4j-author-label.png">
 </p>
 
 * The subgraphs of the case statistics around Hong Kong.

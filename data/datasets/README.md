@@ -88,7 +88,7 @@ The datasets are released in the science paper published in Cell Discovery 2020.
   <img width="800" src="all-ace2.svg">
 </p>
 <p align="center">
-  <img width="600" src="all-ace2-label.png">
+  <img width="800" src="all-ace2-label.png">
 </p>
 
 |Coronavirus | Host-Protein | Host-Gene-ID | PubMed-ID|

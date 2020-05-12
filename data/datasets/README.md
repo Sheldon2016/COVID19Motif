@@ -90,9 +90,6 @@ The datasets are released in the science paper published in Cell Discovery 2020.
 <p align="center">
   <img width="600" src="all-ace2-label.png">
 </p>
-<p align="center">
-  <img width="600" src="all-scheme.png">
-</p>
 
 |Coronavirus | Host-Protein | Host-Gene-ID | PubMed-ID|
 | --- | --- | --- | --- |
@@ -154,7 +151,7 @@ The datasets are released in the science paper published in Cell Discovery 2020.
 |SARS | ND4L | 4539 | 22046132|
 |SARS | COX2 | 4513 | 22046132|
 |SARS | HNRNPA1 | 3178 | 22046132|
-|SARS | ACE2 | 59272 | 22046132|
+|SARS | **ACE2** | 59272 | 22046132|
 |SARS | CLEC4G | 339390 | 22046132|
 |SARS | CD209 | 30835 | 22046132|
 |SARS | CLEC4M | 10332 | 22046132|

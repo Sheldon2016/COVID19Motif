@@ -90,7 +90,9 @@ The datasets are released in the science paper published in Cell Discovery 2020.
 <p align="center">
   <img width="600" src="all-ace2-label.png">
 </p>
-
+<p align="center">
+  <img width="600" src="all-scheme.png">
+</p>
 |Coronavirus | Host-Protein | Host-Gene-ID | PubMed-ID|
 | --- | --- | --- | --- |
 |IBV | NONO | 4841 | 23637410|

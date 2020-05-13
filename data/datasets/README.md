@@ -81,6 +81,15 @@ The datasets are released in the science paper published in Cell Discovery 2020.
 * pros: proved data for potential drug discovery.
 * cons: result onbly; domain knowledge needed to integrate the data.
 
+#### problems
+* how to evaluate the drugs discovered
+  * single drug: numeric indicators (z-score, p value),  bioinformatics validation (drug-induced gene signatures and HCoV induced transcriptomics), literature-derived antiviral evidence
+  * drug combinations: numeric indicators (z-score, p value)
+* data to be releases:
+  * HCoV–host protein interactions
+  * drug–target network
+  * human protein–protein interactome
+  
 #### examples
 
 * The subgraphs around the HostProtein "ACE2" which is functionally associate with Covid-19 viral infection.

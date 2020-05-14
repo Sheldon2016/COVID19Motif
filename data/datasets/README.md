@@ -234,7 +234,7 @@ The datasets are released in the science paper published in Cell Discovery 2020.
 |MHV | SMAD3 | 4088 | STRING | Viruses|
 
 | Coronavirus | GenBank ID | Identity% | Protein |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | 2019-nCoV[Wuhan-Hu-1] | QHD43415.1 | 100 | ORF1ab |
 | 2019-nCoV[HKU-SZ-002a] | QHN73794.1 | 100 | ORF1ab |
 | 2019-nCoV[HKU-SZ-005b] | QHN73809.1 | 99.99 | ORF1ab |

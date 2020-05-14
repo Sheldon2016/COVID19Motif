@@ -232,3 +232,81 @@ The datasets are released in the science paper published in Cell Discovery 2020.
 |HCoV-229E | TGFB1 | 7040 | STRING | Viruses|
 |HCoV-229E | FGL2 | 10875 | STRING | Viruses|
 |MHV | SMAD3 | 4088 | STRING | Viruses|
+
+| Coronavirus | GenBank | ID | Identity% | Protein |
+| --- | --- | --- | --- | --- |
+| 2019-nCoV[Wuhan-Hu-1] | QHD43415.1 | 100 | ORF1ab |
+| 2019-nCoV[HKU-SZ-002a] | QHN73794.1 | 100 | ORF1ab |
+| 2019-nCoV[HKU-SZ-005b] | QHN73809.1 | 99.99 | ORF1ab |
+| SARS-CoV[GZ02] | AAS00002.1 | 86.51 | ORF1ab |
+| SARS-CoV[Sino1-11] | AAR23243.1 | 86.44 | ORF1ab |
+| SARS-CoV[GD01] | AAP51225.1 | 86.35 | ORF1ab |
+| SARS-CoV[NS-1] | AAR91584.1 | 86.35 | ORF1ab |
+| MERS-CoV[ChinaGD01] | AKJ80135.2 | 48 | ORF1ab |
+| MERS-CoV[2014KSA_683] | AIL23987.1 | 47.97 | ORF1ab |
+| HCoV-OC43 | AIX09804.1 | 44.93 | ORF1ab |
+| HCoV-HKU1 | ABD75567.1 | 44.69 | ORF1ab |
+| MHV | YP_209229.2 | 44.64 | ORF1ab |
+| HCoV-NL63 | AVA26872.1 | 40.05 | ORF1ab |
+| HCoV-229E | QEG03783.1 | 39.95 | ORF1ab |
+| IBV | ATJ01091.1 | 27.86 | ORF1ab |
+| 2019-nCoV[Wuhan-Hu-1] | QHD43416.1 | 100 | Spike |
+| 2019-nCoV[HKU-SZ-005b] | QHN73810.1 | 100 | Spike |
+| 2019-nCoV[HKU-SZ-002a] | QHN73795.1 | 100 | Spike |
+| SARS-CoV[GZ02] | AAS00003.1 | 77.62 | Spike |
+| SARS-CoV[GD01] | AAP51227.1 | 77.54 | Spike |
+| SARS-CoV[Sino1-11] | AAR23250.1 | 77.46 | Spike |
+| SARS-CoV[NS-1] | AAR91586.1 | 77.38 | Spike |
+| MHV | YP_209233.1 | 32.12 | Spike |
+| MERS-CoV[ChinaGD01] | AKJ80137.2 | 31.93 | Spike |
+| MERS-CoV[2014KSA_683] | AID55073.1 | 31.93 | Spike |
+| HCoV-OC43 | AIX09807.1 | 30.84 | Spike |
+| HCoV-HKU1 | ABD75561.1 | 30.17 | Spike |
+| HCoV-229E | QEG03785.1 | 27.37 | Spike |
+| IBV | ATJ01093.1 | 27.14 | Spike |
+| HCoV-NL63 | AVA26873.1 | 26.89 | Spike |
+| 2019-nCoV[Wuhan-Hu-1] | QHD43418.1 | 100 | Envelope Protein |
+| 2019-nCoV[HKU-SZ-002a] | QHN73797.1 | 100 | Envelope Protein |
+| 2019-nCoV[HKU-SZ-005b] | QHN73812.1 | 100 | Envelope Protein |
+| SARS-CoV[NS-1] | AAR91589.1 | 96 | Envelope Protein |
+| SARS-CoV[GZ02] | AAS00006.1 | 96 | Envelope Protein |
+| SARS-CoV[GD01] | AAP51230.1 | 94.67 | Envelope Protein |
+| SARS-CoV[Sino1-11] | AAR23247.1 | 94.59 | Envelope Protein |
+| MERS-CoV[2014KSA_683] | AIL23994.1 | 36 | Envelope Protein |
+| MERS-CoV[ChinaGD01] | AKJ80142.1 | 36 | Envelope Protein |
+| HCoV-HKU1 | ABD75563.1 | 29.33 | Envelope Protein |
+| HCoV-229E | QEG03787.1 | 27.14 | Envelope Protein |
+| MHV | YP_209236.1 | 21.33 | Envelope Protein |
+| IBV | ATJ01096.1 | 20.27 | Envelope Protein |
+| HCoV-OC43 | AIX09809.1 | 18.67 | Envelope Protein |
+| HCoV-NL63 | AVA26875.1 | 17.14 | Envelope Protein |
+| 2019-nCoV[Wuhan-Hu-1] | QHD43419.1 | 100 | Membrane |
+| 2019-nCoV[HKU-SZ-002a] | QHN73798.1 | 100 | Membrane |
+| 2019-nCoV[HKU-SZ-005b] | QHN73813.1 | 100 | Membrane |
+| SARS-CoV[GD01] | AAP51231.1 | 89.59 | Membrane |
+| SARS-CoV[GZ02] | AAS00007.1 | 89.59 | Membrane |
+| SARS-CoV[NS-1] | AAR91590.1 | 89.59 | Membrane |
+| SARS-CoV[Sino1-11] | AAR23248.1 | 89.14 | Membrane |
+| MERS-CoV[2014KSA_683] | AIL23995.1 | 39.27 | Membrane |
+| MERS-CoV[ChinaGD01] | AKJ80143.1 | 39.27 | Membrane |
+| HCoV-OC43 | AIX09810.1 | 38.29 | Membrane |
+| MHV | YP_209237.1 | 37.1 | Membrane |
+| HCoV-HKU1 | ABD75564.1 | 35.29 | Membrane |
+| IBV | ATJ01097.1 | 30.56 | Membrane |
+| HCoV-229E | QEG03788.1 | 28.77 | Membrane |
+| HCoV-NL63 | AVA26876.1 | 27.73 | Membrane |
+| 2019-nCoV[Wuhan-Hu-1] | QHD43423.2 | 100 | Nucleocapsid |
+| 2019-nCoV[HKU-SZ-002a] | QHN73802.1 | 100 | Nucleocapsid |
+| 2019-nCoV[HKU-SZ-005b] | QHN73817.1 | 100 | Nucleocapsid |
+| SARS-CoV[GD01] | AAP51234.1 | 89.74 | Nucleocapsid |
+| SARS-CoV[GZ02] | AAS00011.1 | 89.74 | Nucleocapsid |
+| SARS-CoV[Sino1-11] | AAR23249.1 | 89.74 | Nucleocapsid |
+| SARS-CoV[NS-1] | AAR91593.1 | 89.74 | Nucleocapsid |
+| MERS-CoV[2014KSA_683] | AIL23996.1 | 48.85 | Nucleocapsid |
+| MERS-CoV[ChinaGD01] | AKJ80144.1 | 48.85 | Nucleocapsid |
+| MHV | YP_209238.1 | 35.31 | Nucleocapsid |
+| HCoV-HKU1 | ABD75565.1 | 35.22 | Nucleocapsid |
+| HCoV-OC43 | AIX09811.1 | 34.79 | Nucleocapsid |
+| IBV | ATJ01100.1 | 29.46 | Nucleocapsid |
+| HCoV-NL63 | AVA26877.1 | 28.03 | Nucleocapsid |
+| HCoV-229E | QEG03789.1 | 27.35 | Nucleocapsid |

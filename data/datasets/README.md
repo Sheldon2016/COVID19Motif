@@ -233,7 +233,7 @@ The datasets are released in the science paper published in Cell Discovery 2020.
 |HCoV-229E | FGL2 | 10875 | STRING | Viruses|
 |MHV | SMAD3 | 4088 | STRING | Viruses|
 
-| Coronavirus | GenBank | ID | Identity% | Protein |
+| Coronavirus | GenBank ID | Identity% | Protein |
 | --- | --- | --- | --- | --- |
 | 2019-nCoV[Wuhan-Hu-1] | QHD43415.1 | 100 | ORF1ab |
 | 2019-nCoV[HKU-SZ-002a] | QHN73794.1 | 100 | ORF1ab |

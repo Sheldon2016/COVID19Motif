@@ -1,305 +1,354 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="http://js2neo.org/cdn/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-  <title>m-cypher</title>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="http://js2neo.org/cdn/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="http://js2neo.org/cdn/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="http://js2neo.org/cdn/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  <script src="http://js2neo.org/dist/js2neo.js"></script>
-  <script src="http://js2neo.org/sizes.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="http://js2neo.org/cdn/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <title>m-cypher</title>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="http://js2neo.org/cdn/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="http://js2neo.org/cdn/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="http://js2neo.org/cdn/bootstrap.min.js"
+            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
+    <script src="http://js2neo.org/dist/js2neo.js"></script>
+    <script src="http://js2neo.org/sizes.js"></script>
 
-  <!-- noppa/text-security -->
-  <link rel="stylesheet" type="text/css" href="http://js2neo.org/cdn/text-security.css">
+    <!-- noppa/text-security -->
+    <link rel="stylesheet" type="text/css" href="http://js2neo.org/cdn/text-security.css">
 
-  <!-- CytoScape JavaScript for Motif-Input and Motif-visualization -->
-  <script type="text/javascript" src="js/motif-input.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/cytoscape-context-menus.css">
-  <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
-  <script src="js/cytoscape-context-menus.js"></script>
+    <!-- CytoScape JavaScript for Motif-Input and Motif-visualization -->
+    <script type="text/javascript" src="js/motif-visualize.js"></script>
+    <!--    <script type="text/javascript" src="js/motif-input.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="css/cytoscape-context-menus.css">
+    <link rel="stylesheet" type="text/css" href="css/mcypher.css">
+    <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+    <script src="js/cytoscape-context-menus.js"></script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/css/custom-theme/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/css/custom-theme/jquery-ui-1.10.0.custom.css"
+          rel="stylesheet"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
-  <style>
-  h2 {
-    margin: 2rem 0 1rem 0;
-  }
+    <style>
+        h2 {
+            margin: 2rem 0 1rem 0;
+        }
 
-  textarea {
-    font-family: monospace
-  }
+        textarea {
+            font-family: monospace
+        }
 
-  .text-security {
-    font-family: "text-security-disc"
-  }
+        .text-security {
+            font-family: "text-security-disc"
+        }
 
-  code {
-    font-size: 1rem;
-  }
+        code {
+            font-size: 1rem;
+        }
 
-  pre {
-    padding: .5rem .8rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: .3rem;
-    background-color: #F0F0EC;
-  }
+        pre {
+            padding: .5rem .8rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: .3rem;
+            background-color: #F0F0EC;
+        }
 
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0); /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+        }
 
-  /* Modal Content */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 50%;
-  }
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%;
+        }
 
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
 
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
 
-  #canvasHolder{
-    height: 300px;
-    border: solid 1px #cccccc;
-    margin-bottom:10px;
-  }
-  </style>
+        #canvasHolder {
+            height: 300px;
+            border: solid 1px #cccccc;
+            margin-bottom: 10px;
+        }
+
+        #motifVisualOutput {
+            height: 800px;
+            border: solid 1px #cccccc;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 
 <body style="overflow-y:scroll">
 
-  <div id="graphMSelector" class="modal">
+<div id="graphMSelector" class="modal">
     <div class="modal-content">
-      <span class="close" id="graphM-close" onclick="span_click()">&times;</span>
-      <div id="canvasHolder" style="-webkit-tap-highlight-color: rgba(0,0,0,0);">
-      </div>
-      <div class="float-left">
-        <button type="button" class="btn btn-primary btn" id="graphMSelector-submit-button" onclick="span_click()">Submit</button>
-        <button type="button" class="btn btn-primary btn" id="graphMSelector-clean-button" onclick="clean_up_motif()">Clean</button>
-      </div>
+        <span class="close" id="graphM-close" onclick="modal_close()">&times;</span>
+        <div id="canvasHolder" style="-webkit-tap-highlight-color: rgba(0,0,0,0);">
+        </div>
+        <div class="float-left">
+            <button type="button" class="btn btn-primary btn" id="graphMSelector-submit-button" onclick="span_click()">
+                Submit
+            </button>
+            <button type="button" class="btn btn-primary btn" id="graphMSelector-clean-button"
+                    onclick="clean_up_motif()">Clean
+            </button>
+        </div>
     </div>
-  </div>
+</div>
+
+<div id="queryVisualResult" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="modal_close()">&times;</span>
+        <div id="motifVisualOutput" style="-webkit-tap-highlight-color: rgba(0,0,0,0);">
+        </div>
+        <!-- <p>"Hello!"</p> -->
+    </div>
+</div>
 
 
-  <div class="container">
+<div class="container">
 
     <h1 style="text-align: center;padding: 3rem 0">
-      <img src="https://i.cs.hku.hk/~xdli/papers/logo.png" width="20%">
+        <img src="https://i.cs.hku.hk/~xdli/papers/logo.png" width="20%">
     </h1>
 
     <p>
-      The <strong>M-Cypher</strong> project is a graph query language (GQL) supporting motif-related queries. It is based on Neo4j and JavaScript, with a parser to integrate typical Cypher queries with motif-related queries, as well as several popular motif-related algorithms and visualizations.
+        The <strong>M-Cypher</strong> project is a graph query language (GQL) supporting motif-related queries. It is
+        based on Neo4j and JavaScript, with a parser to integrate typical Cypher queries with motif-related queries, as
+        well as several popular motif-related algorithms and visualizations.
     </p>
 
     <form id="connection-form">
-      <div class="form-group row">
-        <div class="col">
-          <label for="host">Host</label>
-          <input class="form-control" id="host" placeholder="Enter the server host name or IP address" value="localhost">
+        <div class="form-group row">
+            <div class="col">
+                <label for="host">Host</label>
+                <input class="form-control" id="host" placeholder="Enter the server host name or IP address"
+                       value="localhost">
+            </div>
+            <div class="col">
+                <label for="port">Port</label>
+                <input type="number" class="form-control" id="port" placeholder="Enter the server port number"
+                       value="7687">
+            </div>
+            <div class="col">
+                <label for="host">User</label>
+                <input class="form-control" id="user" placeholder="Enter your user name" value="neo4j">
+            </div>
+            <div class="col" id="password-here">
+                <label for="password">Password</label>
+                <input type="text" class="form-control text-security" id="password">
+            </div>
         </div>
-        <div class="col">
-          <label for="port">Port</label>
-          <input type="number" class="form-control" id="port" placeholder="Enter the server port number" value="7687">
+        <div class="form-group">
         </div>
-        <div class="col">
-          <label for="host">User</label>
-          <input class="form-control" id="user" placeholder="Enter your user name" value="neo4j">
+        <div class="form-group row">
+            <div class="col-12">
+                <label for="cypher">The m-Cypher query:</label>
+                <textarea class="form-control" id="cypher" style="width:100%;height:7.5rem" title="Cypher query">Run the M-Cypher queries here.</textarea>
+            </div>
+            <!--<div class="col-4">-->
+            <!--<label for="params">Parameters</label>-->
+            <!--<select id="params" class="custom-select" size="3" style="height:7.5rem">-->
+            <!--</select>-->
+            <!--</div>-->
         </div>
-        <div class="col" id="password-here">
-          <label for="password">Password</label>
-          <input type="text" class="form-control text-security" id="password">
+        <div class="form-group">
+            <button id="connect-button" type="button" class="btn btn-primary" onclick="connect(); initCytoscape();">
+                Connect
+            </button>
+            <button id="disconnect-button" type="button" class="btn btn-primary" onclick="disconnect()"
+                    disabled="disabled">Disconnect
+            </button>
+            <button id="run-button" type="button" class="btn btn-primary" onclick="run($(&quot;#cypher&quot;).val())"
+                    disabled="disabled">Run
+            </button>
+            <button id="motif-input-button" type="button" class="btn btn-success" disabled="disabled"
+                    onclick="motif_input_btn_click()">Motif Input
+            </button>
+            <button id="visualize-data-button" type="button" class="btn btn-primary" disabled="disabled"
+                    onclick="draw_query_result(); filter_results($(&quot;#cypher&quot;).val());">Visualize!
+            </button>
+
         </div>
-      </div>
-      <div class="form-group">
-      </div>
-      <div class="form-group row">
-        <div class="col-12">
-          <label for="cypher">The m-Cypher query:</label>
-          <textarea class="form-control" id="cypher" style="width:100%;height:7.5rem" title="Cypher query">Run the M-Cypher queries here.</textarea>
-        </div>
-        <!--<div class="col-4">-->
-        <!--<label for="params">Parameters</label>-->
-        <!--<select id="params" class="custom-select" size="3" style="height:7.5rem">-->
-        <!--</select>-->
-        <!--</div>-->
-      </div>
-      <div class="form-group">
-        <button id="connect-button" type="button" class="btn btn-primary" onclick="connect()">Connect</button>
-        <button id="disconnect-button" type="button" class="btn btn-primary" onclick="disconnect()" disabled="disabled">Disconnect
-        </button>
-        <button id="run-button" type="button" class="btn btn-primary" onclick="run($(&quot;#cypher&quot;).val())" disabled="disabled">Run
-        </button>
-        <button id="motif-input-button" type="button" class="btn btn-success" disabled = "disabled" onclick="btn_click()">Motif Input</button>
-      </div>
-      <div class="form-group" id="connection-management-status"></div>
-      <table id="result" class="result table table-hover">
-        <thead id="result-head" class="thead-dark"></thead>
-        <tbody id="result-body"></tbody>
-        <tfoot id="result-foot" class="thead-dark"></tfoot>
-      </table>
+        <div class="form-group" id="connection-management-status"></div>
+        <table id="result" class="result table table-hover">
+            <thead id="result-head" class="thead-dark"></thead>
+            <tbody id="result-body"></tbody>
+            <tfoot id="result-foot" class="thead-dark"></tfoot>
+        </table>
     </form>
 
     <div style="margin:1.5rem 0; text-align: center">
-      <a class="btn btn-success btn-lg" href="#"
-      style="text-align: left;margin-right:1rem;padding-right:6rem">
-      <div style="font-size:250%;float:left;padding-right:1rem;">⇩</div>
-      <div style="font-size:150%">Download <strong>query result</strong></div>
-      <small><em>
-        (<script>document.write(sizes["js2neo.min.js"])</script> bytes,
-        <script>document.write(sizes["js2neo.min.js.gz"])</script> bytes gzipped)</em></small>
-      </a>
-      <a class="btn btn-secondary btn-lg" href="#"
-      style="text-align: left;margin-right:1rem;padding-right:8rem">
-      <div style="font-size:250%;float:left;padding-right:1rem;">⌨</div>
-      <div style="font-size:150%">Get the code</div>
-      <small><em>https://github.com/xxx</em></small>
-    </a>
-  </div>
+        <a class="btn btn-success btn-lg" href="#"
+           style="text-align: left;margin-right:1rem;padding-right:6rem">
+            <div style="font-size:250%;float:left;padding-right:1rem;">⇩</div>
+            <div style="font-size:150%">Download <strong>query result</strong></div>
+            <small><em>
+                (
+                <script>document.write(sizes["js2neo.min.js"])</script>
+                bytes,
+                <script>document.write(sizes["js2neo.min.js.gz"])</script>
+                bytes gzipped)</em></small>
+        </a>
+        <a class="btn btn-secondary btn-lg" href="#"
+           style="text-align: left;margin-right:1rem;padding-right:8rem">
+            <div style="font-size:250%;float:left;padding-right:1rem;">⌨</div>
+            <div style="font-size:150%">Get the code</div>
+            <small><em>https://github.com/xxx</em></small>
+        </a>
+    </div>
 
-  <div class="py-3 text-center">
-    &copy; 2020, the University of Hong Kong.
-  </div>
+    <div class="py-3 text-center">
+        &copy; 2020, the University of Hong Kong.
+    </div>
 </div>
 
 <script src="https://unpkg.com/neo4j-driver"></script>
 
 <script>
-$("#result-form").hide();
+    $("#result-form").hide();
 
-var pub = {};
+    var pub = {};
 
-function setConnectionManagementStatus(level, message) {
-  var status = document.getElementById("connection-management-status"),
-  div = document.createElement("div"),
-  text = document.createTextNode(message);
-  while (status.firstChild) status.removeChild(status.firstChild);
-  if (level) {
-    div.setAttribute("class", "alert alert-" + level);
-    div.setAttribute("role", "alert");
-    status.appendChild(div);
-    div.appendChild(text);
-  }
-}
+    function setConnectionManagementStatus(level, message) {
+        var status = document.getElementById("connection-management-status"),
+            div = document.createElement("div"),
+            text = document.createTextNode(message);
+        while (status.firstChild) status.removeChild(status.firstChild);
+        if (level) {
+            div.setAttribute("class", "alert alert-" + level);
+            div.setAttribute("role", "alert");
+            status.appendChild(div);
+            div.appendChild(text);
+        }
+    }
 
-function setConnected(connected) {
-  if (connected) {
-    $("#run-button").removeAttr("disabled");
-    $("#connect-button").attr("disabled", "disabled");
-    $("#disconnect-button").removeAttr("disabled");
-    $("#motif-input-button").removeAttr("disabled");
-  } else {
-    $("#run-button").attr("disabled", "disabled");
-    $("#connect-button").removeAttr("disabled");
-    $("#disconnect-button").attr("disabled", "disabled");
-    $("#motif-input-button").attr("disabled", "disabled");
-  }
-}
+    function setConnected(connected) {
+        if (connected) {
+            $("#run-button").removeAttr("disabled");
+            $("#connect-button").attr("disabled", "disabled");
+            $("#disconnect-button").removeAttr("disabled");
+            $("#motif-input-button").removeAttr("disabled");
+            $("#visualize-data-button").removeAttr("disabled");
 
-var driver;
-var host;
-var port;
-var user;
-function connect() {
-  host = 'neo4j://'+document.getElementById("host").value;
-  port = parseInt(document.getElementById("port").value);
-  user = document.getElementById("user").value;
-  password = document.getElementById("password").value;
-  driver = neo4j.driver(host, neo4j.auth.basic(user, password));
-  setConnectionManagementStatus("success", "Connected" + " to " + host + " on port " + port + " as user " + user);
-  setConnected(true);
-}
+        } else {
+            $("#run-button").attr("disabled", "disabled");
+            $("#connect-button").removeAttr("disabled");
+            $("#disconnect-button").attr("disabled", "disabled");
+            $("#motif-input-button").attr("disabled", "disabled");
+            $("#visualize-data-button").attr("disabled", "disabled");
+
+        }
+    }
+
+    var driver;
+    var host;
+    var port;
+    var user;
+
+    function connect() {
+        host = 'neo4j://' + document.getElementById("host").value;
+        port = parseInt(document.getElementById("port").value);
+        user = document.getElementById("user").value;
+        password = document.getElementById("password").value;
+        driver = neo4j.driver(host, neo4j.auth.basic(user, password));
+        setConnectionManagementStatus("success", "Connected" + " to " + host + " on port " + port + " as user " + user);
+        setConnected(true);
+    }
 </script>
 
 <script type="text/javascript">
-document.addEventListener("click", function(event) {
-  var modal = document.getElementById("graphMSelector")
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-})
+    document.addEventListener("click", function (event) {
+        var modal = document.getElementById("graphMSelector")
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    })
 </script>
 
 <script>
-function disconnect() {
-  setConnectionManagementStatus("success", "Disconnected" + " from " + host + " on port " + port + " as user " + user);
-  //await driver.close();
-  //setConnected(false);
-}
+    function disconnect() {
+        setConnectionManagementStatus("success", "Disconnected" + " from " + host + " on port " + port + " as user " + user);
+        //await driver.close();
+        //setConnected(false);
+    }
 </script>
 
 <script type="text/javascript" src="js/parser.js"></script>
 
 <script>
-function todoe(){
+    function todoe() {
 
 
-  var tr = document.createElement("tr");
-  for (var i = 0; i < fields.length; i++) {
-    var td = document.createElement("td");
-    var div = document.createElement("div");
-    var value = fields[i], content;
-    if (value === null) {
-      content = undefined;
+        var tr = document.createElement("tr");
+        for (var i = 0; i < fields.length; i++) {
+            var td = document.createElement("td");
+            var div = document.createElement("div");
+            var value = fields[i], content;
+            if (value === null) {
+                content = undefined;
+            } else if (typeof value === "string") {
+                content = document.createTextNode(value);
+            } else if (typeof value === "object" && !Array.isArray(value)) {
+                var type = value.constructor.name;
+                switch (type) {
+                    case "Node":
+                        content = nodeValue(div, value.id, value.labels, value.properties);
+                        break;
+                    default:
+                        div.setAttribute("style", "white-space: pre");
+                        content = document.createTextNode(type + "(" + JSON.stringify(value, null, "  ") + ")");
+                }
+            } else {
+                content = document.createTextNode(JSON.stringify(value));
+            }
+            if (content !== undefined)
+                div.appendChild(content);
+            td.appendChild(div);
+            tr.appendChild(td);
+        }
+        body.appendChild(tr)
     }
-    else if (typeof value === "string") {
-      content = document.createTextNode(value);
-    }
-    else if (typeof value === "object" && !Array.isArray(value)) {
-      var type = value.constructor.name;
-      switch (type) {
-        case "Node":
-        content = nodeValue(div, value.id, value.labels, value.properties);
-        break;
-        default:
-        div.setAttribute("style", "white-space: pre");
-        content = document.createTextNode(type + "(" + JSON.stringify(value, null, "  ") + ")");
-      }
-    }
-    else {
-      content = document.createTextNode(JSON.stringify(value));
-    }
-    if (content !== undefined)
-    div.appendChild(content);
-    td.appendChild(div);
-    tr.appendChild(td);
-  }
-  body.appendChild(tr)
-}
 </script>
 
 

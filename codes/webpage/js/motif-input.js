@@ -37,7 +37,6 @@ function btn_click() {
       name: 'breadthfirst'
     },
   });
-
   var selectAllOfTheSameType = function(ele) {
     cy.elements().unselect();
     if(ele.isNode()) {
@@ -127,6 +126,7 @@ function btn_click() {
         hasTrailingDivider: true
       }
     ]};
+	
     // demo your core ext
     var context_menu_instance = cy.contextMenus(context_options);
     host = 'neo4j://'+document.getElementById("host").value;
@@ -169,7 +169,6 @@ function btn_click() {
       },
 
     });
-	
   }
 
   // When the user clicks on <span> (x), close the modal
@@ -181,7 +180,6 @@ function btn_click() {
 	var allEdges = cy.edges();
 	//var res = "Confirm motif edges:\n";
     // alert(all.length);
-	
     for (var i = 0; i < allEdges.length; i++) {
       the_edge = allEdges[i];
 	  var source = cy.getElementById(the_edge['_private']['data']['source']);
@@ -192,10 +190,8 @@ function btn_click() {
 	  targets.push (targetName);
 	  //res+="source:"+sources[i]+" target:"+targets[i]+"\n";
     }
-
     var modal = document.getElementById("graphMSelector");
     modal.style.display = "none";
-	//alert(res);
   }
   function clean_up_motif(){
     cy.remove(cy.elements("node"));

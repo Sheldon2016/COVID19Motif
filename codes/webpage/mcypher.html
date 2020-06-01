@@ -27,7 +27,7 @@
 
     <!-- CytoScape JavaScript for Motif-Input and Motif-visualization -->
     <script type="text/javascript" src="js/motif-visualize.js"></script>
-    <!--    <script type="text/javascript" src="js/motif-input.js"></script>-->
+    <script type="text/javascript" src="js/motif-input.js"></script>
     <link rel="stylesheet" type="text/css" href="css/cytoscape-context-menus.css">
     <link rel="stylesheet" type="text/css" href="css/mcypher.css">
     <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
@@ -141,6 +141,11 @@
         <span class="close" onclick="modal_close()">&times;</span>
         <div id="motifVisualOutput" style="-webkit-tap-highlight-color: rgba(0,0,0,0);">
         </div>
+        <div class="float-left">
+            <button type="button" class="btn btn-primary btn" id="graphVisulization-clean-button"
+                    onclick="clean_up_visulization()">Clean
+            </button>
+        </div>		
         <!-- <p>"Hello!"</p> -->
     </div>
 </div>
@@ -206,7 +211,7 @@
                     onclick="motif_input_btn_click()">Motif Input
             </button>
             <button id="visualize-data-button" type="button" class="btn btn-primary" disabled="disabled"
-                    onclick="draw_query_result(); filter_results($(&quot;#cypher&quot;).val());">Visualize!
+                    onclick="draw_query_result(); filter_results();">Visualize!
             </button>
 
         </div>

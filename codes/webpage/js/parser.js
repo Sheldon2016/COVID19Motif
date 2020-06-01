@@ -1,3 +1,4 @@
+var visulizationQuery;
 
 function nodeValue(container, id, labels, properties) {
   var card = document.createElement("div"),
@@ -21,47 +22,71 @@ function getcons(queryarr){
 	  cons += "WHERE "
       cons += consarr.split(" RETURN")[0];
 	  cons += "\n";
+	  //alert(cons);
+	  var tem = cons.split("m.");
+	  var con2 = "";
+	  for(var i=0;i<tem.length;i++){
+		  con2 += tem[i];
 	  }
-	return cons;
+	  }else{
+		  return cons;
+	  }
+	return con2;
 }
 
 function run(cypher) {
-
   let map = new Map();
-  
-  var res = "Confirm motif M:\n", resQ="", tail="";
+  var res = "Confirm motif M:\n", resQ="", tail="", resQ2="", tail2="";
+  var res2 = "Nodes in M:\n";
   var nid = 1;
+  //alert(sources.length);
   for (var i = 0; i < sources.length; i++) {
-	 //res+="Edge "+(i+1)+" [source:"+sources[i].name+"] [target:"+targets[i].name+"]\n";
-	 var slabel="", tlabel="";
+	 
+	 var slabel = sources[i].name.toLowerCase()+":"+sources[i].name;
+	 var tlabel = targets[i].name.toLowerCase()+":"+targets[i].name;
+	 
+	 //var slabel="", tlabel="";
 	 if(map.has(sources[i].id)){
-	   slabel = "n"+map.get(sources[i].id)+":"+sources[i].name;
+	   //slabel = "n"+map.get(sources[i].id)+":"+sources[i].name;
 	 }else{
 	   map.set(sources[i].id, nid);
-	   slabel = "n"+nid+":"+sources[i].name;
-	   tail+="n"+nid+".label As m_"+sources[i].name+", ";
+	   res2 += "n"+nid+":"+sources[i].name+"\n";
+	   //slabel = "n"+nid+":"+sources[i].name;
+	   //tail+="n"+nid+".label As m_"+sources[i].name+", ";
+	   //tail2 += "n"+nid+", ";
+	   tail+=sources[i].name.toLowerCase()+".label As m_"+sources[i].name+", ";
+	   tail2 += sources[i].name.toLowerCase()+", ";
 	   nid += 1;
 	 }
 	 if(map.has(targets[i].id)){
-	   tlabel = "n"+map.get(targets[i].id)+":"+targets[i].name;
+	   //tlabel = "n"+map.get(targets[i].id)+":"+targets[i].name;
 	 }else{
 	   map.set(targets[i].id, nid);
-	   tlabel = "n"+nid+":"+targets[i].name;
-	   tail+="n"+nid+".label As m_"+targets[i].name+", ";
+	   res2 += "n"+nid+":"+targets[i].name+"\n";
+	   //tlabel = "n"+nid+":"+targets[i].name;
+	   //tail+="n"+nid+".label As m_"+targets[i].name+", ";
+	   //tail2+="n"+nid+", ";
+	   tail+=targets[i].name.toLowerCase()+".label As m_"+targets[i].name+", ";
+	   tail2 += targets[i].name.toLowerCase()+", ";
 	   nid += 1;
 	 }
+	 
 	 res+="Edge "+(i+1)+" ["+slabel+"--"+tlabel+"]\n";
 	 resQ += "MATCH ("+slabel+")--("+tlabel+")\n";
-  }  
+  }
   tail = tail.substring(0,tail.length-2);
-
+  tail2 = tail2.substring(0,tail2.length-2);
+  //alert(res2);
+  
   resQ += getcons(cypher);
+  resQ2 = resQ;
 
   if(cypher.includes("COUNT"))
 	resQ += "RETURN COUNT(*)+''";
   else
     resQ += "RETURN "+tail;
   //alert(resQ);
+  resQ2 += "RETURN "+tail2;
 
   //m-cypher parser
   var cq = cypher;
@@ -70,7 +95,7 @@ function run(cypher) {
   if(cypher.includes(q1)){
     //cq = "MATCH p=(:Location)<-[:from_location]-(:Strain)-[:mutate_from_branch]->(:Branch) RETURN COUNT (p)+''";
 	cq = resQ;
-	
+	visulizationQuery = resQ2;
     return runonce(cq);
   }
 
@@ -82,14 +107,18 @@ function run(cypher) {
 	
     cq = "match (p1:Location{label:\""+country1+
     "\"})--(s1:Strain)--(b1:Branch)--(b2:Branch)--(s2:Strain)--(p2:Location{label:\""+country2+
-    "\"}) return p1.label as m1_Location, b1.label as m1_Branch1, s1.label as m1_Strain,  s2.label as m2_Strain, p2.label as m2_Country, b2.label as m2_Branch";
+    "\"})";
+	tail = " return p1.label as m1_Location, b1.label as m1_Branch1, s1.label as m1_Strain,  s2.label as m2_Strain, p2.label as m2_Country, b2.label as m2_Branch";
+	tail2 = " return p1, b1, s1,  s2, p2, b2";
+	visulizationQuery = cq + tail2;
+	cq += tail;
     return runonce(cq);
   }
   return runonce(cq)
 }
 
 function runonce(cypher){
-  alert(cypher);
+  //alert(cypher);
   // Clear any existing result
   var head = document.getElementById("result-head"),
   body = document.getElementById("result-body"),

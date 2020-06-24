@@ -562,8 +562,8 @@ function filter_results(cypher) {
 function motif_input_next_button() {
     number_of_motifs += 1;
     document.getElementById("motifNameDiv").innerHTML = "M" + number_of_motifs;
-    var newMotif = motif_input_cy.data();
-    input_motifs.push(newMotif);
+    var current_state = motif_input_cy.json();
+    input_motifs.push(current_state);
     console.log(input_motifs.length, input_motifs[input_motifs.length - 1]);
     motif_input_cy.remove(motif_input_cy.elements("node"));
 }

@@ -7,7 +7,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="http://js2neo.org/cdn/bootstrap.min.css"
           integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <title>m-cypher</title>
+    <title>M-Cypher</title>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="http://js2neo.org/cdn/jquery-3.3.1.slim.min.js"
@@ -158,9 +158,9 @@
     </h1>
 
     <p>
-        The <strong>M-Cypher</strong> project is a graph query language (GQL) supporting motif-related queries. It is
-        based on Neo4j and JavaScript, with a parser to integrate typical Cypher queries with motif-related queries, as
-        well as several popular motif-related algorithms and visualizations.
+        The <strong>M-Cypher</strong> is a Graph Query Language (GQL) framework that supports motif-related queries. It is
+        developed in both syntax level and query engine level, and integrates standard Cypher queries with the state-of-the-art motif-related algorithms and visualizations. 
+		Watch the <a href="#">Video</a> for more instructions!
     </p>
 
     <form id="connection-form">
@@ -188,7 +188,7 @@
         </div>
         <div class="form-group row">
             <div class="col-12">
-                <label for="cypher">The m-Cypher query:</label>
+                <label for="cypher">The M-Cypher query:</label>
                 <textarea class="form-control" id="cypher" style="width:100%;height:7.5rem" title="Cypher query">Run the M-Cypher queries here.</textarea>
             </div>
             <!--<div class="col-4">-->
@@ -223,29 +223,6 @@
         </table>
     </form>
 
-    <div style="margin:1.5rem 0; text-align: center">
-        <a class="btn btn-success btn-lg" href="#"
-           style="text-align: left;margin-right:1rem;padding-right:6rem">
-            <div style="font-size:250%;float:left;padding-right:1rem;">⇩</div>
-            <div style="font-size:150%">Download <strong>query result</strong></div>
-            <small><em>
-                (
-                <script>document.write(sizes["js2neo.min.js"])</script>
-                bytes,
-                <script>document.write(sizes["js2neo.min.js.gz"])</script>
-                bytes gzipped)</em></small>
-        </a>
-        <a class="btn btn-secondary btn-lg" href="#"
-           style="text-align: left;margin-right:1rem;padding-right:8rem">
-            <div style="font-size:250%;float:left;padding-right:1rem;">⌨</div>
-            <div style="font-size:150%">Get the code</div>
-            <small><em>https://github.com/xxx</em></small>
-        </a>
-    </div>
-
-    <div class="py-3 text-center">
-        &copy; 2020, the University of Hong Kong.
-    </div>
 </div>
 
 <script src="https://unpkg.com/neo4j-driver"></script>

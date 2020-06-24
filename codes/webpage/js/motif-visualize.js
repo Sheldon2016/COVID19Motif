@@ -95,7 +95,7 @@ function motif_input_btn_click() {
                 'target-arrow-color': '#000'
             }),
         layout: {
-            name: 'breadthfirst',
+            name: 'concentric',
             directed: true
         },
     });
@@ -376,7 +376,7 @@ function filter_results() {
         console.log(error)
     }).then(() => {
 		layout = neo4j_cy.layout({
-            name: 'breadthfirst'
+            name: 'concentric'
         });
         neo4j_cy.on('tap', function (event) {
             // target holds a reference to the originator

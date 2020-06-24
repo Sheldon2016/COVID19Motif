@@ -4,7 +4,8 @@ var driver;
 var layout;
 var node_ids = [];
 var input_motifs = [];
-
+var number_of_motifs = 1;
+var node_selection_order = [];
 
 function initCytoscape() {
 
@@ -179,6 +180,19 @@ function motif_input_btn_click() {
         },
     });
 
+    motif_input_cy.on('tap', function (event) {
+        // target holds a reference to the originator
+        // of the event (core or element)
+        var evtTarget = event.target;
+
+        if (evtTarget === cy) {
+            node_selection_order = [];
+
+        } else if (evtTarget['_private']['group'] === "nodes") {
+            node_selection_order.push(evtTarget['_private']['data']['id']);
+        }
+    });
+
     //motif_input_cy.remove(motif_input_cy.elements("node"));
     var selectAllOfTheSameType = function (ele) {
         motif_input_cy.elements().unselect();
@@ -249,12 +263,11 @@ function motif_input_btn_click() {
 
                 selector: 'node:selected',
                 onClickFunction: function (event) {
-                    var target = motif_input_cy.$('node:selected');
-                    if (target.length != 2)
+                    if (node_selection_order.length !== 2)
                         alert("Need to select 2 nodes");
                     else {
-                        var s = target[0]['_private']['data']['id'];
-                        var t = target[1]['_private']['data']['id'];
+                        var s = node_selection_order[0];
+                        var t = node_selection_order[1];
                         motif_input_cy.add([{
                             group: "edges",
                             data: {
@@ -545,3 +558,13 @@ function filter_results(cypher) {
 
 
 }
+
+function motif_input_next_button() {
+    number_of_motifs += 1;
+    document.getElementById("motifNameDiv").innerHTML = "M" + number_of_motifs;
+    var current_state = motif_input_cy.json();
+    input_motifs.push(current_state);
+    console.log(input_motifs.length, input_motifs[input_motifs.length - 1]);
+    motif_input_cy.remove(motif_input_cy.elements("node"));
+}
+

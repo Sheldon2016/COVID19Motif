@@ -125,8 +125,14 @@
         <span class="close" id="graphM-close" onclick="modal_close()">&times;</span>
         <div id="canvasHolder" style="-webkit-tap-highlight-color: rgba(0,0,0,0);">
         </div>
+        <div id="motifNameDiv"><p>M1</p></div>
         <div class="float-left">
-            <button type="button" class="btn btn-primary btn" id="graphMSelector-submit-button" onclick="submit_button()">
+            <button type="button" class="btn btn-primary btn" id="graphMSelector-next-button"
+                    onclick="motif_input_next_button()">
+                Next
+            </button>
+            <button type="button" class="btn btn-primary btn" id="graphMSelector-submit-button"
+                    onclick="submit_button()">
                 Submit
             </button>
             <button type="button" class="btn btn-primary btn" id="graphMSelector-clean-button"
@@ -145,7 +151,7 @@
             <button type="button" class="btn btn-primary btn" id="graphVisualization-clean-button"
                     onclick="clean_up_visualization()">Clean
             </button>
-        </div>		
+        </div>
         <!-- <p>"Hello!"</p> -->
     </div>
 </div>

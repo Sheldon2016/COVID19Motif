@@ -35,6 +35,7 @@ function getcons(queryarr){
 }
 
 function run(cypher) {
+	visulizationQuery = cypher;
   let map = new Map();
   var res = "Confirm motif M:\n", resQ="", tail="", resQ2="", tail2="";
   var res2 = "Nodes in M:\n";
@@ -118,7 +119,8 @@ function run(cypher) {
 }
 
 function runonce(cypher){
-  //alert(cypher);
+	alert(visulizationQuery);
+  alert(cypher);
   // Clear any existing result
   var head = document.getElementById("result-head"),
   body = document.getElementById("result-body"),

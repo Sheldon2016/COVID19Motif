@@ -17,26 +17,29 @@ function initCytoscape() {
         panningEnabled: true,
         userZoomingEnabled: true,
 
-        style: [
-            {
-                selector: 'node',
-                style: {
-                    'content': 'data(name)'
-                }
-            },
-
-            {
-                selector: 'edge',
-                style: {
-                    'target-arrow-shape': 'triangle'
-                }
-            },
-
-            {
-                selector: ':selected',
-                style: {}
-            }
-        ],
+        style: cytoscape.stylesheet()
+            .selector('node')
+            .css({
+                'content': 'data(name)',
+                'height': 30,
+                'width': 30,
+                'background-color': '#543190',
+                'border-color': '#000',
+                'border-width': 1,
+                'border-opacity': 1
+            })
+            .selector('node:selected')
+            .css({
+                'border-color': '#e700ff',
+            })
+            .selector('edge')
+            .css({
+                'curve-style': 'straight',
+                'width': 1,
+                'target-arrow-shape': 'triangle',
+                'line-color': '#000',
+                'target-arrow-color': '#000'
+            }),
         layout: {
             name: 'random'
         },
@@ -58,8 +61,18 @@ function initCytoscape() {
 
 }
 
- var sources = [];
- var targets = [];
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+var sources = [];
+var targets = [];
+
 function motif_input_btn_click() {
     var modal = document.getElementById("graphMSelector");
     modal.style.display = "block";
@@ -79,7 +92,7 @@ function motif_input_btn_click() {
                 'width': 30,
                 'background-color': '#543190',
                 'border-color': '#000',
-                'border-width': 4,
+                'border-width': 1,
                 'border-opacity': 1
             })
             .selector('node:selected')
@@ -89,7 +102,7 @@ function motif_input_btn_click() {
             .selector('edge')
             .css({
                 'curve-style': 'bezier',
-                'width': 3,
+                'width': 1,
                 'target-arrow-shape': 'triangle',
                 'line-color': '#000',
                 'target-arrow-color': '#000'
@@ -224,15 +237,6 @@ function motif_input_btn_click() {
 
                         var pos = event.position;
 
-                        function getRandomColor() {
-                            var letters = '0123456789ABCDEF';
-                            var color = '#';
-                            for (var i = 0; i < 6; i++) {
-                                color += letters[Math.floor(Math.random() * 16)];
-                            }
-                            return color;
-                        }
-
                         if (!node_types.includes(record.get(0)[0])) {
                             console.log("new color for class:  " + record.get(0)[0]);
                             motif_input_cy.style().selector('.' + record.get(0)[0]).css({'background-color': getRandomColor()}).update();
@@ -274,6 +278,7 @@ function clean_up_motif() {
 
 var sources = [];
 var targets = [];
+
 function submit_button() {
     var all = cy.edges();
     // alert(all.length);
@@ -281,12 +286,12 @@ function submit_button() {
         the_edge = all[i];
         var target = cy.getElementById(the_edge['_private']['data']['target']);
         var source = cy.getElementById(the_edge['_private']['data']['source']);
-		
-		var sourceName = source['_private']['data'];//['id'];
-		var targetName = target['_private']['data'];//['id'];
-		
-		sources.push (sourceName);
-		targets.push (targetName);
+
+        var sourceName = source['_private']['data'];//['id'];
+        var targetName = target['_private']['data'];//['id'];
+
+        sources.push(sourceName);
+        targets.push(targetName);
         // alert(source['_private']['data']['name']+"--> "+target['_private']['data']['name']);
     }
     var modal = document.getElementById("graphMSelector");
@@ -305,69 +310,86 @@ function filter_results() {
     var result_edges = [];
     var result_node_ids = [];
     var result_edges_ids = [];
+    var node_types = [];
 
     var session = driver.session();
-	var resEdgeNum = 0;
+    var resEdgeNum = 0;
     session.run(visulizationQuery).then(result => {
             result.records.forEach(record => {
                 console.log(record);
 
-				for (var j = 0; j < record.length-1; j++) {
-					var source = record.get(j);
-					var source_node, target_node;
-					let s_flag = true;
-					let t_flag = true;
-					if (!node_ids.includes(source['identity']['low'])) {
-						source_node = {
-							group: 'nodes',
-							data: {
-								id: source['identity']['low'],
-								name: source['properties']['label'],
-							},
-							classes: [source['labels'][0]],
-	
-						};
-						node_ids.push(source['identity']['low']);
-					} else {
-						// console.log("source redundant -->" + source['identity']['low'] + ",  " + source['properties']['label']);
-						s_flag = false;
+                for (var j = 0; j < record.length - 1; j++) {
+                    var source = record.get(j);
+                    var source_node, target_node;
+                    let s_flag = true;
+                    let t_flag = true;
+                    if (!node_ids.includes(source['identity']['low'])) {
+                        source_node = {
+                            group: 'nodes',
+                            data: {
+                                id: source['identity']['low'],
+                                name: source['properties']['name'],
+                            },
+                            classes: [source['labels'][0]],
 
-					}
-					var target = record.get(j+1);
-					if (!node_ids.includes(target['identity']['low'])) {
-						target_node = {
-							group: 'nodes',
-							data: {
-								id: target['identity']['low'],
-								name: target['properties']['label'],
-							},
-							classes: [target['labels'][0]],
+                        };
+                        node_ids.push(source['identity']['low']);
+                    } else {
+                        // console.log("source redundant -->" + source['identity']['low'] + ",  " + source['properties']['label']);
+                        s_flag = false;
 
-						};
-						node_ids.push(target['identity']['low']);
-					} else {
-						// console.log("target redundant -->" + target['identity']['low'] + ",  " + target['properties']['label']);
-						t_flag = false;
+                    }
+                    var target = record.get(j + 1);
+                    if (!node_ids.includes(target['identity']['low'])) {
+                        target_node = {
+                            group: 'nodes',
+                            data: {
+                                id: target['identity']['low'],
+                                name: target['properties']['name'],
+                            },
+                            classes: [target['labels'][0]],
 
-					}
-					var edge = {
-						group: "edges",
-						data: {
-							// inferred as an edge because `source` and `target` are specified:
-							source: source['identity']['low'], // the source node id (edge comes from this node)
-							target: target['identity']['low']  // the target node id (edge goes to this node)
-							// (`source` and `target` can be effectively changed by `eles.move()`)
-						},
+                        };
+                        node_ids.push(target['identity']['low']);
+                    } else {
+                        // console.log("target redundant -->" + target['identity']['low'] + ",  " + target['properties']['label']);
+                        t_flag = false;
 
-						pannable: true // whether dragging on the edge causes panning
-					};
+                    }
+                    var edge = {
+                        group: "edges",
+                        data: {
+                            // inferred as an edge because `source` and `target` are specified:
+                            source: source['identity']['low'], // the source node id (edge comes from this node)
+                            target: target['identity']['low']  // the target node id (edge goes to this node)
+                            // (`source` and `target` can be effectively changed by `eles.move()`)
+                        },
 
-					if (s_flag) neo4j_cy.add(source_node);
-					if (t_flag) neo4j_cy.add(target_node);
-					neo4j_cy.add(edge);
-					resEdgeNum = resEdgeNum + 1;
-					//alert(resEdgeNum+": "+edge['source']+" - "+edge['source']);
-			}
+                        pannable: true // whether dragging on the edge causes panning
+                    };
+
+                    if (s_flag) {
+                        if (!node_types.includes(source_node['classes'])) {
+                            neo4j_cy.style().selector('.' + source_node['classes']).css({'background-color': getRandomColor()}).update();
+                            node_types.push(source_node['classes'])
+                        }
+
+                        neo4j_cy.add(source_node);
+                    }
+                    if (t_flag) {
+                        if (!node_types.includes(target_node['classes'])) {
+                            neo4j_cy.style().selector('.' + target['classes']).css({'background-color': getRandomColor()}).update();
+                            node_types.push(target_node['classes'])
+                        }
+                        neo4j_cy.add(target_node);
+                    }
+                    if (!result_edges.includes(edge)) {
+                        neo4j_cy.add(edge);
+                        resEdgeNum = resEdgeNum + 1;
+                        result_edges.push(edge);
+                    }
+                    //alert(resEdgeNum+": "+edge['source']+" - "+edge['source']);
+                }
                 // console.log('----------------------');
 
             });
@@ -375,7 +397,7 @@ function filter_results() {
     ).catch(error => {
         console.log(error)
     }).then(() => {
-		layout = neo4j_cy.layout({
+        layout = neo4j_cy.layout({
             name: 'concentric'
         });
         neo4j_cy.on('tap', function (event) {
@@ -390,10 +412,10 @@ function filter_results() {
                 console.log('tap on some element');
             }
         });
-		
-		neo4j_cy.center();
-		
-		
+
+        neo4j_cy.center();
+
+
     });
 
     // neo4j_cy.center();

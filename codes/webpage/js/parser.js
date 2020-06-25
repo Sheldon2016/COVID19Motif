@@ -119,8 +119,8 @@ function run(cypher) {
 }
 
 function runonce(cypher){
-	alert(visulizationQuery);
-  alert(cypher);
+	//alert(visulizationQuery);
+  //alert(cypher);
   // Clear any existing result
   var head = document.getElementById("result-head"),
   body = document.getElementById("result-body"),

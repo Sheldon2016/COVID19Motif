@@ -69,6 +69,10 @@ function getRandomColor() {
     }
     return color;
 }
+function getColor(counter) {
+    var letters = ["#F95E12", "#543190","#D2F074", "purple","maroon", "lime", "fushsia", "yellow", "navy", , "olive", "teal", "aqua", "gray", "silver"];
+    return letters[counter];
+}
 
 var sources = [];
 var targets = [];
@@ -219,6 +223,7 @@ function motif_input_btn_click() {
     var context_menu_instance = motif_input_cy.contextMenus(context_options);
     var type_reader_session = driver.session();
     var i = 0;
+	var colorcounter = 0;
     node_types = [];
     type_reader_session.run("MATCH (n) RETURN DISTINCT LABELS(n)").subscribe({
         onNext: record => {
@@ -239,7 +244,7 @@ function motif_input_btn_click() {
 
                         if (!node_types.includes(record.get(0)[0])) {
                             console.log("new color for class:  " + record.get(0)[0]);
-                            motif_input_cy.style().selector('.' + record.get(0)[0]).css({'background-color': getRandomColor()}).update();
+                            motif_input_cy.style().selector('.' + record.get(0)[0]).css({'background-color': getColor(colorcounter++)}).update();
                             // motif_input_cy.style().selector('Virus' ).css({'background-color': getRandomColor()});
 
                             node_types.push(record.get(0)[0]);
@@ -311,13 +316,14 @@ function filter_results() {
     var result_node_ids = [];
     var result_edges_ids = [];
     var node_types = [];
-
+	
     var session = driver.session();
     var resEdgeNum = 0;
     session.run(visulizationQuery).then(result => {
             result.records.forEach(record => {
                 console.log(record);
-
+				
+				var colorcounter2 = 0;
                 for (var j = 0; j < record.length - 1; j++) {
                     var source = record.get(j);
                     var source_node, target_node;
@@ -370,7 +376,7 @@ function filter_results() {
 
                     if (s_flag) {
                         if (!node_types.includes(source_node['classes'])) {
-                            neo4j_cy.style().selector('.' + source_node['classes']).css({'background-color': getRandomColor()}).update();
+                            neo4j_cy.style().selector('.' + source_node['classes']).css({'background-color': getColor(colorcounter2++)}).update();
                             node_types.push(source_node['classes'])
                         }
 
@@ -378,7 +384,7 @@ function filter_results() {
                     }
                     if (t_flag) {
                         if (!node_types.includes(target_node['classes'])) {
-                            neo4j_cy.style().selector('.' + target['classes']).css({'background-color': getRandomColor()}).update();
+                            neo4j_cy.style().selector('.' + target['classes']).css({'background-color': getColor(colorcounter2++)}).update();
                             node_types.push(target_node['classes'])
                         }
                         neo4j_cy.add(target_node);

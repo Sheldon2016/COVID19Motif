@@ -5,7 +5,7 @@ This repository contains codes and data used in [M-Cypher: A GQL Framwork Suppor
 * To express a motif-related operation that is difficult to express declaratively with Cypher.
 	* To provide access to motif-related functionality that is not available in Cypher.
 		* For example, subgraph matching and motif connectivity.
-	* To provide uniform interface to third party applications w.r.t. motifs.
+	* To provide uniform interface to the state-of-the-art motifs related algorithms.
 		* For example, proved better effectiveness for clustering, node ranking and link prediction.
 		```
 		MATCH (A) WITH A, size((A)--()) as degree WHERE degree>4000

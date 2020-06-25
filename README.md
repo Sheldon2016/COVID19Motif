@@ -6,7 +6,7 @@ This repository contains codes and data used in [M-Cypher: A GQL Framwork Suppor
 	* To provide access to motif-related functionality that is not available in Cypher.
 		* For example, subgraph matching and motif connectivity.
 	* To provide uniform interface to the state-of-the-art motif-related algorithms.
-		* For example, motif-based graph clustering, motif-based node ranking and motif-based link prediction, which is proved better effectiveness.
+		* For example, motif-based graph clustering, motif-based node ranking and motif-based link prediction, which is proved better effectiveness than the ordinary edge-based solutions.
 		```
 		MATCH (A) WITH A, size((A)--()) as degree WHERE degree>4000
 		CALL algo.pageRank.stream(null, null, {iterations:20, dampingFactor:0.85, sourceNodes: [A]}) YIELD nodeId, score

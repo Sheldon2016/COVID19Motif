@@ -33,16 +33,16 @@ Labels for nodes `nodeLabelID:nodeLabel` and edges `edgeLabelID:edgeLabel`
 ### Open `codes/webpage/mcypher.html` for local view.
 
 ### Components to be added:
-* Motif input [Matin];
-* Output visulization [Matin];
-* M-Cypher parser [Xiaodong];
-* 4-page paper [Xiaodong];
-* Declarative functionalities [Xiaodong]:
+* Motif input [];
+* Output visulization [];
+* M-Cypher parser [];
+* 4-page paper [];
+* Declarative functionalities []:
 	* Motif counting (see Q1);
 	* Motif instance enumerating (a.k.a isomorphic subgraph detection, see Q2);
 	* Motif-paths finding (e.g., nodes reachable by triangle connectivities, see Q3);
 	* Motif-components finding (e.g., k-cliques);
-* Embedded API functionalities [Matin and Xiaodong]:
+* Embedded API functionalities []:
 	* Motif Page Rank for better node ranking;
 	* Motif conductance for better graph clustering;	
 	* Motif Discovery;

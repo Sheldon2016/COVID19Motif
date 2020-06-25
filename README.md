@@ -1,5 +1,6 @@
-# M-Cypher: A GQL Supporting Motifs
-This repository contains codes and datasets used in [M-Cypher: A GQL Supporting Motifs], which is built on Cypher to support motif-related queries. 
+# M-Cypher: A GQL Framework Supporting Motifs
+## Demonstrated by Covid-19 Knowledge Graph Analysis
+This repository contains codes and data used in [M-Cypher: A GQL Framwork Supporting Motifs], which is built on Cypher to support motif-related queries for mining knowledge graphs. 
 
 * To express a motif-related operation that is difficult to express declaratively with Cypher.
 	* To provide access to motif-related functionality that is not available in Cypher.

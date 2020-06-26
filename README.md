@@ -62,23 +62,27 @@ RETURN motif, frequency ORDER BY frequency DESC`
 #### Q5: What is the motif feature vector for the possible missing link (Drug, Covid-19)?
 * cypher:	NA
 * m-cypher:	
-`MATCH (s:Virus) 
+```
+MATCH (s:Virus) 
 WHERE s.name="SARS-CoV-2" 
 MATCH (t:Drug)
 CALL MFV(s,t,[M1,M2]) 
 YIELD s, t, vm 
-RETURN t.name, vm`
+RETURN t.name, vm
+```
 #### Q5: What are the potential drugs for Covid-19 by MPPR ranking?
 * cypher:	NA
 * m-cypher:	
-`MATCH (s:Virus) WHERE s.name="SARS-CoV-2"
+```
+MATCH (s:Virus) WHERE s.name="SARS-CoV-2"
 CALL MPPR(s,[M2,M3,M4,M5],10000,0.85)
 YIELD node, MPPR_score 
 WITH labels(node) AS ln, 
 node.name AS Drug_name, MPPR_score
 WHERE ln = "Drug" AND score > 0
 RETURN Drug_name, MPPR_score
-ORDER BY MPPR_score DESC`
+ORDER BY MPPR_score DESC
+```
 
 <p align="center">
   <img width="600" src="motifs.jpg">

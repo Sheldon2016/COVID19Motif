@@ -9,7 +9,7 @@ The datasets are maintaiend by groups like neo4j. The datasets are mainly from p
 
 #### scheme
 <p align="center">
-  <img width="900" src="neo4j-scheme.png">
+  <img width="900" src="figs/neo4j-scheme.png">
 </p>
 The publication dataset and the gene dataset (marked in green) are linked by a "MENTIONS" link (marked in pink), which means the corresponding paper abstract mentions the gene symbol.
 
@@ -17,26 +17,26 @@ The publication dataset and the gene dataset (marked in green) are linked by a "
 
 * The subgraphs around the gene "CD191|CKR-1|CKR1|CMKBR1|HM145|MIP1aR|SCYAR1".
 <p align="center">
-  <img width="800" src="neo4j-gene.svg">
+  <img width="800" src="figs/neo4j-gene.svg">
 </p>
 <p align="center">
-  <img width="400" src="neo4j-gene-label.png">
+  <img width="400" src="figs/neo4j-gene-label.png">
 </p>
 
 * The subgraphs around the authors in Hong Kong.
 <p align="center">
-  <img width="800" src="neo4j-author.svg">
+  <img width="800" src="figs/neo4j-author.svg">
 </p>
 <p align="center">
-  <img width="500" src="neo4j-author-label.png">
+  <img width="500" src="figs/neo4j-author-label.png">
 </p>
 
 * The subgraphs of the case statistics around Hong Kong.
 <p align="center">
-  <img width="800" src="neo4j-location.svg">
+  <img width="800" src="figs/neo4j-location.svg">
 </p>
 <p align="center">
-  <img width="400" src="neo4j-location-label.png">
+  <img width="400" src="figs/neo4j-location-label.png">
 </p>
 
 
@@ -49,29 +49,29 @@ The datasets are maintained by several universities and companies from mainland,
 
 #### schemes
 <p align="center">
-  <img width="800" src="openkg-scheme.png">
+  <img width="800" src="figs/openkg-scheme.png">
 </p>
 
 #### examples
 
 * yellow: city, red: strain, pink: strain branch
 <p align="center">
-  <img width="800" src="openkg-city-strain-branch.svg">
+  <img width="800" src="figs/openkg-city-strain-branch.svg">
 </p>
 
 * yellow: virus (covid-19), red: protein, blue: host
 <p align="center">
-  <img width="800" src="openkg-host-virus-protein-1.svg">
+  <img width="800" src="figs/openkg-host-virus-protein-1.svg">
 </p>
 
 * yellow: virus (sars), red: protein, blue: host
 <p align="center">
-  <img width="300" src="openkg-host-virus-protein-2.svg">
+  <img width="300" src="figs/openkg-host-virus-protein-2.svg">
 </p>
 
 * yellow: virus (covid-19), red: protein, grey: gene
 <p align="center">
-  <img width="800" src="openkg-virus-protein-gene.svg">
+  <img width="800" src="figs/openkg-virus-protein-gene.svg">
 </p>
 
 ## Virus-Protein-Drug network
@@ -94,10 +94,10 @@ The datasets are released in the science paper published in Cell Discovery 2020.
 
 * The subgraphs around the HostProtein "ACE2" which is functionally associate with Covid-19 viral infection.
 <p align="center">
-  <img width="800" src="all-ace2.svg">
+  <img width="800" src="figs/all-ace2.svg">
 </p>
 <p align="center">
-  <img width="800" src="all-ace2-label.png">
+  <img width="800" src="figs/all-ace2-label.png">
 </p>
 
 |Coronavirus | Host-Protein | Host-Gene-ID | PubMed-ID|

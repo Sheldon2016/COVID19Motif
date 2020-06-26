@@ -85,7 +85,7 @@ ORDER BY MPPR_score DESC
 ```
 
 <p align="center">
-  <img width="600" src="motifs.jpg">
+  <img width="600" src="motifs.png">
 </p>
 
 ## Dependencies

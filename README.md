@@ -1,11 +1,12 @@
-# M-Cypher: A GQL Supporting Motifs
-This repository contains codes and datasets used in [M-Cypher: A GQL Supporting Motifs], which is built on Cypher to support motif-related queries. 
+# M-Cypher: A GQL Framework Supporting Motifs
+## Demonstrated by Covid-19 Knowledge Graph Analysis
+This repository contains codes and data used in [M-Cypher: A GQL Framwork Supporting Motifs], which is built on Cypher to support motif-related queries for mining knowledge graphs. 
 
 * To express a motif-related operation that is difficult to express declaratively with Cypher.
 	* To provide access to motif-related functionality that is not available in Cypher.
 		* For example, subgraph matching and motif connectivity.
-	* To provide uniform interface to third party applications w.r.t. motifs.
-		* For example, proved better effectiveness for clustering, node ranking and link prediction.
+	* To provide uniform interface to the state-of-the-art motif-related algorithms.
+		* For example, motif-based graph clustering, motif-based node ranking and motif-based link prediction, which is proved better effectiveness than the ordinary edge-based solutions.
 		```
 		MATCH (A) WITH A, size((A)--()) as degree WHERE degree>4000
 		CALL algo.pageRank.stream(null, null, {iterations:20, dampingFactor:0.85, sourceNodes: [A]}) YIELD nodeId, score
@@ -32,16 +33,16 @@ Labels for nodes `nodeLabelID:nodeLabel` and edges `edgeLabelID:edgeLabel`
 ### Open `codes/webpage/mcypher.html` for local view.
 
 ### Components to be added:
-* Motif input [Matin];
-* Output visulization [Matin];
-* M-Cypher parser [Xiaodong];
-* 4-page paper [Xiaodong];
-* Declarative functionalities [Xiaodong]:
+* Motif input [];
+* Output visulization [];
+* M-Cypher parser [];
+* 4-page paper [];
+* Declarative functionalities []:
 	* Motif counting (see Q1);
 	* Motif instance enumerating (a.k.a isomorphic subgraph detection, see Q2);
 	* Motif-paths finding (e.g., nodes reachable by triangle connectivities, see Q3);
 	* Motif-components finding (e.g., k-cliques);
-* Embedded API functionalities [Matin and Xiaodong]:
+* Embedded API functionalities []:
 	* Motif Page Rank for better node ranking;
 	* Motif conductance for better graph clustering;	
 	* Motif Discovery;

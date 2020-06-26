@@ -19,7 +19,7 @@ The code takes the **edge list** of the graph. Every row indicates an edge betwe
 #### labels
 Labels for nodes `nodeLabelID:nodeLabel` and edges `edgeLabelID:edgeLabel`
 <p align="center">
-  <img width="800" src="schema.jpg">
+  <img width="800" src="schema.png">
 </p>
 
 ## Usage 

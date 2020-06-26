@@ -6,15 +6,9 @@ This repository contains codes and data used in [M-Cypher: A GQL Framwork Suppor
 	* To provide access to motif-related functionality that is not available in Cypher.
 		* For example, subgraph matching and motif connectivity.
 	* To provide uniform interface to the state-of-the-art motif-related algorithms.
-		* For example, motif-based graph clustering, motif-based node ranking and motif-based link prediction, which is proved better effectiveness than the ordinary edge-based solutions.
-		```
-		MATCH (A) WITH A, size((A)--()) as degree WHERE degree>4000
-		CALL algo.pageRank.stream(null, null, {iterations:20, dampingFactor:0.85, sourceNodes: [A]}) YIELD nodeId, score
-		RETURN algo.asNode(nodeId) AS page,score ORDER BY score DESC
-		```
-* To provide user-friendly input and output.
-* To fullfill standard GQL protocals in theory.
-* To embed advanced features into the query, e.g., motif adjacency matrix, proximity (distance) matrix w.r.t. motifs.
+		* For example, motif-based graph clustering, motif-based node ranking and motif-based link prediction, which is proved better effectiveness than the ordinary edge-based solutions in many cases.
+* To provide user-friendly input and output, when fullfilling standard GQL protocals.
+* To embed advanced features into the query, e.g., motif adjacency matrix .
 
 ## Datasets
 The code takes the **edge list** of the graph. Every row indicates an edge between two nodes separated by a comma. The datasets used in the paper are included in the  `data/` directory.
@@ -25,24 +19,18 @@ The code takes the **edge list** of the graph. Every row indicates an edge betwe
 #### labels
 Labels for nodes `nodeLabelID:nodeLabel` and edges `edgeLabelID:edgeLabel`
 <p align="center">
-  <img width="800" src="covid19.png">
+  <img width="800" src="schema.pdf">
 </p>
 
 ## Usage 
 
 ### Open `codes/webpage/mcypher.html` for local view.
-
-### Components to be added:
-* Motif input [];
-* Output visulization [];
-* M-Cypher parser [];
-* 4-page paper [];
-* Declarative functionalities []:
+* Declarative functionalities:
 	* Motif counting (see Q1);
 	* Motif instance enumerating (a.k.a isomorphic subgraph detection, see Q2);
 	* Motif-paths finding (e.g., nodes reachable by triangle connectivities, see Q3);
 	* Motif-components finding (e.g., k-cliques);
-* Embedded API functionalities []:
+* Embedded API functionalities:
 	* Motif Page Rank for better node ranking;
 	* Motif conductance for better graph clustering;	
 	* Motif Discovery;
@@ -50,20 +38,20 @@ Labels for nodes `nodeLabelID:nodeLabel` and edges `edgeLabelID:edgeLabel`
 	* Motif feature vectors for better link prediction.
 
 ### Use cases
-In the following query examples, we demonstrate three use cases (Q1, Q2 and Q3) by motif M, which is predefined by the user in the GUI.
+In the following query examples, we demonstrate several use cases by motif M, which is predefined by the user in the GUI.
 #### Q1: What is the significance of motif pattern M?
-* cypher:	`MATCH p=(:Country)<-[:from_country]-(:Strain)-[:mutate_from_branch]->(:Branch) RETURN COUNT (p)`
+* cypher:	`MATCH p=(t1:Location)<-[r1:from_location]-(s:Virus)-[r2:mutate_from]->(t2:Virus) RETURN COUNT (p)`
 * m-cypher:	`MATCH (m:M) RETURN COUNT (m)`
-* What if M is a large motif? 
+* What if M is a large and xomplex motif? 
 	* Almost impossible to describe M by path pattern queries in cypher! 
-	* Even so, there will be many duplicates!
+	* Even so, over-countering occurs in Cypher!
 #### Q2: What are the instances of motif pattern M?
-* cypher:	`MATCH (a:Location)<-[:from_location]-(b:Strain)-[:mutate_from_branch]->(c:Branch) RETURN a,b,c`
+* cypher:	`MATCH (t1:Location)<-[r1:from_location]-(s:Virus)-[r2:mutate_from]->(t2:Virus) RETURN s,t1,t2`
 * m-cypher:	`MATCH (m:M) RETURN m`
 * Same problems exists as Q1!
-#### Q3: How virus mutates when spreading from Location a to Location b?
+#### Q3: How virus mutates when spreading from Hong Kong?
 * cypher:	NA
-* m-cypher:	`MATCH (a:Location{name:a})-[m:M*]->(b:Location{name:b})`
+* m-cypher:	`MATCH (s:Location)-[m:M*]->(t:Location) WHERE s.name = "Hong Kong" RETURN t.name`
 
 <p align="center">
   <img width="600" src="motifM.PNG">
@@ -112,17 +100,4 @@ LOAD CSV FROM 'file:///edges' AS line
 MATCH (n:Virus {id:toInteger(line[0])}), (m:VirusProtein{id:toInteger(line[1])})
 FOREACH ( ignoreMe in CASE WHEN line[2]='4' THEN [1] ELSE [] END | MERGE (n)-[:Produce]->(m))
 ```
-### MC-Explorer 
-#### [Motif-clique explorer system](http://motif.cs.hku.hk/)
-#### [Format of graph for MC-explorer](http://motif.cs.hku.hk/file/readme.txt)
-#### Codes 
-* See `codes/mc-explorer`.
-* About motif input:
-see`codes/mc-explorer/platform/WebContent/js/graphM.js`, `codes/mc-explorer/platform/WebContent/js/utilities.js`
-and `codes/mc-explorer/platform/WebContent/js/graphResult.js`.
-* About graph visualization: [cytoscape](https://cytoscape.org/).
-
-#### [COVID19 VLDB demo video](https://www.dropbox.com/s/xhpczwsv7m4cut1/covid_19_vldb_demo_%20compression.mp4?dl=0). 
-#### [COVID19 datasource](https://mp.weixin.qq.com/s/eHbkrMtYpg-oEmWS92970w). Chinese version only.
-
 

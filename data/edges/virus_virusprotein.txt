@@ -1,0 +1,526 @@
+#virus-ID,virus-name,NCBI-virus-protein-ID,virus-protein
+2697049,SARS-CoV-2,4893,NS6
+2697049,SARS-CoV-2,3974179,ORF6
+2697049,SARS-CoV-2,1343053,ORF10
+2697049,SARS-CoV-2,3707765,ORF1A
+2697049,SARS-CoV-2,107824161,N
+2697049,SARS-CoV-2,3974180,ORF7
+2697049,SARS-CoV-2,103859424,NS3
+2697049,SARS-CoV-2,9714829,ORF7A
+2697049,SARS-CoV-2,921688,ORF1AB
+2697049,SARS-CoV-2,33654,M
+2697049,SARS-CoV-2,26408723,ORF3A
+2697049,SARS-CoV-2,6016,NS8
+2697049,SARS-CoV-2,37616150,NS7A
+2697049,SARS-CoV-2,3974181,ORF8
+2697049,SARS-CoV-2,3974168,ORF3
+2697049,SARS-CoV-2,103405766,S
+2697049,SARS-CoV-2,37616151,NS7B
+2697049,SARS-CoV-2,824614,E
+2697049,SARS-CoV-2,9714830,ORF7B
+11676,﻿HIV,4336986,Spike
+12663,feline coronavirus,4336986,Spike
+1508220,Bat SARS-CoV,3974181,ORF8
+1508220,Bat coronavirus,4336986,Spike
+1508220,Bat coronavirus,3974181,ORF8
+1335626,MERS-CoV,4336986,Spike
+1335626,MERS-CoV,820886,Nsp3
+1508220,bat SARS-CoV-like,4336986,Spike
+2664420,Coronaviruses,820886,Nsp3
+2664420,Coronaviruses,824614,E
+2664420,Coronaviruses,3707779,ORF1b
+2664420,Coronaviruses,3707765,ORF1a
+2664420,Coronaviruses,4336986,Spike
+2664420,Coronaviruses,921688,ORF1ab
+694005,Murine coronavirus,820886,Nsp3
+28295,porcine epidemic diarrhea virus,4336986,Spike
+11138,mouse hepatitis virus,820886,Nsp3
+694009,SARS-CoV,820887,Nsp1
+694009,SARS-CoV,4336986,Spike
+694009,SARS-CoV,820886,Nsp3
+694009,SARS-CoV,824614,E
+694009,SARS-CoV,107824161,N
+694009,SARS-CoV,921688,ORF1ab
+11138,murine hepatitis virus,820886,Nsp3
+2697049,SARS-CoV-2,921688,ORF1ab
+2697049,SARS-CoV-2,9714829,ORF7a
+2697049,SARS-CoV-2,4336986,Spike
+2697049,SARS-CoV-2,820886,Nsp3
+2697049,SARS-CoV-2,3707779,ORF1b
+2697049,SARS-CoV-2,824614,E
+2697049,SARS-CoV-2,3974179,ORF6
+2697049,SARS-CoV-2,3974181,ORF8
+2697049,SARS-CoV-2,3707765,ORF1a
+2697049,SARS-CoV-2,1343053,ORF10
+2697049,SARS-CoV-2,26408723,ORF3a
+2697049,SARS-CoV-2,820887,Nsp1
+2697049,SARS-CoV-2,107824161,N
+2697049,SARS-CoV-2,956581,nucleocapsid protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,43740568,spike glycoprotein
+2697049,SARS-CoV-2,956581,nucleocapsid protein
+2697049,SARS-CoV-2,43740568,spike glycoprotein
+2697049,SARS-CoV-2,956581,nucleocapsid protein
+2697049,SARS-CoV-2,9714830,ORF7b
+2697049,SARS-CoV-2,43740568,spike glycoprotein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,43740568,spike glycoprotein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,9714830,ORF7b
+2697049,SARS-CoV-2,956581,nucleocapsid protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,956581,nucleocapsid protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,43740568,spike glycoprotein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,956581,nucleocapsid protein
+2697049,SARS-CoV-2,956581,nucleocapsid protein
+2697049,SARS-CoV-2,1463366,envelope protein
+2697049,SARS-CoV-2,1463366,envelope protein
+11041,Rubella virus,35904,NP|NP_740662
+385599,Influenza A virus (A/udorn/1972(H3N2))|Influenza A Virus (A/Udorn/72(H3N2)),112280533,M2|M2_I72A8
+10632,JC polyomavirus|JCPyV|Human polyomavirus (type JC)|JC polyomavirus JCV|JC virus|Polyomavirus hominis 2|human polyomavirus JCV|polyoma virus JC JCV|polyomavirus JC,3355130,LT|LT_POVJC
+10632,JC polyomavirus|JCPyV|Human polyomavirus (type JC)|JC polyomavirus JCV|JC virus|Polyomavirus hominis 2|human polyomavirus JCV|polyoma virus JC JCV|polyomavirus JC,814903,ST|ST_POVJC
+10632,JC polyomavirus|JCPyV|Human polyomavirus (type JC)|JC polyomavirus JCV|JC virus|Polyomavirus hominis 2|human polyomavirus JCV|polyoma virus JC JCV|polyomavirus JC,112284684,VP1|VP1_POVJC
+11036,Venezuelan equine encephalitis virus|VEEV|VEE|Venezuelan equine encephalitis VEE|Venezuelan equine encephalitis virus VEE|Venezuelan equine encephalomyelitis virus,35904,NP|NP_740697
+11034,Sindbis virus,35904,NP|NP_740670
+11034,Sindbis virus,35904,NP|NP_740672
+11034,Sindbis virus,116957718,POLN|POLN_SINDV
+11034,Sindbis virus,35904,NP|NP_740671
+381517,Influenza A virus (A/Udorn/307/1972(H3N2))|Influenza A virus (A/Udorn/307/72 (H3N2))|Influenza A virus (A/Udorn/307/72(H3N2))|Influenza A virus (STRAIN A/UDORN/307/72),827443,NS1|NS1_I72A2
+41856,Hepatitis C virus genotype 1|Hepatitis C virus 1|Hepatitis C virus type 1|hepatitis C virus 1 HCV 1,35904,NP|NP_803170
+41856,Hepatitis C virus genotype 1|Hepatitis C virus 1|Hepatitis C virus type 1|hepatitis C virus 1 HCV 1,35904,NP|NP_751927
+41856,Hepatitis C virus genotype 1|Hepatitis C virus 1|Hepatitis C virus type 1|hepatitis C virus 1 HCV 1,35904,NP|NP_751921
+41856,Hepatitis C virus genotype 1|Hepatitis C virus 1|Hepatitis C virus type 1|hepatitis C virus 1 HCV 1,35904,NP|NP_803144
+41856,Hepatitis C virus genotype 1|Hepatitis C virus 1|Hepatitis C virus type 1|hepatitis C virus 1 HCV 1,35904,NP|NP_751920
+41856,Hepatitis C virus genotype 1|Hepatitis C virus 1|Hepatitis C virus type 1|hepatitis C virus 1 HCV 1,35904,NP|NP_751922
+41856,Hepatitis C virus genotype 1|Hepatitis C virus 1|Hepatitis C virus type 1|hepatitis C virus 1 HCV 1,35904,NP|NP_751919
+41856,Hepatitis C virus genotype 1|Hepatitis C virus 1|Hepatitis C virus type 1|hepatitis C virus 1 HCV 1,35904,NP|NP_751925
+41856,Hepatitis C virus genotype 1|Hepatitis C virus 1|Hepatitis C virus type 1|hepatitis C virus 1 HCV 1,35904,NP|NP_751926
+41856,Hepatitis C virus genotype 1|Hepatitis C virus 1|Hepatitis C virus type 1|hepatitis C virus 1 HCV 1,35904,NP|NP_751923
+41856,Hepatitis C virus genotype 1|Hepatitis C virus 1|Hepatitis C virus type 1|hepatitis C virus 1 HCV 1,35904,NP|NP_751928
+11622,Lassa virus Josiah|Lassa virus (strain Josiah)|Lassa virus strain Josiah,31230,Z|Z_LASSJ
+82830,Epstein-barr virus strain ag876,305103,GP42|GP42_EBVA8
+82830,Epstein-barr virus strain ag876,657659,ITP|ITP_EBVA8
+82830,Epstein-barr virus strain ag876,3783714,BLLF2|BLLF2_EBVA8
+82830,Epstein-barr virus strain ag876,252544,RTA|RTA_EBVA8
+82830,Epstein-barr virus strain ag876,105220972,EBNA4|EBNA4_EBVA8
+82830,Epstein-barr virus strain ag876,100216496,GB|GB_EBVA8
+82830,Epstein-barr virus strain ag876,3783683,BARF1|BARF1_EBVA8
+82830,Epstein-barr virus strain ag876,3783770,BTRF1|BTRF1_EBVA8
+82830,Epstein-barr virus strain ag876,5726491,CEP2|CEP2_EBVA8
+82830,Epstein-barr virus strain ag876,44451,EAR|EAR_EBVA8
+82830,Epstein-barr virus strain ag876,3783748,LF2|LF2_EBVA8
+82830,Epstein-barr virus strain ag876,3077564,UL92|UL92_EBVA8
+82830,Epstein-barr virus strain ag876,3783693,BDLF2|BDLF2_EBVA8
+82830,Epstein-barr virus strain ag876,50245310,DUT|DUT_EBVA8
+82830,Epstein-barr virus strain ag876,837958,GN|GN_EBVA8
+82830,Epstein-barr virus strain ag876,3783744,BZLF1|BZLF1_EBVA8
+82830,Epstein-barr virus strain ag876,110889620,KITH|KITH_EBVA8
+82830,Epstein-barr virus strain ag876,105219243,EBNA6|EBNA6_EBVA8
+82830,Epstein-barr virus strain ag876,3783717,BLRF2|BLRF2_EBVA8
+82830,Epstein-barr virus strain ag876,30665,LMP2|LMP2_EBVA8
+82830,Epstein-barr virus strain ag876,380426,LMP1|LMP1_EBVA8
+82830,Epstein-barr virus strain ag876,110904092,RIR2|RIR2_EBVA8
+82830,Epstein-barr virus strain ag876,112288183,LTP|LTP_EBVA8
+82830,Epstein-barr virus strain ag876,5723238,CEP1|CEP1_EBVA8
+82830,Epstein-barr virus strain ag876,3783728,BRRF1|BRRF1_EBVA8
+82830,Epstein-barr virus strain ag876,101213602,MTP|MTP_EBVA8
+82830,Epstein-barr virus strain ag876,107761694,NEC1|NEC1_EBVA8
+82830,Epstein-barr virus strain ag876,101221983,GL|GL_EBVA8
+82830,Epstein-barr virus strain ag876,41913,GM|GM_EBVA8
+82830,Epstein-barr virus strain ag876,5726697,TRM3|TRM3_EBVA8
+11714,Human immunodeficiency virus type 2 (ISOLATE BEN),14971912,TAT|TAT_HV2BE
+11714,Human immunodeficiency virus type 2 (ISOLATE BEN),100141955,GAG|GAG_HV2BE
+11714,Human immunodeficiency virus type 2 (ISOLATE BEN),1490006,VPX|VPX_HV2BE
+11714,Human immunodeficiency virus type 2 (ISOLATE BEN),50286,NEF|NEF_HV2BE
+382855,Influenza A virus (A/swine/Wisconsin/1/1967(H1N1)),101217987,M1|M1_I67A2
+31530,Myxoma virus (strain Lausanne),69814,MT5|MT5_MYXVL
+11676,Human immunodeficiency virus 1|HIV-1|HIV|HIV1|LAV-1|Human immunodeficiency virus type 1|human immunodeficiency virus 1 HIV-1|human immunodeficiency virus HIV-1|human immunodeficiency virus type 1 HIV 1|human immunodeficiency virus type 1 HIV-1|human immunodeficiency virus type 1 HIV1|human immunodeficiency virus type 1- HIV-1|human immunodeficiency virus type I HIV-1|human immunodeficiency virus type-1 HIV-1|human immunodeficiency virus-1 HIV-1|AIDS virus,35904,NP|NP_789739
+11676,Human immunodeficiency virus 1|HIV-1|HIV|HIV1|LAV-1|Human immunodeficiency virus type 1|human immunodeficiency virus 1 HIV-1|human immunodeficiency virus HIV-1|human immunodeficiency virus type 1 HIV 1|human immunodeficiency virus type 1 HIV-1|human immunodeficiency virus type 1 HIV1|human immunodeficiency virus type 1- HIV-1|human immunodeficiency virus type I HIV-1|human immunodeficiency virus type-1 HIV-1|human immunodeficiency virus-1 HIV-1|AIDS virus,35904,NP|NP_705926
+11676,Human immunodeficiency virus 1|HIV-1|HIV|HIV1|LAV-1|Human immunodeficiency virus type 1|human immunodeficiency virus 1 HIV-1|human immunodeficiency virus HIV-1|human immunodeficiency virus type 1 HIV 1|human immunodeficiency virus type 1 HIV-1|human immunodeficiency virus type 1 HIV1|human immunodeficiency virus type 1- HIV-1|human immunodeficiency virus type I HIV-1|human immunodeficiency virus type-1 HIV-1|human immunodeficiency virus-1 HIV-1|AIDS virus,35904,NP|NP_789740
+11676,Human immunodeficiency virus 1|HIV-1|HIV|HIV1|LAV-1|Human immunodeficiency virus type 1|human immunodeficiency virus 1 HIV-1|human immunodeficiency virus HIV-1|human immunodeficiency virus type 1 HIV 1|human immunodeficiency virus type 1 HIV-1|human immunodeficiency virus type 1 HIV1|human immunodeficiency virus type 1- HIV-1|human immunodeficiency virus type I HIV-1|human immunodeficiency virus type-1 HIV-1|human immunodeficiency virus-1 HIV-1|AIDS virus,35904,NP|NP_705927
+11676,Human immunodeficiency virus 1|HIV-1|HIV|HIV1|LAV-1|Human immunodeficiency virus type 1|human immunodeficiency virus 1 HIV-1|human immunodeficiency virus HIV-1|human immunodeficiency virus type 1 HIV 1|human immunodeficiency virus type 1 HIV-1|human immunodeficiency virus type 1 HIV1|human immunodeficiency virus type 1- HIV-1|human immunodeficiency virus type I HIV-1|human immunodeficiency virus type-1 HIV-1|human immunodeficiency virus-1 HIV-1|AIDS virus,35904,NP|NP_705928
+11676,Human immunodeficiency virus 1|HIV-1|HIV|HIV1|LAV-1|Human immunodeficiency virus type 1|human immunodeficiency virus 1 HIV-1|human immunodeficiency virus HIV-1|human immunodeficiency virus type 1 HIV 1|human immunodeficiency virus type 1 HIV-1|human immunodeficiency virus type 1 HIV1|human immunodeficiency virus type 1- HIV-1|human immunodeficiency virus type I HIV-1|human immunodeficiency virus type-1 HIV-1|human immunodeficiency virus-1 HIV-1|AIDS virus,35904,NP|NP_579876
+11676,Human immunodeficiency virus 1|HIV-1|HIV|HIV1|LAV-1|Human immunodeficiency virus type 1|human immunodeficiency virus 1 HIV-1|human immunodeficiency virus HIV-1|human immunodeficiency virus type 1 HIV 1|human immunodeficiency virus type 1 HIV-1|human immunodeficiency virus type 1 HIV1|human immunodeficiency virus type 1- HIV-1|human immunodeficiency virus type I HIV-1|human immunodeficiency virus type-1 HIV-1|human immunodeficiency virus-1 HIV-1|AIDS virus,35904,NP|NP_579894
+11676,Human immunodeficiency virus 1|HIV-1|HIV|HIV1|LAV-1|Human immunodeficiency virus type 1|human immunodeficiency virus 1 HIV-1|human immunodeficiency virus HIV-1|human immunodeficiency virus type 1 HIV 1|human immunodeficiency virus type 1 HIV-1|human immunodeficiency virus type 1 HIV1|human immunodeficiency virus type 1- HIV-1|human immunodeficiency virus type I HIV-1|human immunodeficiency virus type-1 HIV-1|human immunodeficiency virus-1 HIV-1|AIDS virus,35904,NP|NP_579883
+11676,Human immunodeficiency virus 1|HIV-1|HIV|HIV1|LAV-1|Human immunodeficiency virus type 1|human immunodeficiency virus 1 HIV-1|human immunodeficiency virus HIV-1|human immunodeficiency virus type 1 HIV 1|human immunodeficiency virus type 1 HIV-1|human immunodeficiency virus type 1 HIV1|human immunodeficiency virus type 1- HIV-1|human immunodeficiency virus type I HIV-1|human immunodeficiency virus type-1 HIV-1|human immunodeficiency virus-1 HIV-1|AIDS virus,35904,NP|NP_579895
+11676,Human immunodeficiency virus 1|HIV-1|HIV|HIV1|LAV-1|Human immunodeficiency virus type 1|human immunodeficiency virus 1 HIV-1|human immunodeficiency virus HIV-1|human immunodeficiency virus type 1 HIV 1|human immunodeficiency virus type 1 HIV-1|human immunodeficiency virus type 1 HIV1|human immunodeficiency virus type 1- HIV-1|human immunodeficiency virus type I HIV-1|human immunodeficiency virus type-1 HIV-1|human immunodeficiency virus-1 HIV-1|AIDS virus,35904,NP|NP_579880
+11676,Human immunodeficiency virus 1|HIV-1|HIV|HIV1|LAV-1|Human immunodeficiency virus type 1|human immunodeficiency virus 1 HIV-1|human immunodeficiency virus HIV-1|human immunodeficiency virus type 1 HIV 1|human immunodeficiency virus type 1 HIV-1|human immunodeficiency virus type 1 HIV1|human immunodeficiency virus type 1- HIV-1|human immunodeficiency virus type I HIV-1|human immunodeficiency virus type-1 HIV-1|human immunodeficiency virus-1 HIV-1|AIDS virus,35904,NP|NP_579881
+11670,Equine infectious anemia virus (CLONE 1369),100141955,GAG|GAG_EIAV9
+11927,Human T-cell lymphotrophic virus type 1 (Caribbean isolate)|Human T-cell leukemia virus type I (Caribbean isolate),100141955,GAG|GAG_HTL1C
+11927,Human T-cell lymphotrophic virus type 1 (Caribbean isolate)|Human T-cell leukemia virus type I (Caribbean isolate),6900,TAX|TAX_HTL1C
+11927,Human T-cell lymphotrophic virus type 1 (Caribbean isolate)|Human T-cell leukemia virus type I (Caribbean isolate),402813,ENV|ENV_HTL1C
+11927,Human T-cell lymphotrophic virus type 1 (Caribbean isolate)|Human T-cell leukemia virus type I (Caribbean isolate),45353,REX|REX_HTL1C
+88776,Influenza A virus (A/Brevig Mission/1/1918(H1N1))|Influenza A virus (A/BREVIG MISSION/1/18 (H1N1))|Influenza A virus (A/Brevig Mission/1/1918 (H1N1))|Influenza A virus (A/Brevig_Mission/1/18(H1N1))|Influenza A virus (A/Brevig_Mission/1/1918(H1N1)),827443,NS1|NS1_I18A0
+868565,Human herpesvirus 8 strain GK18|Human herpesvirus 8 (strain GK18),3974232,ORF11|ORF11_HHV8P
+868565,Human herpesvirus 8 strain GK18|Human herpesvirus 8 (strain GK18),41913,GM|GM_HHV8P
+868565,Human herpesvirus 8 strain GK18|Human herpesvirus 8 (strain GK18),249387,K7|K7_HHV8P
+868565,Human herpesvirus 8 strain GK18|Human herpesvirus 8 (strain GK18),3974177,ORF4|ORF4_HHV8P
+868565,Human herpesvirus 8 strain GK18|Human herpesvirus 8 (strain GK18),43946,LANA1|LANA1_HHV8P
+868565,Human herpesvirus 8 strain GK18|Human herpesvirus 8 (strain GK18),542561,MIR1|MIR1_HHV8P
+868565,Human herpesvirus 8 strain GK18|Human herpesvirus 8 (strain GK18),101460962,TYSY|TYSY_HHV8P
+868565,Human herpesvirus 8 strain GK18|Human herpesvirus 8 (strain GK18),1343053,ORF10|ORF10_HHV8P
+868565,Human herpesvirus 8 strain GK18|Human herpesvirus 8 (strain GK18),18983507,MCP|MCP_HHV8P
+868565,Human herpesvirus 8 strain GK18|Human herpesvirus 8 (strain GK18),68239,K42|K42_HHV8P
+868565,Human herpesvirus 8 strain GK18|Human herpesvirus 8 (strain GK18),110904092,RIR2|RIR2_HHV8P
+868565,Human herpesvirus 8 strain GK18|Human herpesvirus 8 (strain GK18),541654,MIR2|MIR2_HHV8P
+868565,Human herpesvirus 8 strain GK18|Human herpesvirus 8 (strain GK18),3077564,UL92|UL92_HHV8P
+868565,Human herpesvirus 8 strain GK18|Human herpesvirus 8 (strain GK18),100216496,GB|GB_HHV8P
+868565,Human herpesvirus 8 strain GK18|Human herpesvirus 8 (strain GK18),46847293,UNG|UNG_HHV8P
+868565,Human herpesvirus 8 strain GK18|Human herpesvirus 8 (strain GK18),9615633,TRX1|TRX1_HHV8P
+868565,Human herpesvirus 8 strain GK18|Human herpesvirus 8 (strain GK18),1446584,ORF48|ORF48_HHV8P
+868565,Human herpesvirus 8 strain GK18|Human herpesvirus 8 (strain GK18),3866,K15|K15_HHV8P
+868565,Human herpesvirus 8 strain GK18|Human herpesvirus 8 (strain GK18),1446597,ORF58|ORF58_HHV8P
+868565,Human herpesvirus 8 strain GK18|Human herpesvirus 8 (strain GK18),101449321,DYR|DYR_HHV8P
+868565,Human herpesvirus 8 strain GK18|Human herpesvirus 8 (strain GK18),35505,SCAF|SCAF_HHV8P
+868565,Human herpesvirus 8 strain GK18|Human herpesvirus 8 (strain GK18),1343067,ORF24|ORF24_HHV8P
+868565,Human herpesvirus 8 strain GK18|Human herpesvirus 8 (strain GK18),1446585,ORF50|ORF50_HHV8P
+10360,Human herpesvirus 5 strain AD169|Human cytomegalovirus (strain AD169)|Human herpesvirus 5 (strain AD169),101451751,NEC2|NEC2_HCMVA
+10360,Human herpesvirus 5 strain AD169|Human cytomegalovirus (strain AD169)|Human herpesvirus 5 (strain AD169),3077525,UL84|UL84_HCMVA
+10360,Human herpesvirus 5 strain AD169|Human cytomegalovirus (strain AD169)|Human herpesvirus 5 (strain AD169),103456463,VIE2|VIE2_HCMVA
+10377,Human herpesvirus 4 strain B95-8|Human herpesvirus 4 (strain B95-8),101221983,GL|GL_EBVB9
+10377,Human herpesvirus 4 strain B95-8|Human herpesvirus 4 (strain B95-8),657659,ITP|ITP_EBVB9
+10377,Human herpesvirus 4 strain B95-8|Human herpesvirus 4 (strain B95-8),252544,RTA|RTA_EBVB9
+10377,Human herpesvirus 4 strain B95-8|Human herpesvirus 4 (strain B95-8),24271468,UL24|UL24_EBVB9
+10377,Human herpesvirus 4 strain B95-8|Human herpesvirus 4 (strain B95-8),112288183,LTP|LTP_EBVB9
+10377,Human herpesvirus 4 strain B95-8|Human herpesvirus 4 (strain B95-8),110889620,KITH|KITH_EBVB9
+10377,Human herpesvirus 4 strain B95-8|Human herpesvirus 4 (strain B95-8),9619380,TRX2|TRX2_EBVB9
+10377,Human herpesvirus 4 strain B95-8|Human herpesvirus 4 (strain B95-8),380426,LMP1|LMP1_EBVB9
+10377,Human herpesvirus 4 strain B95-8|Human herpesvirus 4 (strain B95-8),105219243,EBNA6|EBNA6_EBVB9
+10377,Human herpesvirus 4 strain B95-8|Human herpesvirus 4 (strain B95-8),3783707,BILF1|BILF1_EBVB9
+10377,Human herpesvirus 4 strain B95-8|Human herpesvirus 4 (strain B95-8),105220972,EBNA4|EBNA4_EBVB9
+10377,Human herpesvirus 4 strain B95-8|Human herpesvirus 4 (strain B95-8),3783694,BDLF3|BDLF3_EBVB9
+10377,Human herpesvirus 4 strain B95-8|Human herpesvirus 4 (strain B95-8),3783770,BTRF1|BTRF1_EBVB9
+10377,Human herpesvirus 4 strain B95-8|Human herpesvirus 4 (strain B95-8),305103,GP42|GP42_EBVB9
+10377,Human herpesvirus 4 strain B95-8|Human herpesvirus 4 (strain B95-8),30665,LMP2|LMP2_EBVB9
+10377,Human herpesvirus 4 strain B95-8|Human herpesvirus 4 (strain B95-8),41913,GM|GM_EBVB9
+10377,Human herpesvirus 4 strain B95-8|Human herpesvirus 4 (strain B95-8),3783714,BLLF2|BLLF2_EBVB9
+10377,Human herpesvirus 4 strain B95-8|Human herpesvirus 4 (strain B95-8),3783757,RPMS1|RPMS1_EBVB9
+10377,Human herpesvirus 4 strain B95-8|Human herpesvirus 4 (strain B95-8),100216496,GB|GB_EBVB9
+10377,Human herpesvirus 4 strain B95-8|Human herpesvirus 4 (strain B95-8),36814,PRIM|PRIM_EBVB9
+10377,Human herpesvirus 4 strain B95-8|Human herpesvirus 4 (strain B95-8),3783744,BZLF1|BZLF1_EBVB9
+333761,Human papillomavirus type 18|Human papilloma virus type 18,543659,VE1|VE1_HPV18
+333761,Human papillomavirus type 18|Human papilloma virus type 18,516130,VL1|VL1_HPV18
+11059,Dengue virus 1 Nauru/West Pac/1974|Dengue virus type 1 (strain Western Pacific)|Dengue virus type 1 Nauru/West Pac/1974,34792,POLG|POLG_DEN1W
+11589,Rift valley fever virus (STRAIN ZH-548 M12),956557,NSS|NSS_RVFVZ
+383596,Influenza A virus (A/Beijing/39/1975(H3N2))|Influenza A virus (A/Beijing/39/75(H3N2 ))|Influenza A virus (A/Beijing/39/75(H3N2))|Influenza A virus (A/Beijing/39/75)|Influenza A virus (strain A/Beijing/39/75),3678371,PA|PA_I75A0
+11053,Dengue virus 1|Dengue virus type 1|dengue type 1 D1 virus|dengue virus type 1 DEN1|dengue virus type I|dengue virus-1 DEN-1|type 1 dengue virus DEN-1,35904,NP|NP_722460
+172148,Alkhumra hemorrhagic fever virus|AHFV,34792,POLG|POLG_ALKV
+103922,Human enterovirus 71 (strain 7423/MS/87)|Human enterovirus 71 (strain 7423/MS/87) (Ev 71),34792,POLG|POLG_HE71M
+381518,Influenza A virus (A/Wilson-Smith/1933(H1N1))|Influenza A virus (A/WS/33(H1N1))|Influenza A virus (A/Wilson-Smith/33(H1N1))|Influenza A virus (STRAIN A/WILSON-SMITH/33),100533373,NEP|NEP_I33A0
+381518,Influenza A virus (A/Wilson-Smith/1933(H1N1))|Influenza A virus (A/WS/33(H1N1))|Influenza A virus (A/Wilson-Smith/33(H1N1))|Influenza A virus (STRAIN A/WILSON-SMITH/33),112280533,M2|M2_I33A0
+381518,Influenza A virus (A/Wilson-Smith/1933(H1N1))|Influenza A virus (A/WS/33(H1N1))|Influenza A virus (A/Wilson-Smith/33(H1N1))|Influenza A virus (STRAIN A/WILSON-SMITH/33),3678371,PA|PA_I33A0
+381518,Influenza A virus (A/Wilson-Smith/1933(H1N1))|Influenza A virus (A/WS/33(H1N1))|Influenza A virus (A/Wilson-Smith/33(H1N1))|Influenza A virus (STRAIN A/WILSON-SMITH/33),36109496,HEMA|HEMA_I33A0
+381518,Influenza A virus (A/Wilson-Smith/1933(H1N1))|Influenza A virus (A/WS/33(H1N1))|Influenza A virus (A/Wilson-Smith/33(H1N1))|Influenza A virus (STRAIN A/WILSON-SMITH/33),827443,NS1|NS1_I33A0
+381518,Influenza A virus (A/Wilson-Smith/1933(H1N1))|Influenza A virus (A/WS/33(H1N1))|Influenza A virus (A/Wilson-Smith/33(H1N1))|Influenza A virus (STRAIN A/WILSON-SMITH/33),107795055,PB2|PB2_I33A0
+381518,Influenza A virus (A/Wilson-Smith/1933(H1N1))|Influenza A virus (A/WS/33(H1N1))|Influenza A virus (A/Wilson-Smith/33(H1N1))|Influenza A virus (STRAIN A/WILSON-SMITH/33),100801632,RDRP|RDRP_I33A0
+381518,Influenza A virus (A/Wilson-Smith/1933(H1N1))|Influenza A virus (A/WS/33(H1N1))|Influenza A virus (A/Wilson-Smith/33(H1N1))|Influenza A virus (STRAIN A/WILSON-SMITH/33),101217987,M1|M1_I33A0
+384493,Influenza A virus (A/seal/Mass/1/1980(H7N7))|Influenza A virus (A/seal/Mass/1/80(H7N7))|Influenza A virus (STRAIN A/SEAL/MASSACHUSETTS/1/80),107795055,PB2|PB2_I80A2
+28282,Human adenovirus 12|Adenovirus Ad12|Adenovirus type 12|Human adenovirus type 12|Mastadenovirus 12|Mastadenovirus h12,4336986,SPIKE|SPIKE_ADE12
+28282,Human adenovirus 12|Adenovirus Ad12|Adenovirus type 12|Human adenovirus type 12|Mastadenovirus 12|Mastadenovirus h12,28544357,E1BS|E1BS_ADE12
+28282,Human adenovirus 12|Adenovirus Ad12|Adenovirus type 12|Human adenovirus type 12|Mastadenovirus 12|Mastadenovirus h12,379214,E1A|E1A_ADE12
+1980471,Hantaan orthohantavirus|Hantaan hantavirus|Hantaan virus|Korean hemorrhagic fever virus,35904,NP|NP_941977
+1980471,Hantaan orthohantavirus|Hantaan hantavirus|Hantaan virus|Korean hemorrhagic fever virus,35904,NP|NP_941987
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),821323,C2|C2_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),110904092,RIR2|RIR2_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),249387,K7|K7_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),5658151,C7|C7_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),3707634,C9L|C9L_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),543524,E8|E8_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),4700,B14|B14_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),100145898,K3|K3_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),28912,A27|A27_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),692600,SPI2|SPI2_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),11464232,A46|A46_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),107759629,A20|A20_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),3707616,C23L|C23L_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),829521,G7|G7_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),110798481,B1|B1_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),110889620,KITH|KITH_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),542462,C5|C5_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),1192,G6|G6_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),106380462,E3|E3_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),11464222,A36|A36_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),270106,A52|A52_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),110806310,N2|N2_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),107774394,D5|D5_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),100286638,C10|C10_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),101463101,KTHY|KTHY_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),100015540,TCRM|TCRM_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),36271,F1|F1_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),37112,E7|E7_VACCW
+10254,Vaccinia virus WR|Vaccinia virus (strain WR),5726125,RIR1|RIR1_VACCW
+31634,Dengue virus 2 Thailand/16681/84|Dengue virus type 2 (strain 16681)|Dengue virus type 2 Thailand/16681/84,34792,POLG|POLG_DEN26
+10383,Herpesvirus saimiri (strain 11),101449321,DYR|DYR_SHV21
+10600,Human papillomavirus type 6b|Human papillomavirus - 6b,543659,VE1|VE1_HPV6B
+10600,Human papillomavirus type 6b|Human papillomavirus - 6b,544230,VE2|VE2_HPV6B
+10579,Human papillomavirus type 8|Human papillomavirus - 8|human papillomavirus 8|human papillomavirus type 8 HPV8,544230,VE2|VE2_HPV08
+11033,Semliki Forest virus,116957718,POLN|POLN_SFV
+12509,Human herpesvirus 4 type 2|Epstein-Barr virus-2 EBV-2,31938,YP|YP_001129464
+333284,Hepatitis C virus (isolate Con1),34792,POLG|POLG_HCVCO
+82831,Equid herpesvirus type 2 strain 86/87|Equine herpesvirus 2 strain 86/67|Equine herpesvirus type 2 (strain 86/87)|Equine herpesvirus type 2 strain 86/87,38752,CFLA|CFLA_EHV2
+265872,Cowpox virus (Brighton Red),692600,SPI2|SPI2_CWPXB
+11679,Human immunodeficiency virus type 1 (CLONE 12),101268665,VIF|VIF_HV112
+11746,Jaagsiekte sheep retrovirus|JSRV|OPAV|Endogenous Jaagziekte retrovirus|Jaagsiekte sheep virus|Ovine pulmonary adenocarcinoma virus|Ovine pulmonary carcinoma virus|Sheep pulmonary adenomatosis virus|jaagsiekte retrovirus|jaagsiekte sheep retrovirus JSRV|jaagsiekte virus,402813,ENV|ENV_JSRV
+11963,Human spumaretrovirus|foamy virus,100141955,GAG|GAG_FOAMV
+337052,Deltapapillomavirus 4|BPV-1|Bos taurus Papillomavirus type-1|Bos taurus papillomavirus 1|Bovine papilloma virus type 1|Bovine papillomavirus - 1|Bovine papillomavirus 1|Bovine papillomavirus type 1,544230,VE2|VE2_BPV1
+337052,Deltapapillomavirus 4|BPV-1|Bos taurus Papillomavirus type-1|Bos taurus papillomavirus 1|Bovine papilloma virus type 1|Bovine papillomavirus - 1|Bovine papillomavirus 1|Bovine papillomavirus type 1,543659,VE1|VE1_BPV1
+648242,Adeno-associated virus 2 Srivastava/1982|Adeno-associated virus 2 (isolate Srivastava/1982),20469030,REP52|REP52_AAV2S
+408871,Dengue virus 4 Dominica/814669/1981|Dengue virus type 4 (strain Dominica/814669/1981)|Dengue virus type 4 Dominica/814669/1981,34792,POLG|POLG_DEN4D
+10623,Kappapapillomavirus 2|CRPV|Cottontail rabbit (SHOPE) PAPILLOMAVIRUS|Cottontail rabbit papillomavirus|Papillomavirus sylvilagi|Rabbit papillomavirus,35904,NP|NP_077109
+11070,Dengue virus 4|Dengue virus type 4|dengue type 4 virus DEN4,35904,NP|NP_740321
+11070,Dengue virus 4|Dengue virus type 4|dengue type 4 virus DEN4,35904,NP|NP_740325
+10900,Bluetongue virus (serotype 10 / American isolate)|Bluetongue virus (serotype 10 / isolate USA),100147738,VP8|VP8_BTV10
+333763,Human papillomavirus type 32,544230,VE2|VE2_HPV32
+652674,Hepatitis E virus isolate Hetian|Hepatitis E virus (isolate Hetian),3974168,ORF3|ORF3_HEVCH
+31675,Equine infectious anemia virus (clone CL22),836190,REV|REV_EIAVC
+11706,HIV-1 M:B_HXB2R|Human immunodeficiency virus type 1 (HXB2 ISOLATE),14971912,TAT|TAT_HV1H2
+11706,HIV-1 M:B_HXB2R|Human immunodeficiency virus type 1 (HXB2 ISOLATE),101268665,VIF|VIF_HV1H2
+11706,HIV-1 M:B_HXB2R|Human immunodeficiency virus type 1 (HXB2 ISOLATE),402813,ENV|ENV_HV1H2
+11706,HIV-1 M:B_HXB2R|Human immunodeficiency virus type 1 (HXB2 ISOLATE),836190,REV|REV_HV1H2
+11706,HIV-1 M:B_HXB2R|Human immunodeficiency virus type 1 (HXB2 ISOLATE),50286,NEF|NEF_HV1H2
+11706,HIV-1 M:B_HXB2R|Human immunodeficiency virus type 1 (HXB2 ISOLATE),100141955,GAG|GAG_HV1H2
+694009,Severe acute respiratory syndrome-related coronavirus|SARSr-CoV|SARSrCoV|Human coronavirus (strain SARS)|SARS coronavirus|HCoV-SARS|SARS|SARS virus|SARS-like coronavirus|SARS-related coronavirus|Severe acute respiratory syndrome coronavirus,37616150,NS7A|NS7A_CVHSA
+694009,Severe acute respiratory syndrome-related coronavirus|SARSr-CoV|SARSrCoV|Human coronavirus (strain SARS)|SARS coronavirus|HCoV-SARS|SARS|SARS virus|SARS-like coronavirus|SARS-related coronavirus|Severe acute respiratory syndrome coronavirus,35904,NP|NP_828863
+694009,Severe acute respiratory syndrome-related coronavirus|SARSr-CoV|SARSrCoV|Human coronavirus (strain SARS)|SARS coronavirus|HCoV-SARS|SARS|SARS virus|SARS-like coronavirus|SARS-related coronavirus|Severe acute respiratory syndrome coronavirus,35904,NP|NP_828869
+694009,Severe acute respiratory syndrome-related coronavirus|SARSr-CoV|SARSrCoV|Human coronavirus (strain SARS)|SARS coronavirus|HCoV-SARS|SARS|SARS virus|SARS-like coronavirus|SARS-related coronavirus|Severe acute respiratory syndrome coronavirus,35904,NP|NP_828865
+694009,Severe acute respiratory syndrome-related coronavirus|SARSr-CoV|SARSrCoV|Human coronavirus (strain SARS)|SARS coronavirus|HCoV-SARS|SARS|SARS virus|SARS-like coronavirus|SARS-related coronavirus|Severe acute respiratory syndrome coronavirus,35904,NP|NP_828851
+694009,Severe acute respiratory syndrome-related coronavirus|SARSr-CoV|SARSrCoV|Human coronavirus (strain SARS)|SARS coronavirus|HCoV-SARS|SARS|SARS virus|SARS-like coronavirus|SARS-related coronavirus|Severe acute respiratory syndrome coronavirus,35904,NP|NP_828862
+694009,Severe acute respiratory syndrome-related coronavirus|SARSr-CoV|SARSrCoV|Human coronavirus (strain SARS)|SARS coronavirus|HCoV-SARS|SARS|SARS virus|SARS-like coronavirus|SARS-related coronavirus|Severe acute respiratory syndrome coronavirus,35904,NP|NP_904322
+694009,Severe acute respiratory syndrome-related coronavirus|SARSr-CoV|SARSrCoV|Human coronavirus (strain SARS)|SARS coronavirus|HCoV-SARS|SARS|SARS virus|SARS-like coronavirus|SARS-related coronavirus|Severe acute respiratory syndrome coronavirus,35904,NP|NP_828860
+694009,Severe acute respiratory syndrome-related coronavirus|SARSr-CoV|SARSrCoV|Human coronavirus (strain SARS)|SARS coronavirus|HCoV-SARS|SARS|SARS virus|SARS-like coronavirus|SARS-related coronavirus|Severe acute respiratory syndrome coronavirus,35904,NP|NP_828868
+694009,Severe acute respiratory syndrome-related coronavirus|SARSr-CoV|SARSrCoV|Human coronavirus (strain SARS)|SARS coronavirus|HCoV-SARS|SARS|SARS virus|SARS-like coronavirus|SARS-related coronavirus|Severe acute respiratory syndrome coronavirus,35904,NP|NP_828861
+694009,Severe acute respiratory syndrome-related coronavirus|SARSr-CoV|SARSrCoV|Human coronavirus (strain SARS)|SARS coronavirus|HCoV-SARS|SARS|SARS virus|SARS-like coronavirus|SARS-related coronavirus|Severe acute respiratory syndrome coronavirus,4893,NS6|NS6_CVHSA
+694009,Severe acute respiratory syndrome-related coronavirus|SARSr-CoV|SARSrCoV|Human coronavirus (strain SARS)|SARS coronavirus|HCoV-SARS|SARS|SARS virus|SARS-like coronavirus|SARS-related coronavirus|Severe acute respiratory syndrome coronavirus,35904,NP|NP_828870
+694009,Severe acute respiratory syndrome-related coronavirus|SARSr-CoV|SARSrCoV|Human coronavirus (strain SARS)|SARS coronavirus|HCoV-SARS|SARS|SARS virus|SARS-like coronavirus|SARS-related coronavirus|Severe acute respiratory syndrome coronavirus,116732,VME1|VME1_CVHSA
+694009,Severe acute respiratory syndrome-related coronavirus|SARSr-CoV|SARSrCoV|Human coronavirus (strain SARS)|SARS coronavirus|HCoV-SARS|SARS|SARS virus|SARS-like coronavirus|SARS-related coronavirus|Severe acute respiratory syndrome coronavirus,4835992,NS3B|NS3B_CVHSA
+694009,Severe acute respiratory syndrome-related coronavirus|SARSr-CoV|SARSrCoV|Human coronavirus (strain SARS)|SARS coronavirus|HCoV-SARS|SARS|SARS virus|SARS-like coronavirus|SARS-related coronavirus|Severe acute respiratory syndrome coronavirus,35904,NP|NP_828852
+694009,Severe acute respiratory syndrome-related coronavirus|SARSr-CoV|SARSrCoV|Human coronavirus (strain SARS)|SARS coronavirus|HCoV-SARS|SARS|SARS virus|SARS-like coronavirus|SARS-related coronavirus|Severe acute respiratory syndrome coronavirus,35904,NP|NP_828872
+694009,Severe acute respiratory syndrome-related coronavirus|SARSr-CoV|SARSrCoV|Human coronavirus (strain SARS)|SARS coronavirus|HCoV-SARS|SARS|SARS virus|SARS-like coronavirus|SARS-related coronavirus|Severe acute respiratory syndrome coronavirus,35904,NP|NP_828867
+694009,Severe acute respiratory syndrome-related coronavirus|SARSr-CoV|SARSrCoV|Human coronavirus (strain SARS)|SARS coronavirus|HCoV-SARS|SARS|SARS virus|SARS-like coronavirus|SARS-related coronavirus|Severe acute respiratory syndrome coronavirus,35904,NP|NP_828864
+694009,Severe acute respiratory syndrome-related coronavirus|SARSr-CoV|SARSrCoV|Human coronavirus (strain SARS)|SARS coronavirus|HCoV-SARS|SARS|SARS virus|SARS-like coronavirus|SARS-related coronavirus|Severe acute respiratory syndrome coronavirus,35904,NP|NP_828871
+694009,Severe acute respiratory syndrome-related coronavirus|SARSr-CoV|SARSrCoV|Human coronavirus (strain SARS)|SARS coronavirus|HCoV-SARS|SARS|SARS virus|SARS-like coronavirus|SARS-related coronavirus|Severe acute respiratory syndrome coronavirus,35904,NP|NP_828866
+694009,Severe acute respiratory syndrome-related coronavirus|SARSr-CoV|SARSrCoV|Human coronavirus (strain SARS)|SARS coronavirus|HCoV-SARS|SARS|SARS virus|SARS-like coronavirus|SARS-related coronavirus|Severe acute respiratory syndrome coronavirus,37616151,NS7B|NS7B_CVHSA
+10533,Human adenovirus 1|Adenovirus 1|Adenovirus type 1|Human adenovirus C1|Human adenovirus type 1|Human mastadenovirus 1,658656,AP|AP_000529
+10533,Human adenovirus 1|Adenovirus 1|Adenovirus type 1|Human adenovirus C1|Human adenovirus type 1|Human mastadenovirus 1,658656,AP|AP_000530
+129875,Human mastadenovirus A|HAdV-A|Human adenovirus A,658656,AP|AP_000107
+138950,Enterovirus C|Enterovirus EV-C|Human enterovirus C|Poliovirus,35904,NP|NP_740478
+138950,Enterovirus C|Enterovirus EV-C|Human enterovirus C|Poliovirus,35904,NP|NP_740474
+10585,Human papillomavirus type 31|Human papilloma virus type 31|Human papillomavirus - 31,543659,VE1|VE1_HPV31
+10585,Human papillomavirus type 31|Human papilloma virus type 31|Human papillomavirus - 31,544230,VE2|VE2_HPV31
+10585,Human papillomavirus type 31|Human papilloma virus type 31|Human papillomavirus - 31,516130,VL1|VL1_HPV31
+1979160,Human rubulavirus 2|HPIV-2|HPIV2|PIV-2|Human parainfluenza 2 virus|Human parainfluenza virus 2|Human parainfluenza virus type 2|Parainfluenza virus type 2,35904,NP|NP_598402
+39720,Walleye dermal sarcoma virus,102589911,CYCL|CYCL_WDSV
+39720,Walleye dermal sarcoma virus,13919019,ORFB|ORFB_WDSV
+645098,Measles virus strain Ichinose-B95a|Measles morbillivirus strain Ichinose-B95a|Measles virus (strain Ichinose-B95a),44095,FUS|FUS_MEASC
+645098,Measles virus strain Ichinose-B95a|Measles morbillivirus strain Ichinose-B95a|Measles virus (strain Ichinose-B95a),36109496,HEMA|HEMA_MEASC
+644440,Infectious bursal disease virus chicken/UK/UK661/1989|Avian infectious bursal disease virus (isolate Chicken/UK/UK661/1989),100801632,RDRP|RDRP_IBDVU
+928302,Hepatitis B virus C/ayr human/Japan/Okamoto|Hepatitis B virus genotype C subtype ayr (isolate Human/Japan/Okamoto),9538188,X|X_HBVCJ
+928302,Hepatitis B virus C/ayr human/Japan/Okamoto|Hepatitis B virus genotype C subtype ayr (isolate Human/Japan/Okamoto),920217,DPOL|DPOL_HBVCJ
+10614,Human papillomavirus 3|Human papillomavirus - 3|Human papillomavirus type 3,544230,VE2|VE2_HPV03
+28285,Human adenovirus 5|Adenovirus 5|Adenovirus type 5|Human adenovirus C5|Human adenovirus type 5|Human mastadenovirus 5|Mastadenovirus 5|Mastadenovirus h5|adenovirus Ad5|adenovirus type 5 AD5,47208,TERM|TERM_ADE05
+28285,Human adenovirus 5|Adenovirus 5|Adenovirus type 5|Human adenovirus C5|Human adenovirus type 5|Human mastadenovirus 5|Mastadenovirus 5|Mastadenovirus h5|adenovirus Ad5|adenovirus type 5 AD5,379214,E1A|E1A_ADE05
+28285,Human adenovirus 5|Adenovirus 5|Adenovirus type 5|Human adenovirus C5|Human adenovirus type 5|Human mastadenovirus 5|Mastadenovirus 5|Mastadenovirus h5|adenovirus Ad5|adenovirus type 5 AD5,28544357,E1BS|E1BS_ADE05
+28285,Human adenovirus 5|Adenovirus 5|Adenovirus type 5|Human adenovirus C5|Human adenovirus type 5|Human mastadenovirus 5|Mastadenovirus 5|Mastadenovirus h5|adenovirus Ad5|adenovirus type 5 AD5,35904,NP|NP_ADE05
+10580,Human papillomavirus type 11|HPV 11|HPV-11|Human papillomavirus - 11,516130,VL1|VL1_HPV11
+10580,Human papillomavirus type 11|HPV 11|HPV-11|Human papillomavirus - 11,543659,VE1|VE1_HPV11
+10580,Human papillomavirus type 11|HPV 11|HPV-11|Human papillomavirus - 11,544230,VE2|VE2_HPV11
+11909,Human T-lymphotropic virus 2|HTLV-2|HTLV-II|Human T-Cell leukemia virus type 2|Human T-cell leukemia virus type II|Human T-cell lymphotropic virus type 2|Human T-cell lymphotropic virus type II|Human T-lymphotropic virus Type II|Human lymphotropic virus type 2|Human lymphotropic virus type II|human T cell leukemia virus II HTLV-II|human T lymphotropic virus type II HTLV-II|human T-cell leukemia virus II|human T-cell lymphotropic virus type II HTLV-II,819306,POL|POL_HTLV2
+11909,Human T-lymphotropic virus 2|HTLV-2|HTLV-II|Human T-Cell leukemia virus type 2|Human T-cell leukemia virus type II|Human T-cell lymphotropic virus type 2|Human T-cell lymphotropic virus type II|Human T-lymphotropic virus Type II|Human lymphotropic virus type 2|Human lymphotropic virus type II|human T cell leukemia virus II HTLV-II|human T lymphotropic virus type II HTLV-II|human T-cell leukemia virus II|human T-cell lymphotropic virus type II HTLV-II,6900,TAX|TAX_HTLV2
+11909,Human T-lymphotropic virus 2|HTLV-2|HTLV-II|Human T-Cell leukemia virus type 2|Human T-cell leukemia virus type II|Human T-cell lymphotropic virus type 2|Human T-cell lymphotropic virus type II|Human T-lymphotropic virus Type II|Human lymphotropic virus type 2|Human lymphotropic virus type II|human T cell leukemia virus II HTLV-II|human T lymphotropic virus type II HTLV-II|human T-cell leukemia virus II|human T-cell lymphotropic virus type II HTLV-II,45353,REX|REX_HTLV2
+11909,Human T-lymphotropic virus 2|HTLV-2|HTLV-II|Human T-Cell leukemia virus type 2|Human T-cell leukemia virus type II|Human T-cell lymphotropic virus type 2|Human T-cell lymphotropic virus type II|Human T-lymphotropic virus Type II|Human lymphotropic virus type 2|Human lymphotropic virus type II|human T cell leukemia virus II HTLV-II|human T lymphotropic virus type II HTLV-II|human T-cell leukemia virus II|human T-cell lymphotropic virus type II HTLV-II,402813,ENV|ENV_HTLV2
+11909,Human T-lymphotropic virus 2|HTLV-2|HTLV-II|Human T-Cell leukemia virus type 2|Human T-cell leukemia virus type II|Human T-cell lymphotropic virus type 2|Human T-cell lymphotropic virus type II|Human T-lymphotropic virus Type II|Human lymphotropic virus type 2|Human lymphotropic virus type II|human T cell leukemia virus II HTLV-II|human T lymphotropic virus type II HTLV-II|human T-cell leukemia virus II|human T-cell lymphotropic virus type II HTLV-II,100141955,GAG|GAG_HTLV2
+31518,Bovine herpesvirus type 1.1 (strain Jura)|Bovine herpesvirus type 1 (strain Jura),8658587,ICP0|ICP0_BHV1J
+11801,Moloney murine leukemia virus|MoMLV|MMLV|Moloney murine leukemia virus M-MuLV|rat Moloney murine leukemia virus MoMuLV,35904,NP|NP_955588
+11801,Moloney murine leukemia virus|MoMLV|MMLV|Moloney murine leukemia virus M-MuLV|rat Moloney murine leukemia virus MoMuLV,35904,NP|NP_955583
+1891767,Macaca mulatta polyomavirus 1|SV40|Polyomavirus maccacae|Polyomavirus maccacae 1|Rhesus macaque polyomavirus|Simian virus 40|rhesus polyomavirus,814903,ST|ST_SV40
+1891767,Macaca mulatta polyomavirus 1|SV40|Polyomavirus maccacae|Polyomavirus maccacae 1|Rhesus macaque polyomavirus|Simian virus 40|rhesus polyomavirus,3355130,LT|LT_SV40
+1891767,Macaca mulatta polyomavirus 1|SV40|Polyomavirus maccacae|Polyomavirus maccacae 1|Rhesus macaque polyomavirus|Simian virus 40|rhesus polyomavirus,112284684,VP1|VP1_SV40
+11926,Human T-cell lymphotrophic virus type 1 (strain ATK)|Human T-cell leukemia virus type I (strain ATK),102354658,HBZ|HBZ_HTL1A
+587200,Variola virus human/India/Ind3/1967|Variola virus (isolate Human/India/Ind3/1967),1485875,CRMB|CRMB_VAR67
+10320,Bovine alphaherpesvirus 1|BoHV-1|Infectious bovine rhinotracheitis virus|Bovine herpesvirus 1|Bovine herpesvirus type 1|Bovine herpesvirus-1|Bovine rhinotracheitis virus|bovine herpesvirus 1 BHV 1|bovine herpesvirus 1 BHV-1|bovine herpesvirus 1 BHV1|bovine herpesvirus BHV-1|bovine herpesvirus type 1 BHV-1|bovine herpesvirus type-1 BHV-1|infectious bovine rhinotracheitis virus BHV-1,35904,NP|NP_045311
+11723,Simian immunodeficiency virus|SIV|CIV|Chimpanzee immunodeficiency virus|Chimpanzee immunodeficiency virus (SIV(CPZ))|Simian immunodeficiency virus SIVcpz|simian immunodeficiency virus SIV|simian immunodeficiency virus- SIV|simian immunodeficiency viruses SIV,35904,NP|NP_687035
+11665,Equine infectious anemia virus|EIAV|equine infectious anemia virus EIAV,35904,NP|NP_056903
+46015,Autographa californica nucleopolyhedrovirus|AcMNPV|Autographa californica multicapsid nuclear polyhedrosis virus|Autographa californica multicapsid nuclear polyhedrosis virus AcMNPV|Autographa californica nuclear polyhedrosis virus|Autographa californica nuclear polyhedrosis virus AcMNPV|Autographa californica nuclear polyhedrosis virus AcNPV|Autographa californica nuclear polyhedrosis virus- AcMNPV,34385,P35|P35_NPVAC
+11085,Langat virus|LGT|Flavivirus langat|Langat virus LGT,35904,NP|NP_740302
+11085,Langat virus|LGT|Flavivirus langat|Langat virus LGT,35904,NP|NP_740299
+10384,Herpesvirus saimiri (strain 488)|Herpesvirus saimiri (SUBGROUP C / STRAIN 488),832530,TIP|TIP_SHV2C
+31684,Simian immunodeficiency virus (isolate AGM / clone GRI-1),1490006,VPX|VPX_SIVG1
+31684,Simian immunodeficiency virus (isolate AGM / clone GRI-1),50286,NEF|NEF_SIVG1
+31684,Simian immunodeficiency virus (isolate AGM / clone GRI-1),100141955,GAG|GAG_SIVG1
+406769,Human T-cell leukemia virus 3 (strain Pyl43),6900,TAX|TAX_HTL3P
+356411,Hepatitis C virus JFH-1|Hepatitis C virus (isolate JFH-1)|Hepatitis C virus strain JFH-1,34792,POLG|POLG_HCVJF
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),107904219,SCP|SCP_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),2703428,UL56|UL56_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),6224,US10|US10_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),48135441,RNB|RNB_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),547881,GH|GH_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),5728252,TRM1|TRM1_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),100216496,GB|GB_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),34553,GC|GC_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),831411,TRM2|TRM2_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),9615633,TRX1|TRX1_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),35505,SCAF|SCAF_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),101449474,GD|GD_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),5726697,TRM3|TRM3_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),840521,GK|GK_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),101451751,NEC2|NEC2_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),5726125,RIR1|RIR1_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),9829361,US02|US02_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),110904092,RIR2|RIR2_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),107843476,OBP|OBP_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),41913,GM|GM_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),5723238,CEP1|CEP1_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),112288183,LTP|LTP_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),8658587,ICP0|ICP0_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),2703452,US9|US9_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),107761694,NEC1|NEC1_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),251202,GE|GE_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),18983507,MCP|MCP_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),46847293,UNG|UNG_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),2703371,UL20|UL20_HHV11
+10299,Human alphaherpesvirus 1 strain 17|Herpes simplex virus (type 1 / strain 17),839401,AN|AN_HHV11
+35304,Bunyamwera virus|Bunyamwera bunyavirus group|Bunyamwera serogroup|Bunyamwera virus group,956557,NSS|NSS_BUNYW
+10588,Human papillomavirus type 39|Human papillomavirus - 39,544230,VE2|VE2_HPV39
+2169971,Visna-maedi virus|Maedi visna virus|Maedi visna virus MVV|Maedi-Visna virus|Maedi/Visna virus|Visna lentivirus|Visna virus|Visna/maedi virus,35904,NP|NP_040842
+2169971,Visna-maedi virus|Maedi visna virus|Maedi visna virus MVV|Maedi-Visna virus|Maedi/Visna virus|Visna lentivirus|Visna virus|Visna/maedi virus,35904,NP|NP_040844
+354090,UR2 sarcoma virus|Avian sarcoma virus (STRAIN UR2)|Avian sarcoma virus UR2,100141955,GAG|GAG_AVISU
+578843,Rotavirus A human/BEL/4106/2000 G3P11[14]|Rotavirus A (isolate Human/Belgium/4106/2000 G3-P11[14]),820888,NSP4|NSP4_ROT41
+578843,Rotavirus A human/BEL/4106/2000 G3P11[14]|Rotavirus A (isolate Human/Belgium/4106/2000 G3-P11[14]),820886,NSP3|NSP3_ROT41
+380337,Influenza A virus (A/equine/Prague/1/1956(H7N7))|Influenza A virus (A/eq/Prague/1/1956(H7N7))|Influenza A virus (A/equine/Prague/1/56 (H7N7))|Influenza A virus (A/equine/Praque/1/1956(H7N7))|Influenza A virus (A/equine/prague/56(H7N7))|Influenza A virus (STRAIN A/EQUINE/PRAGUE/1/56),100533373,NEP|NEP_I56A3
+380337,Influenza A virus (A/equine/Prague/1/1956(H7N7))|Influenza A virus (A/eq/Prague/1/1956(H7N7))|Influenza A virus (A/equine/Prague/1/56 (H7N7))|Influenza A virus (A/equine/Praque/1/1956(H7N7))|Influenza A virus (A/equine/prague/56(H7N7))|Influenza A virus (STRAIN A/EQUINE/PRAGUE/1/56),827443,NS1|NS1_I56A3
+11084,Tick-borne encephalitis virus|TBEV|FSME virus|tick-borne encephalitis virus TBEV,35904,NP|NP_775511
+2043570,Zika virus ZIKV/H. sapiens/FrenchPolynesia/10087PF/2013|Zika virus isolate ZIKV/H.sapiens/FrenchPolynesia/10087PF/2013,34792,POLG|POLG_ZIKVF
+512345,Hepatitis E virus swine/g3/United States/swUS1|Hepatitis E virus genotype 3 (isolate swine/United States/swUS1),116957718,POLN|POLN_HEVMG
+11045,Rubella virus strain Therien|Rubella virus (strain THERIEN),116957718,POLN|POLN_RUBVT
+386032,Reston ebolavirus - Reston (1989),920943,VP24|VP24_EBORR
+299386,Equine arteritis virus Bucyrus|Equine arteritis virus (strain Bucyrus),48987694,RPOA|RPOA_EAVBU
+10621,Human papillomavirus 9|Human papillomavirus - 9|Human papillomavirus type 9,544230,VE2|VE2_HPV09
+10636,Murine polyomavirus strain A2|Mouse polyomavirus (strain A2),3355130,LT|LT_POVMA
+10636,Murine polyomavirus strain A2|Mouse polyomavirus (strain A2),103407121,MT|MT_POVMA
+408870,Dengue virus 3 Philippines/H87/1956|Dengue virus type 3 (strain Philippines/H87/1956)|Dengue virus type 3 Philippines/H87/1956,34792,POLG|POLG_DEN3P
+10586,Human papillomavirus type 33|Human papilloma virus type 33|Human papillomavirus - 33,544230,VE2|VE2_HPV33
+31635,Dengue virus 2 16681-PDK53|Dengue virus type 2 (strain 16681-PDK53)|Dengue virus type 2 16681-PDK53,34792,POLG|POLG_DEN27
+122928,Norovirus GI|Human calicivirus genogroup 1|Norovirus genogroup 1|Norovirus genogroup I|Norwalk-like virus genogroup 1,35904,NP|NP_786945
+122928,Norovirus GI|Human calicivirus genogroup 1|Norovirus genogroup 1|Norovirus genogroup I|Norwalk-like virus genogroup 1,35904,NP|NP_786948
+402527,Influenza A virus (A/chicken/Scotland/1959(H5N1))|Influenza A virus (A/chicken/Scotland/59(H5N1))|Influenza A virus (STRAIN A/CHICKEN/SCOTLAND/59),100533373,NEP|NEP_I59A0
+402527,Influenza A virus (A/chicken/Scotland/1959(H5N1))|Influenza A virus (A/chicken/Scotland/59(H5N1))|Influenza A virus (STRAIN A/CHICKEN/SCOTLAND/59),827443,NS1|NS1_I59A0
+11660,Caprine arthritis encephalitis virus|CAEV|Caprine arthritis-encephalitis virus|caprine arthritis encephalitis virus CAEV|caprine arthritis-encephalitis virus- CAEV,35904,NP|NP_040941
+128951,Ebola virus - Zaire (1995)|Ebola virus (strain Zaire-95)|Ebola virus strain Zaire-95|Zaire ebolavirus - Zaire (1995),920947,VP40|VP40_EBOZ5
+333923,Human papillomavirus 5|Human papillomavirus type - 5|Human papillomavirus type 5,544230,VE2|VE2_HPV05
+128952,Ebola virus - Mayinga- Zaire- 1976|EBOV-May|Ebola virus (strain Zaire Mayinga)|Ebola virus strain Zaire Mayinga|Zaire ebolavirus - Mayinga (Zaire- 1976)|Zaire ebolavirus Mayinga strain,920947,VP40|VP40_EBOZM
+128952,Ebola virus - Mayinga- Zaire- 1976|EBOV-May|Ebola virus (strain Zaire Mayinga)|Ebola virus strain Zaire Mayinga|Zaire ebolavirus - Mayinga (Zaire- 1976)|Zaire ebolavirus Mayinga strain,920943,VP24|VP24_EBOZM
+128952,Ebola virus - Mayinga- Zaire- 1976|EBOV-May|Ebola virus (strain Zaire Mayinga)|Ebola virus strain Zaire Mayinga|Zaire ebolavirus - Mayinga (Zaire- 1976)|Zaire ebolavirus Mayinga strain,920942,VP30|VP30_EBOZM
+128952,Ebola virus - Mayinga- Zaire- 1976|EBOV-May|Ebola virus (strain Zaire Mayinga)|Ebola virus strain Zaire Mayinga|Zaire ebolavirus - Mayinga (Zaire- 1976)|Zaire ebolavirus Mayinga strain,920948,VP35|VP35_EBOZM
+11078,Kunjin virus (STRAIN MRM61C),34792,POLG|POLG_KUNJM
+10553,Fowl aviadenovirus 1|CELO|Adenovirus a1|Aviadenovirus gal1|Avian adenovirus gal1|Avian adenovirus gal1 (STRAIN PHELPS)|Fowl adenovirus 1|Fowl adenovirus 1 (CELO- 112- Phelps)|Fowl adenovirus gal1|avian adenovirus CELO|fowl adenovirus gal1 (STRAIN PHELPS),110940207,GAM1|GAM1_ADEG1
+928296,Borna disease virus-V|Borna disease virus (strain V)|Borna disease virus strain V,9538188,X|X_BDVV
+512346,Hepatitis E virus human/g1/India/Hyderabad|Hepatitis E virus genotype 1 (isolate human/India/Hyderabad),116957718,POLN|POLN_HEVHY
+334203,Mupapillomavirus 1|Human papillomavirus - 1|Human papillomavirus 1,35904,NP|NP_597740
+337042,Alphapapillomavirus 7|Human papillomavirus - 18|Human papillomavirus 18,35904,NP|NP_040314
+337042,Alphapapillomavirus 7|Human papillomavirus - 18|Human papillomavirus 18,35904,NP|NP_040311
+337042,Alphapapillomavirus 7|Human papillomavirus - 18|Human papillomavirus 18,35904,NP|NP_040313
+10515,Human adenovirus 2|Adenovirus 2|Adenovirus type 2|Human adenovirus C2|Human adenovirus type 2|Human mastadenovirus 2|Mastadenovirus 2|Mastadenovirus h2|adenovirus-2,920217,DPOL|DPOL_ADE02
+10515,Human adenovirus 2|Adenovirus 2|Adenovirus type 2|Human adenovirus C2|Human adenovirus type 2|Human mastadenovirus 2|Mastadenovirus 2|Mastadenovirus h2|adenovirus-2,4336986,SPIKE|SPIKE_ADE02
+10515,Human adenovirus 2|Adenovirus 2|Adenovirus type 2|Human adenovirus C2|Human adenovirus type 2|Human mastadenovirus 2|Mastadenovirus 2|Mastadenovirus h2|adenovirus-2,379214,E1A|E1A_ADE02
+10515,Human adenovirus 2|Adenovirus 2|Adenovirus type 2|Human adenovirus C2|Human adenovirus type 2|Human mastadenovirus 2|Mastadenovirus 2|Mastadenovirus h2|adenovirus-2,37073,ADP|ADP_ADE02
+10515,Human adenovirus 2|Adenovirus 2|Adenovirus type 2|Human adenovirus C2|Human adenovirus type 2|Human mastadenovirus 2|Mastadenovirus 2|Mastadenovirus h2|adenovirus-2,28544357,E1BS|E1BS_ADE02
+408686,Dengue virus 4 Philippines/H241/1956|Dengue virus type 4 Philippines/H241/1956,34792,POLG|POLG_DEN4P
+417296,Bovine immunodeficiency virus R29|Bovine immunodeficiency virus (isolate R29),402813,ENV|ENV_BIV29
+11082,West Nile virus|WNV,35904,NP|NP_776014
+11082,West Nile virus|WNV,35904,NP|NP_776011
+11082,West Nile virus|WNV,35904,NP|NP_776015
+11082,West Nile virus|WNV,34792,POLG|POLG_WNV
+11082,West Nile virus|WNV,35904,NP|NP_776010
+11082,West Nile virus|WNV,35904,NP|NP_776022
+121791,Nipah henipavirus|Nipah virus|Nipah-virus,654844,V|V_NIPAV
+295027,Human herpesvirus 5 strain Merlin,2703439,US11|US11_HCMVM
+295027,Human herpesvirus 5 strain Merlin,2703384,UL14|UL14_HCMVM
+295027,Human herpesvirus 5 strain Merlin,103456462,VIE1|VIE1_HCMVM
+295027,Human herpesvirus 5 strain Merlin,3077471,UL144|UL144_HCMVM
+211044,Influenza A virus (A/Puerto Rico/8/1934(H1N1))|Influenza A virus (A/PR 8/34 (H1N1))|Influenza A virus (A/PR/8/1934(H1N1))|Influenza A virus (A/PR/8/34(H0N1))|Influenza A virus (A/PR/8/34(H1N1))|Influenza A virus (A/PR8/1934(H1N1))|Influenza A virus (A/Puerto Rico/8/1934(H0N1))|Influenza A virus (A/Puerto Rico/8/34(H1N1))|Influenza A virus (A/Puerto Rico/8/34)|Influenza A virus (STRAIN A/PUERTO RICO/8/34)|nfluenza A virus (A/PR 8/34(H1N1)),112280533,M2|M2_I34A1
+211044,Influenza A virus (A/Puerto Rico/8/1934(H1N1))|Influenza A virus (A/PR 8/34 (H1N1))|Influenza A virus (A/PR/8/1934(H1N1))|Influenza A virus (A/PR/8/34(H0N1))|Influenza A virus (A/PR/8/34(H1N1))|Influenza A virus (A/PR8/1934(H1N1))|Influenza A virus (A/Puerto Rico/8/1934(H0N1))|Influenza A virus (A/Puerto Rico/8/34(H1N1))|Influenza A virus (A/Puerto Rico/8/34)|Influenza A virus (STRAIN A/PUERTO RICO/8/34)|nfluenza A virus (A/PR 8/34(H1N1)),827443,NS1|NS1_I34A1
+211044,Influenza A virus (A/Puerto Rico/8/1934(H1N1))|Influenza A virus (A/PR 8/34 (H1N1))|Influenza A virus (A/PR/8/1934(H1N1))|Influenza A virus (A/PR/8/34(H0N1))|Influenza A virus (A/PR/8/34(H1N1))|Influenza A virus (A/PR8/1934(H1N1))|Influenza A virus (A/Puerto Rico/8/1934(H0N1))|Influenza A virus (A/Puerto Rico/8/34(H1N1))|Influenza A virus (A/Puerto Rico/8/34)|Influenza A virus (STRAIN A/PUERTO RICO/8/34)|nfluenza A virus (A/PR 8/34(H1N1)),3678371,PA|PA_I34A1
+211044,Influenza A virus (A/Puerto Rico/8/1934(H1N1))|Influenza A virus (A/PR 8/34 (H1N1))|Influenza A virus (A/PR/8/1934(H1N1))|Influenza A virus (A/PR/8/34(H0N1))|Influenza A virus (A/PR/8/34(H1N1))|Influenza A virus (A/PR8/1934(H1N1))|Influenza A virus (A/Puerto Rico/8/1934(H0N1))|Influenza A virus (A/Puerto Rico/8/34(H1N1))|Influenza A virus (A/Puerto Rico/8/34)|Influenza A virus (STRAIN A/PUERTO RICO/8/34)|nfluenza A virus (A/PR 8/34(H1N1)),107795055,PB2|PB2_I34A1
+211044,Influenza A virus (A/Puerto Rico/8/1934(H1N1))|Influenza A virus (A/PR 8/34 (H1N1))|Influenza A virus (A/PR/8/1934(H1N1))|Influenza A virus (A/PR/8/34(H0N1))|Influenza A virus (A/PR/8/34(H1N1))|Influenza A virus (A/PR8/1934(H1N1))|Influenza A virus (A/Puerto Rico/8/1934(H0N1))|Influenza A virus (A/Puerto Rico/8/34(H1N1))|Influenza A virus (A/Puerto Rico/8/34)|Influenza A virus (STRAIN A/PUERTO RICO/8/34)|nfluenza A virus (A/PR 8/34(H1N1)),101217987,M1|M1_I34A1
+211044,Influenza A virus (A/Puerto Rico/8/1934(H1N1))|Influenza A virus (A/PR 8/34 (H1N1))|Influenza A virus (A/PR/8/1934(H1N1))|Influenza A virus (A/PR/8/34(H0N1))|Influenza A virus (A/PR/8/34(H1N1))|Influenza A virus (A/PR8/1934(H1N1))|Influenza A virus (A/Puerto Rico/8/1934(H0N1))|Influenza A virus (A/Puerto Rico/8/34(H1N1))|Influenza A virus (A/Puerto Rico/8/34)|Influenza A virus (STRAIN A/PUERTO RICO/8/34)|nfluenza A virus (A/PR 8/34(H1N1)),36109496,HEMA|HEMA_I34A1
+211044,Influenza A virus (A/Puerto Rico/8/1934(H1N1))|Influenza A virus (A/PR 8/34 (H1N1))|Influenza A virus (A/PR/8/1934(H1N1))|Influenza A virus (A/PR/8/34(H0N1))|Influenza A virus (A/PR/8/34(H1N1))|Influenza A virus (A/PR8/1934(H1N1))|Influenza A virus (A/Puerto Rico/8/1934(H0N1))|Influenza A virus (A/Puerto Rico/8/34(H1N1))|Influenza A virus (A/Puerto Rico/8/34)|Influenza A virus (STRAIN A/PUERTO RICO/8/34)|nfluenza A virus (A/PR 8/34(H1N1)),100533373,NEP|NEP_I34A1
+211044,Influenza A virus (A/Puerto Rico/8/1934(H1N1))|Influenza A virus (A/PR 8/34 (H1N1))|Influenza A virus (A/PR/8/1934(H1N1))|Influenza A virus (A/PR/8/34(H0N1))|Influenza A virus (A/PR/8/34(H1N1))|Influenza A virus (A/PR8/1934(H1N1))|Influenza A virus (A/Puerto Rico/8/1934(H0N1))|Influenza A virus (A/Puerto Rico/8/34(H1N1))|Influenza A virus (A/Puerto Rico/8/34)|Influenza A virus (STRAIN A/PUERTO RICO/8/34)|nfluenza A virus (A/PR 8/34(H1N1)),100801632,RDRP|RDRP_I34A1
+11097,Hog cholera virus (strain Alfort),34792,POLG|POLG_CSFVA
+11888,Rous sarcoma virus - Prague C|Rous sarcoma virus (strain Prague C),100141955,GAG|GAG_RSVP
+11673,Feline immunodeficiency virus|FIV|feline immunodeficiency virus FIV,35904,NP|NP_040972
+11673,Feline immunodeficiency virus|FIV|feline immunodeficiency virus FIV,35904,NP|NP_040976
+333760,Human papillomavirus type 16|HPV16|Human papilloma virus type 16|Human papillomavirus - 16|Human papillomavirus 16|human papillomavirus type 16 HPV 16|human papillomavirus type 16 HPV16,516130,VL1|VL1_HPV16
+333760,Human papillomavirus type 16|HPV16|Human papilloma virus type 16|Human papillomavirus - 16|Human papillomavirus 16|human papillomavirus type 16 HPV 16|human papillomavirus type 16 HPV16,543659,VE1|VE1_HPV16
+333760,Human papillomavirus type 16|HPV16|Human papilloma virus type 16|Human papillomavirus - 16|Human papillomavirus 16|human papillomavirus type 16 HPV 16|human papillomavirus type 16 HPV16,544230,VE2|VE2_HPV16
+1979163,Mapuera rubulavirus|Mapuera virus,31938,YP|YP_001249272
+10498,African swine fever virus BA71V|African swine fever virus (strain BA71V),22220380,DP71L|DP71L_ASFB7
+10498,African swine fever virus BA71V|African swine fever virus (strain BA71V),112776546,UBC|UBC_ASFB7
+10366,Murid betaherpesvirus 1|Mouse cytomegalovirus 1|Murid herpesvirus 1|murine cytomegalovirus (MCMV)|murine cytomegalovirus MCMV|murine herpesvirus 1,31938,YP|YP_214057
+64320,Zika virus|ZIKV,31938,YP|YP_009227200
+64320,Zika virus|ZIKV,31938,YP|YP_009227202
+64320,Zika virus|ZIKV,31938,YP|YP_009227201
+64320,Zika virus|ZIKV,34792,POLG|POLG_ZIKV
+64320,Zika virus|ZIKV,31938,YP|YP_009227203
+64320,Zika virus|ZIKV,31938,YP|YP_009227204
+64320,Zika virus|ZIKV,31938,YP|YP_009227197
+64320,Zika virus|ZIKV,31938,YP|YP_009227199
+64320,Zika virus|ZIKV,31938,YP|YP_009227196
+64320,Zika virus|ZIKV,31938,YP|YP_009227198
+64320,Zika virus|ZIKV,31938,YP|YP_009227205
+11901,Bovine leukemia virus|BLV|bovine leukemia virus BLV|bovine leukemia virus- BLV,402813,ENV|ENV_BLV
+10280,Molluscum contagiosum virus subtype 1|McVI|Molluscum contagiosum virus 1|Molluscum contagiosum virus subtype I MCV I|Molluscum contagiosum virus type 1,38752,CFLA|CFLA_MCV1
+648235,Murine minute virus strain MVM prototype|Murine minute virus (strain MVM prototype),827443,NS1|NS1_MUMIP
+11235,Measles virus strain Edmonston|Measles morbillivirus strain Edmonston|Measles virus (STRAIN EDMONSTON),654844,V|V_MEASE
+11122,Avian infectious bronchitis virus (strain Beaudette),4336986,SPIKE|SPIKE_IBVB
+11886,Rous sarcoma virus|Rous sarcoma virus RSV,35904,NP|NP_955616
+928306,Moloney murine leukemia virus isolate Shinnick|Moloney murine leukemia virus (isolate Shinnick),100141955,GAG|GAG_MLVMS
+928303,Hendra virus horse/Australia/Hendra/1994|Hendra virus (isolate Horse/Autralia/Hendra/1994),654844,V|V_HENDH
+11908,Human T-cell leukemia virus type I|HTLV-1|HTLV-I|Human T cell leukemia virus type 1|Human T-cell leukemia virus type 1|Human T-cell leukemia virus type I HTLV-I|Human T-cell leukemia virus-1|Human T-cell lymphotropic virus 1|Human T-cell lymphotropic virus type 1|Human T-cell lymphotropic virus type I|Human T-lymphotropic virus 1|Human T-lymphotropic virus type 1|Human adult T-cell leukemia virus|Human lymphotropic virus type I|human T cell leukemia virus type 1 HTLV-1|human T cell lymphotropic virus type I HTLV-I|human T-cell leukemia virus I|human T-cell leukemia virus type 1 HTLV-1|human T-cell leukemia/lymphoma virus type I HTLV-I|human T-cell leukemia/lymphotropic virus type I HTLV-I|human T-cell lymphoma/leukemia virus type I HTLV-I|human T-cell lymphotropic virus type 1- HTLV-1|human T-lymphotropic virus type 1 HTLV-1|human T-lymphotropic virus type I HTLV-I,35904,NP|NP_955617
+11908,Human T-cell leukemia virus type I|HTLV-1|HTLV-I|Human T cell leukemia virus type 1|Human T-cell leukemia virus type 1|Human T-cell leukemia virus type I HTLV-I|Human T-cell leukemia virus-1|Human T-cell lymphotropic virus 1|Human T-cell lymphotropic virus type 1|Human T-cell lymphotropic virus type I|Human T-lymphotropic virus 1|Human T-lymphotropic virus type 1|Human adult T-cell leukemia virus|Human lymphotropic virus type I|human T cell leukemia virus type 1 HTLV-1|human T cell lymphotropic virus type I HTLV-I|human T-cell leukemia virus I|human T-cell leukemia virus type 1 HTLV-1|human T-cell leukemia/lymphoma virus type I HTLV-I|human T-cell leukemia/lymphotropic virus type I HTLV-I|human T-cell lymphoma/leukemia virus type I HTLV-I|human T-cell lymphotropic virus type 1- HTLV-1|human T-lymphotropic virus type 1 HTLV-1|human T-lymphotropic virus type I HTLV-I,35904,NP|NP_955621
+302272,Sendai virus (strain Ohita),14007788,C|C_SENDO
+10376,Human gammaherpesvirus 4|EPV|HHV-4|Epstein-Barr virus EBV|Human herpesvirus 4|Human herpesvirus type 4|Epstein Barr virus,31938,YP|YP_401728
+10376,Human gammaherpesvirus 4|EPV|HHV-4|Epstein-Barr virus EBV|Human herpesvirus 4|Human herpesvirus type 4|Epstein Barr virus,31938,YP|YP_401725
+11855,Mason-Pfizer monkey virus|MPMV|Simian Mason-Pfizer type D retrovirus|Simian mason-pfizer virus|simian Mason-Pfizer D-type retrovirus SM-PDT,100141955,GAG|GAG_MPMV
+11686,Human immunodeficiency virus type 1 (BRU ISOLATE),836190,REV|REV_HV1BR
+11060,Dengue virus 2|Dengue virus type 2|Dengue virus type II|dengue 2 virus DEN-2|dengue-2 virus,35904,NP|NP_739591
+11060,Dengue virus 2|Dengue virus type 2|Dengue virus type II|dengue 2 virus DEN-2|dengue-2 virus,35904,NP|NP_739582
+11060,Dengue virus 2|Dengue virus type 2|Dengue virus type II|dengue 2 virus DEN-2|dengue-2 virus,35904,NP|NP_739583
+11060,Dengue virus 2|Dengue virus type 2|Dengue virus type II|dengue 2 virus DEN-2|dengue-2 virus,35904,NP|NP_739584
+11060,Dengue virus 2|Dengue virus type 2|Dengue virus type II|dengue 2 virus DEN-2|dengue-2 virus,35904,NP|NP_739587
+11060,Dengue virus 2|Dengue virus type 2|Dengue virus type II|dengue 2 virus DEN-2|dengue-2 virus,35904,NP|NP_739590
+11060,Dengue virus 2|Dengue virus type 2|Dengue virus type II|dengue 2 virus DEN-2|dengue-2 virus,35904,NP|NP_739588

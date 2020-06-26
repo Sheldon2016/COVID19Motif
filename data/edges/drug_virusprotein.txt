@@ -1,0 +1,21 @@
+#DrugBank-ID,Drug-name,NCBI-virus-protein-ID,Virus-protein
+-1,monoclonal antibody,4336986,Spike
+-1,antibody m396,4336986,Spike
+-1,lopinavir/ritonavir,-1,Mpro
+-1,SARS-CoV antibody,4336986,Spike
+-1,CR3022,4336986,Spike
+-1,B-M27-VME,820886,Nsp3
+-1,MERS-CoV-specific human monoclonal antibody m336,4336986,Spike
+1601,lopinavir,-1,Mpro
+1601,lopinavir,820886,Nsp3
+1058,praziquantel,-1,Mpro
+11892,Prulifloxacin,-1,Mpro
+8883,perampanel,-1,Mpro
+402,eszopiclone,-1,Mpro
+220,nelfinavir,-1,Mpro
+8860,pitavastatin,-1,Mpro
+803,colistin,-1,Mpro
+11799,Bictegravir,-1,Mpro
+1198,zopiclone,-1,Mpro
+503,ritonavir,820886,Nsp3
+503,ritonavir,-1,Mpro

@@ -1,0 +1,24 @@
+#virus-ID,virus,disease,Disease ID,Disease name,HPO_ID,HPO_Term
+2697049,﻿SARS-CoV-2,atypical pneumonia,,,2090,Pneumonia
+694009,SARS-CoV,severe respiratory disease,,,2086,Abnormality of the respiratory system
+2664420,Coronaviruses,severe and often fatal respiratory illness,,,2086,Abnormality of the respiratory system
+1335626,MERS-CoV,severe and potential fatal respiratory tract infections,,,11947,Respiratory tract infection
+2697049,SARS-CoV-2,severe pneumonia in patients with weaker immune system,,,2090,Pneumonia
+2664420,Coronaviruses,common cold,,,11947,Respiratory tract infection
+2697049,SARS-CoV-2,death,,,,
+2697049,SARS-CoV-2,COVID-19,140896,Acute respiratory coronavirus infection,11947,Respiratory tract infection
+2697049,SARS-CoV-2,human respiratory disease,,,2086,Abnormality of the respiratory system
+2664420,Coronaviruses,gastrointestinal diseases,,,11024,Abnormality of the gastrointestinal tract
+2697049,SARS-CoV-2,epidemic of acute respiratory syndrome in humans,,,,
+694009,SARS-CoV,SARS,140896,Acute respiratory coronavirus infection,11947,Respiratory tract infection
+2697049,SARS-CoV-2,severe respiratory infection,,,11947,Respiratory tract infection
+2697049,SARS-CoV-2,severe humanrespiratory disease,,,2086,Abnormality of the respiratory system
+2697049,SARS-CoV-2,cough,,,12735,Cough
+2697049,SARS-CoV-2,severe pneumonia,,,2090,Pneumonia
+2664420,Coronaviruses,severe pneumonia,,,2090,Pneumonia
+2697049,SARS-CoV-2,pneumonia,,,2090,Pneumonia
+1335626,MERS-CoV,epidemic,,,,
+694009,SARS-CoV,epidemic,,,,
+2697049,SARS-CoV-2,acute respiratory syndrome,,,2086,Abnormality of the respiratory system
+1335626,MERS-CoV,MERS,140896,Acute respiratory coronavirus infection,11947,Respiratory tract infection
+694009,SARS-CoV,severe respiratory diseases in afflicted human patients,,,2086,Abnormality of the respiratory system

@@ -1,0 +1,528 @@
+0,0,Slovakia
+1,0,Czech Republic
+2,0,Kuwait
+3,0,Sweden
+4,0,Hong Kong
+5,0,Slovenia
+6,0,Pakistan
+7,0,Malaysia
+8,0,Hungary
+9,0,Colombia
+10,0,Portugal
+11,0,Denmark
+12,0,Nepal
+13,0,India
+14,0,Congo
+15,0,Russia
+16,0,Senegal
+17,0,Belgium
+18,0,South Korea
+19,0,Singapore
+20,0,Algeria
+21,0,China
+22,0,Taiwan
+23,0,Georgia
+24,0,Ecuador
+25,0,Brazil
+26,0,Cambodia
+27,0,Thailand
+28,0,Mexico
+29,0,Switzerland
+30,0,Ireland
+31,0,South Africa
+32,0,Netherlands
+33,0,Panama
+34,0,Poland
+35,0,Germany
+36,0,USA
+37,0,Finland
+38,0,New Zealand
+39,0,Canada
+40,0,Greece
+41,0,Vietnam
+42,0,Austria
+43,0,Norway
+44,0,Spain
+45,0,France
+46,0,Australia
+47,0,Iceland
+48,0,Luxembourg
+49,0,United Kingdom
+50,0,Saudi Arabia
+51,0,Japan
+52,0,Nigeria
+53,0,Chile
+54,0,Italy
+55,1,Nevele
+56,1,Kasterlee
+57,1,Kostoliste
+58,1,Lanaken
+59,1,Wevelgem
+60,1,Oostrozebeke
+61,1,Dendermonde
+62,1,Kessel-Lo
+63,1,Tienen
+64,1,Arbre
+65,1,Ath
+66,1,Wellington
+67,1,Leuven
+68,1,Flanders
+69,1,Illinois
+70,1,Chicago
+71,1,Sint-Genesius-Rode
+72,1,Heverlee
+73,1,Bonheiden
+74,1,Sint-Agatha-Berchem
+75,1,Bahia
+76,1,Feira de Santana
+77,1,Marche
+78,1,Goiais
+79,1,Hangzhou
+80,1,Milan
+81,1,Vienne
+82,1,Florida
+83,1,Clayton
+84,1,Barcelona
+85,1,Guangzhou
+86,1,Kyoto
+87,1,Saisinne
+88,1,Kaulile
+89,1,Watermaal-Bosvoorde
+90,1,Vilvoorde
+91,1,Jemappes
+92,1,Yernee-fraineux
+93,1,Montigny-le-Tilleul
+94,1,Couillet
+95,1,Tertre
+96,1,Namur
+97,1,Diemen
+98,1,Delft
+99,1,Oudergem
+100,1,Kosice
+101,1,Bassilly
+102,1,Silly
+103,1,Graub¨¹nden
+104,1,Genappe
+105,1,Thies
+106,1,Thanh Hoa
+107,1,Vinhphuc
+108,1,Chengdu
+109,1,Sichuan
+110,1,Los Angeles
+111,1,Baden-Wuerttemberg
+112,1,Helmond
+113,1,Aargau
+114,1,Rixensart
+115,1,Ronse
+116,1,Estinnes
+117,1,Haulchin
+118,1,Knokke-Heist
+119,1,Waasmunster
+120,1,Wervik
+121,1,Couvin
+122,1,Charleroi
+123,1,Rouen
+124,1,Normandie
+125,1,Gent
+126,1,Mons
+127,1,Havre
+128,1,Geluwe
+129,1,Houten
+130,1,Stekene
+131,1,Lucerne
+132,1,Zhuhai
+133,1,Usti nad Labem
+134,1,Dasman
+135,1,Kuwait
+136,1,Auckland
+137,1,Singapore
+138,1,Sm?land
+139,1,South Korea
+140,1,Hong Kong
+141,1,Kaohsiung
+142,1,Zonhoven
+143,1,Seraing
+144,1,J?nk?ping
+145,1,Herstal
+146,1,Limerick
+147,1,Gilgit Baltistan
+148,1,Gilgit
+149,1,Zeewolde
+150,1,Blaricum
+151,1,Vorst
+152,1,Kuala Lumpur
+153,1,Riyadh
+154,1,Lombardy
+155,1,Hubei
+156,1,Wuhan
+157,1,Shandong
+158,1,Qingdao
+159,1,Guangdong
+160,1,Touba
+161,1,Huldenberg
+162,1,Sint-Truiden
+163,1,Baranya
+164,1,Beringen
+165,1,Bern
+166,1,St-Louis
+167,1,Basel-Stadt
+168,1,Basel
+169,1,Bogota
+170,1,Ghent
+171,1,Geneva
+172,1,Hawali
+173,1,Rio de Janeiro
+174,1,Lummen
+175,1,Braine-l alleud
+176,1,Munich
+177,1,Bierbeek
+178,1,Kathmandu
+179,1,Boston
+180,1,Massachusetts
+181,1,Pays de la Loire
+182,1,Nantes
+183,1,Portugal
+184,1,Chateau-Thierry
+185,1,Berloz
+186,1,Andenne
+187,1,Elsene
+188,1,Noisy le Roi
+189,1,Mbour
+190,1,Rhode Island
+191,1,Talca
+192,1,Fujian
+193,1,Antioquia
+194,1,Kerala
+195,1,Castilla La Mancha
+196,1,Vila Velha
+197,1,Pingxiang
+198,1,Espirito Santo
+199,1,Manaus
+200,1,Amazonas State
+201,1,Foshan
+202,1,Deinze
+203,1,Texas
+204,1,Northern Territory
+205,1,Tokyo
+206,1,Orange County
+207,1,Chongqing
+208,1,Kanagawa
+209,1,Geraardsbergen
+210,1,Pontoise
+211,1,Melbourne
+212,1,Meudon la For¨ºt
+213,1,Venissieux
+214,1,Kinshasa
+215,1,New South Wales
+216,1,Sydney
+217,1,Orsay
+218,1,Walloon Brabant
+219,1,Braine-le-Chateau
+220,1,Lazio
+221,1,Rome
+222,1,Saint Petersburg
+223,1,Forchies-la-marche
+224,1,Kalmthout
+225,1,Beersel
+226,1,Otago
+227,1,Poppel
+228,1,Riemst
+229,1,Ravels
+230,1,Tielt-Winge
+231,1,Grimbergen
+232,1,Herselt
+233,1,Rio Grande do Sul
+234,1,Rockhampton
+235,1,Yongchuan
+236,1,Oregon
+237,1,British Columbia
+238,1,Chaineux
+239,1,Lubbeek
+240,1,Saint-Ghislain
+241,1,Longjumeau
+242,1,Dakar
+243,1,Lyon
+244,1,Li¨¨ge
+245,1,Copenhagen
+246,1,Andalusia
+247,1,Zolder
+248,1,Eindhoven
+249,1,Komen
+250,1,Schwyz
+251,1,Sint-Pieters-Woluwe
+252,1,Khyber Pakhtunkhwa
+253,1,Auvergne Rhone Alpes
+254,1,Contamines
+255,1,Rovaniemi
+256,1,Gyeonggi
+257,1,Sonoma County
+258,1,San Joaquin County
+259,1,Distrito Federal
+260,1,Brasilia
+261,1,Hemiksem
+262,1,Umatilla County
+263,1,Clark County
+264,1,Canary Islands
+265,1,Castilla y Le¨®n
+266,1,Blida
+267,1,Boufarik
+268,1,Garches
+269,1,North Holland
+270,1,Haarlem
+271,1,Cr¨¦py en Valois
+272,1,Jiangxi
+273,1,Queens
+274,1,Frameries
+275,1,Ho Chi Minh City
+276,1,Aichi
+277,1,La Rioja
+278,1,Louth
+279,1,Basque Country
+280,1,Etterbeek
+281,1,Chungcheongnam
+282,1,Suzhou
+283,1,Anhui
+284,1,Yunnan
+285,1,Kunming
+286,1,Huaian
+287,1,Nara
+288,1,Taoyuan
+289,1,Compi¨¨gne
+290,1,Staten Island
+291,1,Bourg-en-Bresse
+292,1,Hauts de France
+293,1,Crouy en Thelle
+294,1,Antwerp
+295,1,Nova Scotia
+296,1,Tbilisi
+297,1,La Crosse County
+298,1,Levallois-Perret
+299,1,Quito
+300,1,North Rhine Westphalia
+301,1,Duesseldorf
+302,1,Limburg
+303,1,Brussels
+304,1,Naarden
+305,1,Andel
+306,1,Hardinxveld Giessendam
+307,1,Nieuwendijk
+308,1,Oss
+309,1,Drenthe
+310,1,Dalen
+311,1,Martin
+312,1,Loon op zand
+313,1,Tipperary
+314,1,Seattle
+315,1,Kirkland
+316,1,Sint-Niklaas
+317,1,Linter
+318,1,Asse
+319,1,Tervuren
+320,1,La Louviere
+321,1,Sihanoukville
+322,1,Shenzhen
+323,1,Jiangsu
+324,1,Nonthaburi
+325,1,Bangkok
+326,1,Santa Clara County
+327,1,Solano County
+328,1,Osaka
+329,1,Zhongxian
+330,1,Selangor
+331,1,Grand Princess cruise ship
+332,1,Grand Princess
+333,1,Dublin
+334,1,Schoten
+335,1,Mexico City
+336,1,Zurich
+337,1,Overijssel
+338,1,South Yorkshire
+339,1,South Holland
+340,1,Nootdorp
+341,1,Tilburg
+342,1,Derbyshire
+343,1,Nassau County
+344,1,Wicklow
+345,1,Lisbon
+346,1,Heinsberg District
+347,1,Gierle
+348,1,Eupen
+349,1,Vienna
+350,1,KwaZulu-Natal
+351,1,Vanves
+352,1,Manhattan
+353,1,Wisconsin
+354,1,Dane County
+355,1,Virginia
+356,1,England
+357,1,Berlicum
+358,1,Queensland
+359,1,Brisbane
+360,1,San Diego County
+361,1,San Francisco
+362,1,Sunshine Coast
+363,1,Utrecht
+364,1,Rotterdam
+365,1,Sao Paulo
+366,1,Brooklyn
+367,1,Holsbeek
+368,1,Netherlands
+369,1,Galicia
+370,1,Gold Coast
+371,1,Scotland
+372,1,Panama City
+373,1,Gelderland
+374,1,Finland
+375,1,Ile de France
+376,1,Saint-Thibault-des-Vignes
+377,1,Nottinghamshire
+378,1,Madrid
+379,1,Catalunya
+380,1,Central Hungary
+381,1,Budapest
+382,1,Zielonogorskie
+383,1,Saive
+384,1,Blegny
+385,1,Helsinki
+386,1,Auvergne-Rh?ne-Alpes
+387,1,Macon
+388,1,Oevel
+389,1,Belgium
+390,1,Merelbeke
+391,1,Minnesota
+392,1,Soignies
+393,1,Zoutleeuw
+394,1,Montreux-Chateau
+395,1,Bourgogne-France-Comt¨¦
+396,1,Privas
+397,1,Juvisy-sur-Orge
+398,1,Thise
+399,1,Tubize
+400,1,Fontaine-l Eveque
+401,1,Saitama
+402,1,Paris
+403,1,North Brabant
+404,1,Dilbeek
+405,1,Victoria
+406,1,Cardiff
+407,1,Ontario
+408,1,Athens
+409,1,Manitoba
+410,1,Herent
+411,1,Winksele
+412,1,Ellezelles
+413,1,Boutersem
+414,1,Quangning
+415,1,Rennes
+416,1,Hanoi
+417,1,Neerpelt
+418,1,Red River Delta
+419,1,Pelt
+420,1,King County
+421,1,Washington
+422,1,Northern Ireland
+423,1,Friuli Venezia Giulia
+424,1,Comunitat Valenciana
+425,1,Flevoland
+426,1,Valencia
+427,1,Marin County
+428,1,Grant County
+429,1,Pierce County
+430,1,Bretagne
+431,1,Utah
+432,1,Perth
+433,1,California
+434,1,San Francisco County
+435,1,Western Australia
+436,1,Connecticut
+437,1,Reykjavik
+438,1,Quaregnon
+439,1,Idaho
+440,1,Nieuwerkerken
+441,1,Luxembourg
+442,1,Wales
+443,1,New York
+444,1,Waterloo
+445,1,Montignies-Sur-Sambre
+446,1,Quevaucamps
+447,1,Temploux
+448,1,Herve
+449,1,Soumagne
+450,1,Mouscron
+451,1,Havelange
+452,1,Boussu
+453,1,Bierset
+454,1,Bree
+455,1,Cuesmes
+456,1,Henri-chapelle
+457,1,Theux
+458,1,Jumet
+459,1,Dalhem
+460,1,Colfontaine
+461,1,Wanze
+462,1,Ladeuze
+463,1,Gennevilliers
+464,1,Oslo
+465,1,Tianmen
+466,1,Phoenix
+467,1,Arizona
+468,1,Seoul
+469,1,Beijing
+470,1,Kochi
+471,1,Cork
+472,1,Saskatchewan
+473,1,Saint-Priest
+474,1,Bronx
+475,1,Chiba
+476,1,Minas Gerais
+477,1,Taiwan
+478,1,Taipei
+479,1,Hoegaarden
+480,1,Vaud
+481,1,Zinnik
+482,1,Grand Est
+483,1,Bratislava
+484,1,Lagos
+485,1,Santiago
+486,1,Woippy
+487,1,Ukkel
+488,1,Reims
+489,1,Georgia
+490,1,Ticino
+491,1,Koersel
+492,1,Kain
+493,1,Zhejiang
+494,1,Lasne
+495,1,New Brunswick
+496,1,Abruzzo
+497,1,Centre-Val de Loire
+498,1,Tours
+499,1,Sint-Gillis-Waas
+500,1,Hasselt
+501,1,Wandre
+502,1,Ganshoren
+503,1,Kraainem
+504,1,Quevy
+505,1,Doornik
+506,1,Courcelles
+507,1,Trazegnies
+508,1,Villerot
+509,1,Honnelles
+510,1,Starnberg
+511,1,Asni¨¨res-sur-Seine
+512,1,Bavaria
+513,1,Tournai
+514,1,Shanghai
+515,1,Blandain
+516,1,Anderlecht
+517,1,Snohomish County
+518,1,Castilla y Leon
+519,1,Alken
+520,1,Sacramento County
+521,1,Valence
+522,1,Brest
+523,1,Couthuin
+524,1,Strasbourg
+525,1,Houthalen-Helchteren
+526,1,Ishikawa
+527,1,Spicheren

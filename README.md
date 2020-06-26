@@ -90,7 +90,7 @@ ORDER BY MPPR_score DESC
 
 ## Dependencies
 ### Neo4j 
-* Install [neo4j-desktop](https://neo4j.com/developer/neo4j-desktop/).
+* Install [neo4j](https://neo4j.com/developer/neo4j-desktop/).
 * Put data into `<neo4j-home>/import`. 
 For example, `C:/Users/<user>/.Neo4jDesktop/neo4jDatabases/<database>/installation-<version>/import` in windows.
 * Import COVID19 data into neo4j.

@@ -1,5 +1,5 @@
 # Datasets for Covid-19 Knowledge Graph
-This repository contains codes and datasets for Covid-19 Knowledge Graph, which can be integrated from different data sources and domains.
+The Covid-19 Knowledge Graph is integrated from different data sources and domains, which are described in this page.
 ## Neo4j Datasets
 The datasets are maintaiend by groups like neo4j. The datasets are mainly from publications and case statistics. 
 * [url](http://www.odbms.org/2020/03/we-build-a-knowledge-graph-on-covid-19/)
@@ -41,7 +41,7 @@ The publication dataset and the gene dataset (marked in green) are linked by a "
 
 
 ## OpenKG Datasets
-The datasets are maintained by several universities and companies from mainland, e.g., Tsinghua University and Huawei. The datsets are from different areas, and the datasets for research purposes include information about host, virus, drugs, gene and protein.
+The datasets are maintained by several universities and companies from China, e.g., Tsinghua University and Huawei. The datsets are from different areas, and the datasets for research purposes include information about host, virus, drugs, gene and protein.
 * [url](http://www.openkg.cn/dataset/covid-19-research)
 * [detailed describtion](https://mp.weixin.qq.com/s/eHbkrMtYpg-oEmWS92970w)
 * pros: wide coverage with rich knowledge
@@ -75,20 +75,11 @@ The datasets are maintained by several universities and companies from mainland,
 </p>
 
 ## Virus-Protein-Drug network
-The datasets are released in the science paper published in Cell Discovery 2020. In the human PPI network, they analyzed human proteins that functionally associate with Covid-19 viral infection and proteins that serve as drug targets. 
+The datasets are released in the paper published in Cell Discovery 2020. In the human PPI network, they analyzed human proteins that functionally associate with Covid-19 viral infection and proteins that serve as drug targets. 
 * [url](https://github.com/ChengF-Lab/2019-nCoV)
 * [describtion](https://www.nature.com/articles/s41421-020-0153-3.pdf)
 * pros: proved data for potential drug discovery.
 * cons: result onbly; domain knowledge needed to integrate the data.
-
-#### problems
-* how to evaluate the drugs discovered:
-  * single drug: numeric indicators (z-score, p value),  bioinformatics validation (drug-induced gene signatures and HCoV induced transcriptomics), literature-derived antiviral evidence
-  * drug combinations: numeric indicators (z-score, p value)
-* data to be released:
-  * HCoV–host protein interactions
-  * drug–target network
-  * human protein–protein interactome
   
 #### examples
 

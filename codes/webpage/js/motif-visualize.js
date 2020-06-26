@@ -70,7 +70,7 @@ function getRandomColor() {
     return color;
 }
 function getColor(counter) {
-    var letters = ["#F95E12", "#543190","#D2F074", "purple","maroon", "lime", "fushsia", "yellow", "navy", , "olive", "teal", "aqua", "gray", "silver"];
+    var letters = ["#F95E12", "#543190","#D2F074", "purple","maroon", "lime", "yellow", "navy", , "olive", "teal", "aqua", "gray", "silver","fushsia", ];
     return letters[counter];
 }
 

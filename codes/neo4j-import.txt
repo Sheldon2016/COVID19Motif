@@ -1,0 +1,33 @@
+# Note that the VirusGene and HostGene are one-to-one matched to VirusProtein and HostProtein respectively.
+
+LOAD CSV FROM 'file:///Disease.txt' AS line CREATE (:Disease {nid:toInteger(line[0]),label:line[1]});
+LOAD CSV FROM 'file:///Drug.txt' AS line CREATE (:Drug {nid:toInteger(line[0]),label:line[1]});
+LOAD CSV FROM 'file:///HostProtein.txt' AS line CREATE (:HostProtein {nid:toInteger(line[0]),label:line[1]});
+LOAD CSV FROM 'file:///HPO.txt' AS line CREATE (:Symptom {nid:toInteger(line[0]),label:line[1]});
+LOAD CSV FROM 'file:///Virus.txt' AS line CREATE (:Virus {nid:toInteger(line[0]),label:line[1]});
+LOAD CSV FROM 'file:///VirusProtein.txt' AS line CREATE (:VirusProtein {nid:toInteger(line[0]),label:line[1]});
+
+CREATE INDEX ON:Disease(nid)
+CREATE INDEX ON:Drug(nid)
+CREATE INDEX ON:HostProtein(nid)
+CREATE INDEX ON:Symptom(nid)
+CREATE INDEX ON:Virus(nid)
+CREATE INDEX ON:VirusProtein(nid)
+
+CREATE CONSTRAINT ON (n:Disease) ASSERT n.nid IS UNIQUE;
+CREATE CONSTRAINT ON (n:Drug) ASSERT n.nid IS UNIQUE;
+CREATE CONSTRAINT ON (n:HostProtein) ASSERT n.nid IS UNIQUE;
+CREATE CONSTRAINT ON (n:Symptom) ASSERT n.nid IS UNIQUE;
+CREATE CONSTRAINT ON (n:Virus) ASSERT n.nid IS UNIQUE;
+CREATE CONSTRAINT ON (n:VirusProtein) ASSERT n.nid IS UNIQUE;
+
+LOAD CSV FROM 'file:///disease_gene.txt' AS line MATCH (n:HostProtein {nid:toInteger(line[1])}), (m:Disease{nid:toInteger(line[3])}) MERGE (n)-[:associate_with]->(m)
+LOAD CSV FROM 'file:///drug_gene.txt' AS line MATCH (n:Drug {nid:toInteger(line[0])}), (m:HostProtein{nid:toInteger(line[2])}) MERGE (n)-[:target]->(m)
+LOAD CSV FROM 'file:///drug_virusprotein.txt' AS line MATCH (n:Drug {nid:toInteger(line[0])}), (m:VirusProtein{nid:toInteger(line[2])}) MERGE (n)-[:target]->(m)
+LOAD CSV FROM 'file:///hpoID_diseaseID_disease.txt' AS line MATCH (n:Disease {nid:toInteger(line[1])}), (m:Symptom{nid:toInteger(line[1])}) MERGE (n)-[:lead_to]->(m)
+LOAD CSV FROM 'file:///hpoID_geneID.txt' AS line MATCH (n:HostProtein {nid:toInteger(line[2])}), (m:Symptom{nid:toInteger(line[0])}) MERGE (n)-[:associate_with]->(m)
+
+LOAD CSV FROM 'file:///virus_disease.txt' AS line MATCH (n:Virus {nid:toInteger(line[0])}), (m:Disease{nid:toInteger(line[3])}) MERGE (n)-[:cause]->(m)
+LOAD CSV FROM 'file:///virus_hostprotein.txt' AS line MATCH (n:Virus {nid:toInteger(line[0])}), (m:HostProtein{nid:toInteger(line[3])}) MERGE (n)-[:interact_with]->(m)
+LOAD CSV FROM 'file:///virus_virusprotein.txt' AS line MATCH (n:Virus {nid:toInteger(line[0])}), (m:VirusProtein{nid:toInteger(line[2])}) MERGE (n)-[:produce]->(m)
+LOAD CSV FROM 'file:///virusprotein_hostprotein.txt' AS line MATCH (n:VirusProtein {nid:toInteger(line[1])}), (m:HostProtein{nid:toInteger(line[4])}) MERGE (n)-[:bind]->(m)

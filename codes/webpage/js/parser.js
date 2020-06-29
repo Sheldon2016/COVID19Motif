@@ -99,22 +99,6 @@ function run(cypher) {
 	visulizationQuery = resQ2;
     return runonce(cq);
   }
-
-  var q2="[m:M*]";
-  if (cypher.includes(q2)) {
-    var cypherarr = cypher.split("\"")
-    var country1 = cypherarr[1]
-    var country2 = cypherarr[3]
-	
-    cq = "match (p1:Location{label:\""+country1+
-    "\"})--(s1:Strain)--(b1:Branch)--(b2:Branch)--(s2:Strain)--(p2:Location{label:\""+country2+
-    "\"})";
-	tail = " return p1.label as m1_Location, b1.label as m1_Branch1, s1.label as m1_Strain,  s2.label as m2_Strain, p2.label as m2_Country, b2.label as m2_Branch";
-	tail2 = " return p1, b1, s1,  s2, p2, b2";
-	visulizationQuery = cq + tail2;
-	cq += tail;
-    return runonce(cq);
-  }
   return runonce(cq)
 }
 

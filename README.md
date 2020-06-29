@@ -2,6 +2,8 @@
 ## Demonstrated by Covid-19 Knowledge Graph Analysis
 This repository contains codes and data used in [M-Cypher: A GQL Framwork Supporting Motifs], which is built on Cypher to support motif-related queries for mining knowledge graphs. 
 
+Cilick [here](www.baidu.com) for the video introduction!
+
 * To express a motif-related operation that is difficult to express declaratively with Cypher.
 	* To provide access to motif-related functionality that is not available in Cypher.
 		* For example, subgraph matching and motif connectivity.
@@ -94,9 +96,3 @@ ORDER BY MPPR_score DESC
 * Put data into `<neo4j-home>/import`. 
 * Import Covid-19 knowledge graph data into neo4j, with codes attached in `codes/neo4j-import.txt`.
 * Put the combiled M-Cypher plugin into `<neo4j-home>/plugin`.
-
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="intro.JPG">
-    <source src="intro.mp4" type="video/mp4">
-  </video>
-</figure>

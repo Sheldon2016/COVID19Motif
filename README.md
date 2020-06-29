@@ -2,7 +2,7 @@
 ## Demonstrated by Covid-19 Knowledge Graph Analysis
 This repository contains codes and data used in [M-Cypher: A GQL Framwork Supporting Motifs], which is built on Cypher to support motif-related queries for mining knowledge graphs. 
 
-Cilick [here](www.baidu.com) for the video introduction!
+Cilick [here](https://drive.google.com/file/d/1bLzy970d6ELnnzLLmrelEHuiXOFXH9Lm/view?usp=sharing) for the video introduction!
 
 * To express a motif-related operation that is difficult to express declaratively with Cypher.
 	* To provide access to motif-related functionality that is not available in Cypher.

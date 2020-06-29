@@ -21,7 +21,7 @@ The code takes the **edge list** of the graph. Every row indicates an edge betwe
 #### labels
 Labels for nodes `nodeLabelID:nodeLabel` and edges `edgeLabelID:edgeLabel`
 <p align="center">
-  <img width="600" src="schema.png">
+  <img width="600" src="codes/schema.png">
 </p>
 
 ## Usage 
@@ -87,7 +87,7 @@ ORDER BY MPPR_score DESC
 ```
 
 <p align="center">
-  <img width="1000" src="motifs.png">
+  <img width="1000" src="codes/motifs.png">
 </p>
 
 ## Dependencies

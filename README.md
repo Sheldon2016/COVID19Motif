@@ -94,3 +94,9 @@ ORDER BY MPPR_score DESC
 * Put data into `<neo4j-home>/import`. 
 * Import Covid-19 knowledge graph data into neo4j, with codes attached in `codes/neo4j-import.txt`.
 * Put the combiled M-Cypher plugin into `<neo4j-home>/plugin`.
+
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="intro.JPG">
+    <source src="intro.mp4" type="video/mp4">
+  </video>
+</figure>

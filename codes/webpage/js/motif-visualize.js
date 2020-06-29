@@ -70,7 +70,7 @@ function getRandomColor() {
     return color;
 }
 function getColor(counter) {
-    var letters = ["#F95E12", "#543190","#D2F074", "purple","maroon", "lime", "yellow", "navy", , "olive", "teal", "aqua", "gray", "silver","fushsia", ];
+    var letters = ["#F95E12", "#543190","#D2F074", "purple","maroon", "lime", "yellow", "navy", , "olive", "teal", "aqua", "gray", "silver","#F95E12", "#543190","#D2F074", "purple"];
     return letters[counter];
 }
 
@@ -319,11 +319,11 @@ function filter_results() {
 	
     var session = driver.session();
     var resEdgeNum = 0;
+	var colorcounter2 = 0;
     session.run(visulizationQuery).then(result => {
             result.records.forEach(record => {
                 console.log(record);
 				
-				var colorcounter2 = 0;
                 for (var j = 0; j < record.length - 1; j++) {
                     var source = record.get(j);
                     var source_node, target_node;
@@ -376,7 +376,9 @@ function filter_results() {
 
                     if (s_flag) {
                         if (!node_types.includes(source_node['classes'])) {
-                            neo4j_cy.style().selector('.' + source_node['classes']).css({'background-color': getColor(colorcounter2++)}).update();
+                            neo4j_cy.style().selector('.' + source_node['classes']).css({'background-color': getColor(colorcounter2)}).update();
+							console.log(source_node['classes']+" "+getColor(colorcounter2));
+							colorcounter2++;
                             node_types.push(source_node['classes'])
                         }
 
@@ -384,8 +386,10 @@ function filter_results() {
                     }
                     if (t_flag) {
                         if (!node_types.includes(target_node['classes'])) {
-                            neo4j_cy.style().selector('.' + target['classes']).css({'background-color': getColor(colorcounter2++)}).update();
+                            neo4j_cy.style().selector('.' + target_node['classes']).css({'background-color': getColor(colorcounter2)}).update();
+							console.log(target_node['classes']+" "+getColor(colorcounter2));
                             node_types.push(target_node['classes'])
+							colorcounter2++;
                         }
                         neo4j_cy.add(target_node);
                     }

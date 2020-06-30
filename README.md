@@ -6,11 +6,9 @@ Cilick [here](https://drive.google.com/file/d/1bLzy970d6ELnnzLLmrelEHuiXOFXH9Lm/
 
 * To express a motif-related operation that is difficult to express declaratively with Cypher.
 	* To provide access to motif-related functionality that is not available in Cypher.
-		* For example, subgraph matching and motif connectivity.
 	* To provide uniform interface to the state-of-the-art motif-related algorithms.
-		* For example, motif-based graph clustering, motif-based node ranking and motif-based link prediction, which is proved better effectiveness than the ordinary edge-based solutions in many cases.
 * To provide user-friendly input and output, when fullfilling standard GQL protocals.
-* To embed advanced features into the query, e.g., motif adjacency matrix .
+* To embed advanced features into the query.
 
 ## Datasets
 The code takes the **edge list** of the graph. Every row indicates an edge between two nodes separated by a comma. The datasets used in the paper are included in the  `data/` directory.
@@ -31,13 +29,13 @@ Labels for nodes `nodeLabelID:nodeLabel` and edges `edgeLabelID:edgeLabel`
 	* Motif counting (see Q1);
 	* Motif instance enumerating (a.k.a isomorphic subgraph detection, see Q2);
 	* Motif-paths finding (e.g., nodes reachable by triangle connectivities, see Q3);
-	* Motif-components finding (e.g., k-cliques);
+	* Motif-components finding (e.g., motif cliques, see Q6);
 * Embedded API functionalities:
-	* Motif Page Rank for better node ranking;
+	* Motif Page Rank for better node ranking (see Q5);
 	* Motif conductance for better graph clustering;	
 	* Motif Discovery;
 	* Motif adjacency matrix calculation;
-	* Motif feature vectors for better link prediction.
+	* Motif feature vectors for better link prediction (see Q4).
 
 ### Use cases
 In the following query examples, we demonstrate several use cases by motif M, which is predefined by the user in the GUI.

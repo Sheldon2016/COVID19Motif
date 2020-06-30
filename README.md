@@ -29,13 +29,13 @@ Labels for nodes `nodeLabelID:nodeLabel` and edges `edgeLabelID:edgeLabel`
 	* Motif counting (see Q1);
 	* Motif instance enumerating (a.k.a isomorphic subgraph detection, see Q2);
 	* Motif-paths finding (e.g., nodes reachable by triangle connectivities, see Q3);
-	* Motif-components finding (e.g., motif cliques, see Q6);
+	* Motif-components finding (e.g., motif cliques, see Q7);
 * Embedded API functionalities:
-	* Motif Page Rank for better node ranking (see Q5);
-	* Motif conductance for better graph clustering;	
-	* Motif Discovery;
+	* Motif Page Rank for better node ranking (see Q6);
+	* Motif conductance for graph clustering;	
+	* Motif Discovery (see Q4);
 	* Motif adjacency matrix calculation;
-	* Motif feature vectors for better link prediction (see Q4).
+	* Motif feature vectors for link prediction (see Q5).
 
 ### Use cases
 In the following query examples, we demonstrate several use cases by motif M, which is predefined by the user in the GUI.
@@ -70,7 +70,7 @@ CALL MFV(s,t,[M1,M2])
 YIELD s, t, vm 
 RETURN t.name, vm
 ```
-#### Q5: What are the potential drugs for Covid-19 by MPPR ranking?
+#### Q6: What are the potential drugs for Covid-19 by MPPR ranking?
 * cypher:	NA
 * m-cypher:	
 ```
@@ -82,6 +82,15 @@ node.name AS Drug_name, MPPR_score
 WHERE ln = "Drug" AND score > 0
 RETURN Drug_name, MPPR_score
 ORDER BY MPPR_score DESC
+```
+#### Q7: What is the clique for motif M?
+* cypher:	NA
+* m-cypher:	
+```
+MATCH (s:Virus) WHERE s.name="SARS"
+CALL MCLQ(s,M)
+YIELD node_set
+RETURN node_set
 ```
 
 <p align="center">

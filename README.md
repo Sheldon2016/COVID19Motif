@@ -25,17 +25,6 @@ Labels for nodes `nodeLabelID:nodeLabel` and edges `edgeLabelID:edgeLabel`
 ## Usage 
 
 ### Open `codes/webpage/mcypher.html` for local view.
-* Declarative functionalities:
-	* Motif counting (see Q1);
-	* Motif instance enumerating (a.k.a isomorphic subgraph detection, see Q2);
-	* Motif-paths finding (e.g., nodes reachable by triangle connectivities, see Q3);
-	* Motif-components finding (e.g., motif cliques, see Q7);
-* Embedded API functionalities:
-	* Motif Page Rank for better node ranking (see Q6);
-	* Motif conductance for graph clustering;	
-	* Motif Discovery (see Q4);
-	* Motif adjacency matrix calculation;
-	* Motif feature vectors for link prediction (see Q5).
 
 ### Use cases
 In the following query examples, we demonstrate several use cases by motif M, which is predefined by the user in the GUI.

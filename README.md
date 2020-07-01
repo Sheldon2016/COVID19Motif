@@ -75,7 +75,7 @@ RETURN t.name, vm
 * m-cypher:	
 ```
 MATCH (s:Virus) WHERE s.name="SARS-CoV-2"
-CALL MPPR(s,[M2,M3,M4,M5],10000,0.85)
+CALL MPPR(s,[M1,M2,M3,M4],10000,0.85)
 YIELD node, MPPR_score 
 WITH labels(node) AS ln, 
 node.name AS Drug_name, MPPR_score

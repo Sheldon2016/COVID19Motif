@@ -11,7 +11,7 @@ Cilick [here](https://drive.google.com/file/d/1bLzy970d6ELnnzLLmrelEHuiXOFXH9Lm/
 * To embed advanced features into the query.
 
 ## Datasets
-The code takes the **edge list** of the graph. Every row indicates an edge between two nodes separated by a comma. The datasets used in the paper are included in the  `data/` directory. Note that the protein-gene links are merged because it is a one-to-one matching.
+The code takes the **edge list** of the graph. Every row indicates an edge between two nodes separated by a comma. The datasets used in the paper are included in the  `data/` directory. Note that the protein-gene links are merged because of the one-to-one matching.
 #### nodes
 `nodeID,nodeLabelID,nodeName`
 #### edges

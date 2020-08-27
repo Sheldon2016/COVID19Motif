@@ -86,7 +86,7 @@ RETURN node_set
   <img width="1000" src="codes/motifs.png">
 </p>
 
-### All methods currently supported
+### All APIs currently supported
 | Method                        | Return Type                             | Description                                                                                                                                                                                                            |
 |-------------------------------|-----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | MDIS(List<String>, int)       | List<String, List<String>, int>         | Given a list of labels and the maximum motif size, MDIS returns a list of motifs, each with a counting number. |
@@ -105,6 +105,7 @@ RETURN node_set
 #### Note: 
 ##### 1. Each motif is determinde by a degree vector (in ASCE order) in String format and a label vector (in DESC order w.r.t. the degree of the mapped node) in List<String> format.
 ##### 2. Each node is determined by a node ID (int) and its label (String).
+##### 3. The queries in the usage part are finished by calling the APIs.
 
 ## Dependencies
 ### Neo4j 

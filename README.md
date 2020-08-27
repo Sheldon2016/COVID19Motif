@@ -112,5 +112,5 @@ RETURN node_set
 * Install [neo4j](https://neo4j.com/download-center/).
 * Put data into `<neo4j-home>/import`. 
 * Import Covid-19 knowledge graph data into neo4j, with codes attached in `codes/neo4j-import.txt`.
-* Put the combiled M-Cypher plugin into `<neo4j-home>/plugin`.
+* Put the combiled M-Cypher plugin mcypher.jar into `<neo4j-home>/plugin`.
 * Put log4j-1.2.17.jar into `<neo4j-home>/plugin`.

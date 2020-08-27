@@ -1,4 +1,4 @@
-var visulizationQuery = "";
+var visulizationQuery;
 
 function nodeValue(container, id, labels, properties) {
   var card = document.createElement("div"),
@@ -16,11 +16,11 @@ function nodeValue(container, id, labels, properties) {
 
 function getcons(queryarr){
 	var cons = "";
-	if(queryarr.includes("WHERE m.")){
+	if(queryarr.includes("WHERE")){
 	  var cypherarr = queryarr.split("WHERE m.");
       var consarr = cypherarr[1];
 	  cons += "WHERE "
-      cons += consarr.split("RETURN")[0];
+      cons += consarr.split(" RETURN")[0];
 	  cons += "\n";
 	  //alert(cons);
 	  var tem = cons.split("m.");
@@ -34,25 +34,8 @@ function getcons(queryarr){
 	return con2;
 }
 
-function returnDeal(cypher){
-	var tem = cypher.split("RETURN ");
-	var r = tem[1];
-	var res = tem[0]+"RETURN ";
-	var rtem = r.split(",");
-	for(var i=0;i<rtem.length;i++){
-		if(rtem[i].includes(".")){
-			var stem = rtem[i].split(".");
-			if(i<rtem.length-1)
-				res += stem[0] +", ";
-			else
-				res += stem[0];
-		}
-	  }
-	return res;
-}
 function run(cypher) {
-  if(visulizationQuery.includes("RETURN "))
-	visulizationQuery = returnDeal(cypher);
+  visulizationQuery = cypher;
   let map = new Map();
   var res = "Confirm motif M:\n", resQ="", tail="", resQ2="", tail2="";
   var res2 = "Nodes in M:\n";
@@ -70,9 +53,9 @@ function run(cypher) {
 	   map.set(sources[i].id, nid);
 	   res2 += "n"+nid+":"+sources[i].name+"\n";
 	   //slabel = "n"+nid+":"+sources[i].name;
-	   //tail+="n"+nid+".name As m_"+sources[i].name+", ";
+	   //tail+="n"+nid+".label As m_"+sources[i].name+", ";
 	   //tail2 += "n"+nid+", ";
-	   tail+=sources[i].name.toLowerCase()+".name As m_"+sources[i].name+", ";
+	   tail+=sources[i].name.toLowerCase()+".label As m_"+sources[i].name+", ";
 	   tail2 += sources[i].name.toLowerCase()+", ";
 	   nid += 1;
 	 }
@@ -82,9 +65,9 @@ function run(cypher) {
 	   map.set(targets[i].id, nid);
 	   res2 += "n"+nid+":"+targets[i].name+"\n";
 	   //tlabel = "n"+nid+":"+targets[i].name;
-	   //tail+="n"+nid+".name As m_"+targets[i].name+", ";
+	   //tail+="n"+nid+".label As m_"+targets[i].name+", ";
 	   //tail2+="n"+nid+", ";
-	   tail+=targets[i].name.toLowerCase()+".name As m_"+targets[i].name+", ";
+	   tail+=targets[i].name.toLowerCase()+".label As m_"+targets[i].name+", ";
 	   tail2 += targets[i].name.toLowerCase()+", ";
 	   nid += 1;
 	 }
@@ -111,83 +94,11 @@ function run(cypher) {
 
   var q1="(m:M)";
   if(cypher.includes(q1)){
-    //cq = "MATCH p=(:Location)<-[:from_location]-(:Strain)-[:mutate_from_branch]->(:Branch) RETURN COUNT (p)+''";
-	cq = resQ;
+    cq = resQ;
 	visulizationQuery = resQ2;
     return runonce(cq);
   }
-
-  var q2="[m:M*]";
-  if (cypher.includes(q2)) {
-    var cypherarr = cypher.split("\"")
-    var location1 = cypherarr[1]
-    //var location2 = cypherarr[3]
-	
-    cq = "match r=(p1:Location{name:\""+location1+"\"})--(s1:Strain)-[:mutate_from*..3]-(s2:Strain)--(s3:Strain)--(p2:Location)";
-	tail = " return distinct p2.name as Location_name";
-	tail2 = " return p1,s1,s2,s3,p2";
-	visulizationQuery = cq + tail2;
-	cq += tail;
-    return runonce(cq);
-  }
-  
-  var q3="MCLQ";
-  if(cypher.includes(q3)){
-	  cq = "match (a:Virus)--(b:HostProtein)--(c:HostProtein)--(d:Symptom)--(b) match (a)--(c) where a.label contains \"SARS\"";
-	  visulizationQuery = cq+"return a,b,c,d";
-	  return runonce(cq+"return collect(distinct a.name) as label_A, collect(distinct b.name) as label_B, collect(distinct d.name) as label_C")
-  }
-  
-  var q4="MPPR";
-  if(cypher.includes(q4)){
-	  cq = "MATCH (v:Virus) Where v.label contains \"SARS-CoV-2\" CALL gds.pageRank.stream(\'covid19udppr\', \{  maxIterations: 2000000,  dampingFactor: 0.85,  sourceNodes: [v]\}) YIELD nodeId, score with gds.util.asNode(nodeId) as node, score as score_raw with labels(node) as ls, node.name as p, round(score_raw*10000)/10000 as score with ls[0] as l, p, score where l = \"Drug\" and score > 0 RETURN p AS name, score ORDER BY score DESC, name ASC";
-	  //console.log(cq);
-	  return runonce(cq);
-  }
-  
-  var q5="MDIS";
-  if(cypher.includes(q5)){
-	  var sname = "";
-	  var slabel = "";
-	  if(cypher.includes("WHERE")){
-		  var temw = cypher.split("WHERE");
-		  var temn = temw[1].split("\"");
-		  sname = temn[1];
-		  var teml = temw[0].split(":");
-		  slabel = teml[1].split(")")[0];
-	  }
-	  var tem = cypher.split("MDIS");
-	  var tem2 = tem[1].split("\"");
-	  var Ls = [];
-	  Ls.push(tem2[1]);
-	  Ls.push(tem2[3]);
-	  Ls.push(tem2[5]);
-	  Ls.push(tem2[7]);
-	  //var Ls = ["Drug","Virus","VirusProtein","HostProtein"];//["Drug","Virus","Disease","Symptom"];
-	  if(sname.length>0){
-		  var svariant = ["a","b","c","d"];
-		  for(var i=0;i<Ls.length;i++){
-			  if(Ls[i] === slabel){
-				  Ls[i] = Ls[i]+"{name:\""+sname+"\"}"
-			  }
-		  }
-		}
-		cq = "match r=(a:"+Ls[0]+")--(b:"+Ls[1]+") \n return labels(a)[0]+\"-\"+labels(b)[0] as motif , count(r)+\"\" as frequency  \n union  \n match r=(a:"+Ls[0]+")--(b:"+Ls[2]+")  \n return labels(a)[0]+\"-\"+labels(b)[0] as motif , count(r)+\"\" as frequency  \n union  \n match r=(a:"+Ls[0]+")--(b:"+Ls[3]+")  \n return labels(a)[0]+\"-\"+labels(b)[0] as motif , count(r)+\"\" as frequency  \n union  \n match r=(a:"+Ls[1]+")--(b:"+Ls[2]+")  \n return labels(a)[0]+\"-\"+labels(b)[0] as motif , count(r)+\"\" as frequency  \n union  \n match r=(a:"+Ls[1]+")--(b:"+Ls[3]+")  \n return labels(a)[0]+\"-\"+labels(b)[0] as motif , count(r)+\"\" as frequency  \n union  \n match r=(a:"+Ls[2]+")--(b:"+Ls[3]+")  \n return labels(a)[0]+\"-\"+labels(b)[0] as motif , count(r)+\"\" as frequency  \n union  \n match r=(a:"+Ls[0]+")--(b:"+Ls[1]+")--(c:"+Ls[2]+")  \n  return labels(a)[0]+\"-\"+labels(b)[0]+\"-\"+labels(c)[0] as motif , count(r)+\"\" as frequency  \n union  \n match r=(a:"+Ls[0]+")--(b:"+Ls[1]+")--(c:"+Ls[3]+")  \n  return labels(a)[0]+\"-\"+labels(b)[0]+\"-\"+labels(c)[0] as motif , count(r)+\"\" as frequency  \n union  \n match r=(a:"+Ls[1]+")--(b:"+Ls[2]+")--(c:"+Ls[3]+")  \n  return labels(a)[0]+\"-\"+labels(b)[0]+\"-\"+labels(c)[0] as motif , count(r)+\"\" as frequency  \n union  \n match r=(a:"+Ls[1]+")--(b:"+Ls[2]+")--(c:"+Ls[3]+")  \n  return labels(a)[0]+\"-\"+labels(b)[0]+\"-\"+labels(c)[0] as motif , count(r)+\"\" as frequency  \n union  \n match r=(a:"+Ls[0]+")--(b:"+Ls[1]+")--(c:"+Ls[2]+")--(a)  \n return labels(a)[0]+\"-\"+labels(b)[0]+\"-\"+labels(c)[0]+\"-\" as motif , count(r)+\"\" as frequency  \n union  \n match r=(a:"+Ls[0]+")--(b:"+Ls[1]+")--(c:"+Ls[3]+")--(a)  \n   return labels(a)[0]+\"-\"+labels(b)[0]+\"-\"+labels(c)[0]+\"-\" as motif , count(r)+\"\" as frequency  \n union  \n match r=(a:"+Ls[1]+")--(b:"+Ls[2]+")--(c:"+Ls[3]+")--(a)  \n   return labels(a)[0]+\"-\"+labels(b)[0]+\"-\"+labels(c)[0]+\"-\" as motif , count(r)+\"\" as frequency  \n union  \n match r=(a:"+Ls[1]+")--(b:"+Ls[2]+")--(c:"+Ls[3]+")--(a)  \n   return labels(a)[0]+\"-\"+labels(b)[0]+\"-\"+labels(c)[0]+\"-\" as motif , count(r)+\"\" as frequency  \n";
-	  return runonce(cq);
-  }
-  
-  var q6="MFV";
-  if(cypher.includes(q6)){
-	  //var sname = "SARS";
-	  //var tname = "Sofosbuvir";
-	  var tem = cypher.split("\"");
-	  var sname = tem[1];
-	  var tname = tem[3];
-	  cq = "match r=(a:Drug)--(b)--(c:Virus) where c.label contains \""+sname+"\" and a.label contains \""+tname+"\" return count (r)+\"\" as MFV union match r=(a:Drug)--(b)--(d)--(c:Virus) where c.label contains \""+sname+"\" and a.label contains \""+tname+"\" return count (r)+\"\" as MFV union match r=(a:Drug)--(b)--(d)--(e)--(c:Virus) where c.label contains \""+sname+"\" and a.label contains \""+tname+"\" return count (r)+\"\" as MFV";
-	  return runonce(cq);
-  }
-  
-  return runonce(cq);
+  return runonce(cq)
 }
 
 function runonce(cypher){

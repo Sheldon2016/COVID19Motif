@@ -86,9 +86,30 @@ RETURN node_set
   <img width="1000" src="codes/motifs.png">
 </p>
 
+### All methods currently supported
+| Method                        | Return Type                             | Description                                                                                                                                                                                                            |
+|-------------------------------|-----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| MDIS(List<String>, int)       | List<String, List<String>, int>         | Given a list of labels and the maximum motif size, MDIS returns a list of motifs, each with a counting number. |
+| MDISS(List<String>, int, int, String) | List<String, List<String>, int> | Similar like MDIS, but the input requires a query node, which should be involed in the motif instances. |
+| MPPR(List<String>, List<List<String>>, int, String, String, int, double) | List<String, double> | Given a list of motifs, the source node ID, source node label, target node label, iteration number and damping factor, MPPR returns a list of target nodes, each with a MPPR score. |
+| MCON(String, List<String>, List<int>, List<String>) | double | Given a motif, and a list of nodes as well their labels, MCON returns the motif conductance w.r.t. the given set of nodes and the motif. |
+| MFV(List<String>, List<List<String>>, int, String, int, String) | List<Integer> |  Given a list of motifs, a pair of nodes (s, t), MFV returns a vector of the counting results. |
+| MFVN(s,M) (List<String>, List<List<String>>, int, String) | List<Integer> | Given a list of motifs and a query node, MFVN returns a vector of the counting results. |
+| SMPD(List<String>, List<List<String>>, int, String, int String) |  int  | Given a list of motifs, a pair of nodes (s, t), SMPD returns the shortest motif path distance between s and t. |
+| MAM(List<String>, List<List<String>>) | List<int, String, int, String, int> | Given a list of motif, MAM returns the higher-order graph represented by a list of edges, formed by a pair of nodes (s, t) and the number of motif instances containing s and t. |
+| MCLQ(String, List<String>, int, String)  | List<int, String> | Given a motif and a query node, MCLQ returns the set of nodes that form the motif clique. |
+| MCC(String, List<String>, int, String) | List<int, String> | Given a motif and a query node, MCC returns the set of nodes that form the motif connected component. |
+| MGD(String, List<String>) | int | Given a motif, MGD returns the higher-orer graph diameter. |
+| MCOUNT(String, List<String>) | int | Given a motif, MCOUNT returns the counting number for it. |
+	
+#### Note: 
+##### 1. Each motif is determinde by a degree vector (in ASCE order) in String format and a label vector (in DESC order w.r.t. the degree of the mapped node) in List<String> format.
+##### 2. Each node is determined by a node ID (int) and its label (String).
+
 ## Dependencies
 ### Neo4j 
 * Install [neo4j](https://neo4j.com/download-center/).
 * Put data into `<neo4j-home>/import`. 
 * Import Covid-19 knowledge graph data into neo4j, with codes attached in `codes/neo4j-import.txt`.
 * Put the combiled M-Cypher plugin into `<neo4j-home>/plugin`.
+* Put log4j-1.2.17.jar into `<neo4j-home>/plugin`.

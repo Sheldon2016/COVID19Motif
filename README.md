@@ -76,10 +76,7 @@ ORDER BY MPPR_score DESC
 * cypher:	NA
 * m-cypher:	
 ```
-MATCH (s:Virus) WHERE s.name="SARS"
-CALL MCLQ(s,M)
-YIELD node_set
-RETURN node_set
+RETURN MCLQ(M,'1','Drug')
 ```
 
 #### Q8: What is the motif conductance for a set of nodes w.r.t. motif M?

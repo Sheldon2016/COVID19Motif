@@ -65,6 +65,7 @@ RETURN MDIS('Drug,Virus,Disease,Symptom','4')
 MATCH (s:Virus) 
 WHERE s.name="SARS-CoV-2" 
 MATCH (t:Drug)
+WHERE t.name CONTAINS "Lepirudin" 
 WITH s.id as SID, t.id as TID
 RETURN MFV([M1,M2],SID,'Virus',TID,'Drug') 
 ```

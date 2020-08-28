@@ -82,6 +82,15 @@ YIELD node_set
 RETURN node_set
 ```
 
+#### Q8: What is the motif conductance for a set of nodes w.r.t. motif M?
+* cypher:	NA
+* m-cypher:	
+```
+RETURN MCON(M,'1,2,3','Drug,Drug,Drug')
+```
+
+
+
 <p align="center">
   <img width="1000" src="codes/motifs.png">
 </p>

@@ -44,11 +44,18 @@ In the following query examples, we demonstrate several use cases by motif M, wh
 #### Q4: What are the significant motifs about Covid-19 virus?
 * cypher:	NA
 * m-cypher:	
-`MATCH (s:Virus) WHERE s.name="SARS-CoV-2"
-CALL MDIS(s,4,["Drug","Virus","Disease","Symptom"])
-YIELD permutation AS motif, frequency
-RETURN motif, frequency ORDER BY frequency DESC`
-#### Q5: What is the motif feature vector for the possible missing link (Drug, Covid-19)?
+```
+MATCH (s:Virus) WHERE s.name="SARS-CoV-2"
+WITH s.nid+"" as SID, s.name as SNAME
+RETURN MDISS('Drug,Virus,Disease,Symptom','4',SNID,SNAME)
+```
+#### Q5: What are the significant motifs in the knowldge graph?
+* cypher:	NA
+* m-cypher:	
+```
+RETURN MDIS('Drug,Virus,Disease,Symptom','4')
+```
+#### Q6: What is the motif feature vector for the possible missing link (Drug, Covid-19)?
 * cypher:	NA
 * m-cypher:	
 ```
@@ -59,7 +66,7 @@ CALL MFV(s,t,[M1,M2])
 YIELD s, t, vm 
 RETURN t.name, vm
 ```
-#### Q6: What are the potential drugs for Covid-19 by MPPR ranking?
+#### Q7: What are the potential drugs for Covid-19 by MPPR ranking?
 * cypher:	NA
 * m-cypher:	
 ```
@@ -72,32 +79,25 @@ WHERE ln = "Drug" AND score > 0
 RETURN Drug_name, MPPR_score
 ORDER BY MPPR_score DESC
 ```
-#### Q7: What is the clique for motif M?
+#### Q8: What is the clique for motif M?
 * cypher:	NA
 * m-cypher:	
 ```
 RETURN MCLQ(M,'1','Drug')
 ```
 
-#### Q8: What is the motif conductance for a set of nodes w.r.t. motif M?
+#### Q9: What is the motif conductance for a set of nodes w.r.t. motif M?
 * cypher:	NA
 * m-cypher:	
 ```
 RETURN MCON(M,'1,2,3','Drug,Drug,Drug')
 ```
 
-#### Q9: What is the diameter for the higher-order graph w.r.t. motif M?
+#### Q10: What is the diameter for the higher-order graph w.r.t. motif M?
 * cypher:	NA
 * m-cypher:	
 ```
 RETURN MGD(M)
-```
-
-#### Q10: What is the shortest motif path distance between node s and t w.r.t. motif M?
-* cypher:	NA
-* m-cypher:	
-```
-RETURN SMPD(M,'1','Drug','10254','Virus')
 ```
 
 #### Q11: What is the shortest motif path distance between node s and t w.r.t. motif M?
@@ -107,14 +107,21 @@ RETURN SMPD(M,'1','Drug','10254','Virus')
 RETURN SMPD(M,'1','Drug','10254','Virus')
 ```
 
-#### Q12: What is the motif adjacency matrix w.r.t. motifs M1 and M2?
+#### Q12: What is the shortest motif path distance between node s and t w.r.t. motif M?
+* cypher:	NA
+* m-cypher:	
+```
+RETURN SMPD(M,'1','Drug','10254','Virus')
+```
+
+#### Q13: What is the motif adjacency matrix w.r.t. motifs M1 and M2?
 * cypher:	NA
 * m-cypher:	
 ```
 RETURN MAM([M1,M2])
 ```
 
-#### Q13: What is the motif connected component that contains node s w.r.t. motif M?
+#### Q14: What is the motif connected component that contains node s w.r.t. motif M?
 * cypher:	NA
 * m-cypher:	
 ```

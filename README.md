@@ -66,7 +66,7 @@ MATCH (s:Virus)
 WHERE s.name="SARS-CoV-2" 
 MATCH (t:Drug)
 WITH s.id as SID, t.id as TID
-RETURN MFV([M1,M2],SID,TID) 
+RETURN MFV([M1,M2],SID,'Virus',TID,'Drug') 
 ```
 #### Q7: What is the motif feature vector for the Covid-19 virus?
 * cypher:	NA
@@ -75,7 +75,7 @@ RETURN MFV([M1,M2],SID,TID)
 MATCH (s:Virus) 
 WHERE s.name="SARS-CoV-2" 
 WITH s.id as SID
-RETURN MFV([M1,M2],SID) 
+RETURN MFV([M1,M2],SID,'Virus') 
 ```
 #### Q8: What are the potential drugs for Covid-19 by MPPR ranking?
 * cypher:	NA

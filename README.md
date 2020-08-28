@@ -89,6 +89,40 @@ RETURN node_set
 RETURN MCON(M,'1,2,3','Drug,Drug,Drug')
 ```
 
+#### Q9: What is the diameter for the higher-order graph w.r.t. motif M?
+* cypher:	NA
+* m-cypher:	
+```
+RETURN MGD(M)
+```
+
+#### Q10: What is the shortest motif path distance between node s and t w.r.t. motif M?
+* cypher:	NA
+* m-cypher:	
+```
+RETURN SMPD(M,'1','Drug','10254','Virus')
+```
+
+#### Q11: What is the shortest motif path distance between node s and t w.r.t. motif M?
+* cypher:	NA
+* m-cypher:	
+```
+RETURN SMPD(M,'1','Drug','10254','Virus')
+```
+
+#### Q12: What is the motif adjacency matrix w.r.t. motifs M1 and M2?
+* cypher:	NA
+* m-cypher:	
+```
+RETURN MAM([M1,M2])
+```
+
+#### Q13: What is the motif connected component that contains node s w.r.t. motif M?
+* cypher:	NA
+* m-cypher:	
+```
+RETURN MCC(M,'1','Drug')
+```
 
 
 <p align="center">

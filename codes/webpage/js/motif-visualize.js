@@ -36,7 +36,6 @@ function initCytoscape() {
             .css({
                 'curve-style': 'straight',
                 'width': 1,
-                'target-arrow-shape': 'triangle',
                 'line-color': '#000',
                 'target-arrow-color': '#000'
             }),
@@ -87,7 +86,7 @@ function motif_input_btn_click() {
         zoomingEnabled: true,
         panningEnabled: true,
         userZoomingEnabled: false,
-
+		//for directed edge: add 'target-arrow-shape': 'triangle',
         style: cytoscape.stylesheet()
             .selector('node')
             .css({
@@ -107,7 +106,6 @@ function motif_input_btn_click() {
             .css({
                 'curve-style': 'bezier',
                 'width': 1,
-                'target-arrow-shape': 'triangle',
                 'line-color': '#000',
                 'target-arrow-color': '#000'
             }),
@@ -286,7 +284,30 @@ var targets = [];
 
 function submit_button() {
     var all = cy.edges();
-    // alert(all.length);
+	var allnodes = cy.nodes();
+	var nodeLabelsArr = [];
+	var degVec = [];
+	for (i=0;i<allnodes.length;i++){
+		var cnode = allnodes[i];
+		//var cnodeID = cy.getElementById(cnode['_private']['data']);
+		degVec.push(cnode.degree());
+		nodeLabelsArr.push(cnode['_private']['data']['name']);
+	}
+	for (i=0;i<degVec.length;i++){
+		for(j=i+1;j<degVec.length;j++){
+			if(degVec[i]>degVec[j]){
+				var temint = degVec[i];
+				degVec[i] = degVec[j];
+				degVec[j] = temint;
+				var temstr = nodeLabelsArr[i];
+				nodeLabelsArr[i] = nodeLabelsArr[j];
+				nodeLabelsArr[j] = temstr;
+			}
+			
+		}
+	}
+	alert(degVec);
+	alert(nodeLabelsArr);
     for (i = 0; i < all.length; i++) {
         the_edge = all[i];
         var target = cy.getElementById(the_edge['_private']['data']['target']);
@@ -297,7 +318,7 @@ function submit_button() {
 
         sources.push(sourceName);
         targets.push(targetName);
-        // alert(source['_private']['data']['name']+"--> "+target['_private']['data']['name']);
+        //alert(source['_private']['data']['id']+"--> "+target['_private']['data']['id']);
     }
     var modal = document.getElementById("graphMSelector");
     modal.style.display = "none";

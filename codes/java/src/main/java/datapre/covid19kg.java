@@ -50,7 +50,7 @@ public class covid19kg {
 
 	private void loaddata(String mainDir) throws IOException {
 		//load nodes
-		String nodes2[] = {"Disease","Drug","HostProtein","HPO","Virus","VirusProtein","Strain","Location"};
+		String nodes2[] = {"Disease","Drug","HostProtein","Symptom","Virus","VirusProtein","Strain","Location"};
 		nodes = nodes2;
 		NodeList = new ArrayList();
 		for(int i=0;i<nodes.length;i++) 
@@ -176,7 +176,7 @@ public class covid19kg {
 			//nodeName[file] = new ArrayList();
 			
 			//if(edges[file].equals("hostprotein_hostprotein")) continue;
-			BufferedReader a = new BufferedReader (new FileReader(mainDir+"edges\\"+edges[file]+".txt"));
+			BufferedReader a = new BufferedReader (new FileReader(mainDir+"edges/"+edges[file]+".txt"));
 			int labelID1 = label1[file];
 			int labelID2 = label2[file];
 			edge[labelID1][labelID2] = new ArrayList[nodeNID[labelID1].size()];
@@ -249,7 +249,7 @@ public class covid19kg {
 			node[nodefile] = new Hashtable();
 			nodeNID[nodefile] = new ArrayList();
 			nodeName[nodefile] = new ArrayList();
-			BufferedReader a = new BufferedReader (new FileReader(mainDir+"nodes\\"+nodes[nodefile]+".txt"));
+			BufferedReader a = new BufferedReader (new FileReader(mainDir+"nodes/"+nodes[nodefile]+".txt"));
 			String s = a.readLine();
 			while(s.charAt(0)=='#') {
 				s=a.readLine();

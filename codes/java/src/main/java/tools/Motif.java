@@ -15,6 +15,11 @@ public class Motif {
 		
 	}
 	public Motif(String degVec) {
+		//note: the degVec is in DESC order from input
+		//the degreeVec in calculation is in ASCE
+		
+		degVec = reverse(degVec);
+		
     	switch(degVec.length()) {
     	case 1: getNode(); break;
     	case 2: getEdge(); break;
@@ -59,6 +64,13 @@ public class Motif {
     	}
 	}
 
+	private String reverse(String degVec) {
+		String res = "";
+		for(int i=degVec.length()-1;i>=0;i--) {
+			res+=degVec.charAt(i);
+		}
+		return res;
+	}
 	public void get4clique(){
 		motif = new ArrayList[4];
 		motif[0] = new ArrayList();//to store neighbors of 0

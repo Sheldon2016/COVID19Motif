@@ -30,13 +30,13 @@ Labels for nodes `nodeLabelID:nodeLabel` and edges `edgeLabelID:edgeLabel`
 In the following query examples, we demonstrate several use cases by motif M, which is predefined by the user in the GUI.
 #### Q1: What is the significance of motif pattern M?
 * cypher:	`MATCH p=(t1:Location)<-[r1:from_location]-(s:Virus)-[r2:mutate_from]->(t2:Virus) RETURN COUNT (p)`
-* m-cypher:	`MATCH (m:M) RETURN COUNT (m)`
+* m-cypher:	`MATCH (m:M) RETURN COUNT (m)` or `RETURN MENUMERATE(M)`
 * What if M is a large and xomplex motif? 
 	* Almost impossible to describe M by path pattern queries in cypher! 
 	* Even so, over-countering occurs in Cypher!
 #### Q2: What are the instances of motif pattern M?
 * cypher:	`MATCH (t1:Location)<-[r1:from_location]-(s:Virus)-[r2:mutate_from]->(t2:Virus) RETURN s,t1,t2`
-* m-cypher:	`MATCH (m:M) RETURN m`
+* m-cypher:	`MATCH (m:M) RETURN m` or `RETURN MCOUNT(M)`
 * Same problems exists as Q1!
 #### Q3: How virus mutates when spreading from Hong Kong?
 * cypher:	NA

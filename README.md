@@ -65,7 +65,7 @@ MATCH (t:Drug)
 with s.id as SID, t.id as TID
 RETURN MFV([M1,M2],SID,TID) 
 ```
-#### Q6: What is the motif feature vector for the Covid-19 virus?
+#### Q7: What is the motif feature vector for the Covid-19 virus?
 * cypher:	NA
 * m-cypher:	
 ```
@@ -74,7 +74,7 @@ WHERE s.name="SARS-CoV-2"
 with s.id as SID
 RETURN MFV([M1,M2],SID) 
 ```
-#### Q7: What are the potential drugs for Covid-19 by MPPR ranking?
+#### Q8: What are the potential drugs for Covid-19 by MPPR ranking?
 * cypher:	NA
 * m-cypher:	
 ```
@@ -82,32 +82,25 @@ MATCH (s:Virus) WHERE s.name="SARS-CoV-2"
 WITH s.id as SID
 RETURN MPPR(M,SID,'Virus','Drug','10000','0.85')	
 ```
-#### Q8: What is the clique for motif M?
+#### Q9: What is the clique for motif M?
 * cypher:	NA
 * m-cypher:	
 ```
 RETURN MCLQ(M,'1','Drug')
 ```
 
-#### Q9: What is the motif conductance for a set of nodes w.r.t. motif M?
+#### Q10: What is the motif conductance for a set of nodes w.r.t. motif M?
 * cypher:	NA
 * m-cypher:	
 ```
 RETURN MCON(M,'1,2,3','Drug,Drug,Drug')
 ```
 
-#### Q10: What is the diameter for the higher-order graph w.r.t. motif M?
+#### Q11: What is the diameter for the higher-order graph w.r.t. motif M?
 * cypher:	NA
 * m-cypher:	
 ```
 RETURN MGD(M)
-```
-
-#### Q11: What is the shortest motif path distance between node s and t w.r.t. motif M?
-* cypher:	NA
-* m-cypher:	
-```
-RETURN SMPD(M,'1','Drug','10254','Virus')
 ```
 
 #### Q12: What is the shortest motif path distance between node s and t w.r.t. motif M?
@@ -117,14 +110,21 @@ RETURN SMPD(M,'1','Drug','10254','Virus')
 RETURN SMPD(M,'1','Drug','10254','Virus')
 ```
 
-#### Q13: What is the motif adjacency matrix w.r.t. motifs M1 and M2?
+#### Q13: What is the shortest motif path distance between node s and t w.r.t. motif M?
+* cypher:	NA
+* m-cypher:	
+```
+RETURN SMPD(M,'1','Drug','10254','Virus')
+```
+
+#### Q14: What is the motif adjacency matrix w.r.t. motifs M1 and M2?
 * cypher:	NA
 * m-cypher:	
 ```
 RETURN MAM([M1,M2])
 ```
 
-#### Q14: What is the motif connected component that contains node s w.r.t. motif M?
+#### Q15: What is the motif connected component that contains node s w.r.t. motif M?
 * cypher:	NA
 * m-cypher:	
 ```

@@ -46,8 +46,8 @@ In the following query examples, we demonstrate several use cases by motif M, wh
 * m-cypher:	
 ```
 MATCH (s:Virus) WHERE s.name="SARS-CoV-2"
-WITH s.nid+"" as SID, s.name as SNAME
-RETURN MDISS('Drug,Virus,Disease,Symptom','4',SNID,SNAME)
+WITH s.nid+"" as SID
+RETURN MDISS('Drug,Virus,Disease,Symptom','4',SNID,'Virus')
 ```
 #### Q5: What are the significant motifs in the knowldge graph?
 * cypher:	NA
@@ -71,13 +71,8 @@ RETURN t.name, vm
 * m-cypher:	
 ```
 MATCH (s:Virus) WHERE s.name="SARS-CoV-2"
-CALL MPPR(s,[M1,M2,M3,M4],10000,0.85)
-YIELD node, MPPR_score 
-WITH labels(node) AS ln, 
-node.name AS Drug_name, MPPR_score
-WHERE ln = "Drug" AND score > 0
-RETURN Drug_name, MPPR_score
-ORDER BY MPPR_score DESC
+WITH s.id as SID
+RETURN MPPR(M,SID,'Virus','Drug','10000','0.85')	
 ```
 #### Q8: What is the clique for motif M?
 * cypher:	NA

@@ -1,4 +1,5 @@
 var visulizationQuery = "";
+var matchStr = ""; 
 
 function nodeValue(container, id, labels, properties) {
   var card = document.createElement("div"),
@@ -50,7 +51,47 @@ function returnDeal(cypher){
 	  }
 	return res;
 }
+
+function replaceAll(str, str1, str2){
+	var tem = str.split(str1);
+	var str3 = "";
+	for(i=0;i<tem.length;i++){
+		if(i<tem.length-1)
+			str3 += tem[i] + str2;
+		else
+			str3 += tem[i];
+	}
+	return str3;
+}
+
+function replaceLast(str, str1, str2){
+	var tem = str.split(str1);
+	var str3 = "";
+	for(i=0;i<tem.length;i++){
+		if(i<tem.length-1){
+			if(i<tem.length-2){
+				str3 += tem[i] + str1;
+			}else{
+				str3 += tem[i] + str2;
+			}
+			
+		}
+		else
+			str3 += tem[i];
+	}
+	return str3;
+}
+
 function run(cypher) {
+  matchStr = "";
+  if(cypher.includes("SID")||cypher.includes("TID")){
+	var tem = cypher.split("RETURN");
+	matchStr = tem[0];
+	matchStr = replaceAll(matchStr,".id",".nid+''");	
+  }
+  cypher = replaceLast(cypher,"SID","'SID'");
+  cypher = replaceLast(cypher,"TID","'TID'");
+	
   if(visulizationQuery.includes("RETURN "))
 	visulizationQuery = returnDeal(cypher);
   let map = new Map();
@@ -132,21 +173,50 @@ function run(cypher) {
   }
   
   var q3="MCLQ";
+  // RETURN MCLQ(M,'1','Drug')
+  //return neo4jdriver.MCLQ('211','A,B,C','5','A')
+  //unwind neo4jdriver.MCLQVis('211','A,B,C','5','A') as ms with ms match (a:A{nid:ms[0]}),(b:B{nid:ms[1]}),(c:C{nid:ms[2]}) return a,b,c
   if(cypher.includes(q3)){
-	  cq = "match (a:Virus)--(b:HostProtein)--(c:HostProtein)--(d:Symptom)--(b) match (a)--(c) where a.label contains \"SARS\"";
-	  visulizationQuery = cq+"return a,b,c,d";
-	  return runonce(cq+"return collect(distinct a.name) as label_A, collect(distinct b.name) as label_B, collect(distinct d.name) as label_C")
+	  var tem = cypher.split("'");
+	  var nodeSStr = tem[1]
+	  var labelSStr = tem[3];
+	  cq = "return neo4jdriver.MCLQ";
+	  visulizationQuery = "unwind neo4jdriver.MCLQVis";
+	  var para = "('"+degVecStr + "','" + nodeLabelsArr +"','"+nodeSStr+"','"+labelSStr+"')";
+	  cq += para;
+	  visulizationQuery += para + " as ms with ms match ";
+	  var retArr = "";
+	  for(i = 0; i < nodeLabelsArr.length; i++){
+		  visulizationQuery += "(n"+i+":"+nodeLabelsArr[i]+"{nid:ms["+i+"]})";
+		  retArr += "n"+i;
+		  if(i!=nodeLabelsArr.length-1){
+			  visulizationQuery += ",";
+			  retArr += ",";
+		  }
+		  
+	  }
+	  visulizationQuery += " return "+retArr;
+	  return runonce(cq);	
   }
   
   var q4="MPPR";
   if(cypher.includes(q4)){
-	  cq = "MATCH (v:Virus) Where v.label contains \"SARS-CoV-2\" CALL gds.pageRank.stream(\'covid19udppr\', \{  maxIterations: 2000000,  dampingFactor: 0.85,  sourceNodes: [v]\}) YIELD nodeId, score with gds.util.asNode(nodeId) as node, score as score_raw with labels(node) as ls, node.name as p, round(score_raw*10000)/10000 as score with ls[0] as l, p, score where l = \"Drug\" and score > 0 RETURN p AS name, score ORDER BY score DESC, name ASC";
-	  //console.log(cq);
+	  //RETURN MPPR(M,'2697049','Virus','Drug','10000','0.85')	  
+	  //unwind neo4jdriver.MPPR('1122', 'A,B,C,D', '5', 'A', 'A', '10000', '0.85') as entry return toInteger(entry[0]) as nodeID, entry[1] as nodeName, toFloat(entry[2]) as MPPRscore order by MPPRscore DESC
+	  var tem = cypher.split("'");
+	  var nodeSStr = tem[1]
+	  var labelSStr = tem[3];
+	  var labelTStr = tem[5]
+	  var interationStr = tem[7];
+	  var dampingStr = tem[9];	  
+	  cq = "return neo4jdriver.MPPR";
+	  var para = "('"+degVecStr + "','" + nodeLabelsArr +"','"+nodeSStr+"','"+labelSStr+"','"+labelTStr+"','"+interationStr+"','"+dampingStr+"')";
+	  cq += para + "as entry return toInteger(entry[0]) as nodeID, entry[1] as nodeName, toFloat(entry[2]) as MPPRscore order by MPPRscore DESC";
 	  return runonce(cq);
   }
   
-  var q5="MDIS";
-  if(cypher.includes(q5)){
+  var q5old="MDISOld";
+  if(cypher.includes(q5old)){
 	  var sname = "";
 	  var slabel = "";
 	  if(cypher.includes("WHERE")){
@@ -176,23 +246,177 @@ function run(cypher) {
 	  return runonce(cq);
   }
   
-  var q6="MFV";
-  if(cypher.includes(q6)){
-	  //var sname = "SARS";
-	  //var tname = "Sofosbuvir";
-	  var tem = cypher.split("\"");
-	  var sname = tem[1];
-	  var tname = tem[3];
-	  cq = "match r=(a:Drug)--(b)--(c:Virus) where c.label contains \""+sname+"\" and a.label contains \""+tname+"\" return count (r)+\"\" as MFV union match r=(a:Drug)--(b)--(d)--(c:Virus) where c.label contains \""+sname+"\" and a.label contains \""+tname+"\" return count (r)+\"\" as MFV union match r=(a:Drug)--(b)--(d)--(e)--(c:Virus) where c.label contains \""+sname+"\" and a.label contains \""+tname+"\" return count (r)+\"\" as MFV";
+  var q51 = "MDIS";
+  //RETURN MDIS('A,B,C,D','4')
+  //unwind neo4jdriver.MDIS('A,B,C,D','4') as tem with tem[0] as degvec, tem[1] as labelvec, toInteger(tem[2]) as countnum where countnum>0 return degvec, labelvec, countnum order by countnum desc
+  var q52 = "MDISS";
+  //RETURN MDISS('A,B,C,D','4','1','A')
+  //unwind neo4jdriver.MDISS('A,B,C,D','4','5','A') as tem with tem[0] as degvec, tem[1] as labelvec, toInteger(tem[2]) as countnum where countnum>0 return degvec, labelvec, countnum order by countnum desc
+  if(cypher.includes(q51)){
+	  var tem = cypher.split("'");
+	  var labelsStr = tem[1]
+	  var kStr = tem[3];
+	  if(cypher.includes(q52)){
+		  var nodeSStr = tem[5]
+	      var labelSStr = tem[7]; 
+		  cq = "unwind neo4jdriver.MDISS('"+labelsStr+"','"+kStr+"','"+nodeSStr+"','"+labelSStr+"') as tem with tem[0] as degvec, tem[1] as labelvec, toInteger(tem[2]) as countnum where countnum>0 return degvec, labelvec, countnum order by countnum desc";
+	  }else{
+		  cq = "unwind neo4jdriver.MDIS('"+labelsStr+"','"+kStr+"') as tem with tem[0] as degvec, tem[1] as labelvec, toInteger(tem[2]) as countnum where countnum>0 return degvec, labelvec, countnum order by countnum desc";
+	  }
 	  return runonce(cq);
+  }
+  
+  
+  
+  var q61 = "MFV";
+  //RETURN MFV([M1,M2],'5','A','3','D')
+  //return neo4jdriver.MFV('112|222','A,C,D|A,C,D','5','A','3','D')
+  var q62 = "MFVN";
+  //RETURN MFV([M1,M2],'5','A')
+  //return neo4jdriver.MFVN('112|222','A,C,D|A,C,D','5','A')
+  if(cypher.includes(q61)){
+	  var tem = cypher.split("'");
+	  var nodeSStr = tem[1]
+	  var labelSStr = tem[3];
+	  cq = "return neo4jdriver.";
+	  var para = "'"+degVecStr + "','" + nodeLabelsArr + "','" + nodeSStr +"','"+ labelSStr +"'";
+	  if(cypher.includes(q62)){
+		  cq+="MFVN("+para+")";
+	  }else{
+		  var nodeTStr = tem[5]
+	      var labelTStr = tem[7];
+		  cq+="MFV("+para+","+nodeTStr+"','"+labelTStr+"')";
+	  }
+	  return runonce(cq);
+  }
+  
+  var q71="MCOUNT";
+  var q72="MENUMERATE";
+  //return MCOUNT(M)
+  //unwind neo4jdriver.mcount('211','A,B,C') as ms return count(ms)
+  if(cypher.includes(q71)||cypher.includes(q72)){
+	  cq = "unwind neo4jdriver.MCOUNT(";
+	  cq += "'"+degVecStr + "','" + nodeLabelsArr + "') as ms";
+	  visulizationQuery = cq + " with ms match ";
+	  var retArr = "";
+	  for(i = 0; i < nodeLabelsArr.length; i++){
+		  visulizationQuery += "(n"+i+":"+nodeLabelsArr[i]+"{nid:ms["+i+"]})";
+		  retArr += "n"+i;
+		  if(i!=nodeLabelsArr.length-1){
+			  visulizationQuery += ",";
+			  retArr += ",";
+		  }
+		  
+	  }
+	  visulizationQuery += " return "+retArr;
+	  if(cypher.includes(q71))
+		  cq += " return count(ms)+'' as MotifCountNumber";
+	  else
+		  cq += " return ms";
+	  return runonce(cq);
+  }
+  
+  var q8="MCON";
+  //RETURN MCON(M,'1,2,3','Drug,Drug,Drug')
+  //return neo4jdriver.MCON('112','A,B,C','5,9,17,18,19','A,A,A,A,A')
+  if(cypher.includes(q8)){
+	  var tem = cypher.split("'");
+	  var nodeSetStr = tem[1]
+	  var labelSetStr = tem[3];
+	  
+	  cq = "return neo4jdriver.MCON(";
+	  cq += "'"+degVecStr + "','" + nodeLabelsArr + "','" + nodeSetStr + "','" + labelSetStr + "')";
+	  return runonce(cq);
+  }  
+  
+  var q9="MGD";
+  //RETURN MGD(M)
+  if(cypher.includes(q9)){	  
+	  cq = "return neo4jdriver.MGD(";
+	  cq += "'"+degVecStr + "','" + nodeLabelsArr + "')";
+	  return runonce(cq);
+  }  
+
+  var q10 = "SMPD";
+  //RETURN SMPD(M,'1','Drug','10254','Virus')
+  //return neo4jdriver.SMPD('112','A,B,C','5','A','17','A')
+  //unwind neo4jdriver.SMPDVis('112','A,B,C','5','A','17','A') as ms with ms match (a:A{nid:ms[0]}),(b:B{nid:ms[1]}),(c:C{nid:ms[2]}) return a,b,c 
+  if(cypher.includes(q10)){
+	  var tem = cypher.split("'");
+	  var nodeSStr = tem[1]
+	  var labelSStr = tem[3];
+	  var nodeTStr = tem[5]
+	  var labelTStr = tem[7];
+	  cq = "return neo4jdriver.SMPD";
+	  visulizationQuery = "unwind neo4jdriver.SMPDVis";
+	  var para = "('"+degVecStr + "','" + nodeLabelsArr +"','"+nodeSStr+"','"+labelSStr+"','"+nodeTStr+"','"+labelTStr+"')";
+	  cq += para;
+	  visulizationQuery += para + " as ms with ms match ";
+	  var retArr = "";
+	  for(i = 0; i < nodeLabelsArr.length; i++){
+		  visulizationQuery += "(n"+i+":"+nodeLabelsArr[i]+"{nid:ms["+i+"]})";
+		  retArr += "n"+i;
+		  if(i!=nodeLabelsArr.length-1){
+			  visulizationQuery += ",";
+			  retArr += ",";
+		  }
+		  
+	  }
+	  visulizationQuery += " return "+retArr;
+	  return runonce(cq);	  
+	  
+  }
+  
+  var q11 = "MAM";
+  //RETURN MAM([M1,M2]);
+  //unwind neo4jdriver.MAM('1122|112','A,B,C,D|A,B,C') as entry return toInteger(entry[0]) as node1, entry[1] as label1, toInteger(entry[2]) as node2, entry[3] as label2, toInteger(entry[4]) as weight
+  if(cypher.includes(q11)){	  
+	  cq = "unwind neo4jdriver.MAM('";
+	  cq += degVecStr + "','" + nodeLabelsArr;
+	  cq += "') as entry return toInteger(entry[0]) as node1, entry[1] as label1, toInteger(entry[2]) as node2, entry[3] as label2, toInteger(entry[4]) as weight";
+	  return runonce(cq);
+  }  
+  
+  var q12 = "MCC";
+  //RETURN MCC(M,'1','Drug')
+  //return neo4jdriver.MCC('112','A,B,C','5','A')
+  //unwind neo4jdriver.MCCVis('112','A,B,C','5','A') as ms with ms match (a:A{nid:ms[0]}),(b:B{nid:ms[1]}),(c:C{nid:ms[2]}) return a,b,c
+  if(cypher.includes(q12)){
+	  var tem = cypher.split("'");
+	  var nodeSStr = tem[1]
+	  var labelSStr = tem[3];
+	  cq = "return neo4jdriver.MCC";
+	  visulizationQuery = "unwind neo4jdriver.MCCVis";
+	  var para = "('"+degVecStr + "','" + nodeLabelsArr +"','"+nodeSStr+"','"+labelSStr+"')";
+	  cq += para;
+	  visulizationQuery += para + " as ms with ms match ";
+	  var retArr = "";
+	  for(i = 0; i < nodeLabelsArr.length; i++){
+		  visulizationQuery += "(n"+i+":"+nodeLabelsArr[i]+"{nid:ms["+i+"]})";
+		  retArr += "n"+i;
+		  if(i!=nodeLabelsArr.length-1){
+			  visulizationQuery += ",";
+			  retArr += ",";
+		  }
+		  
+	  }
+	  visulizationQuery += " return "+retArr;
+	  return runonce(cq);	  
+	  
   }
   
   return runonce(cq);
 }
 
 function runonce(cypher){
-  //alert(visulizationQuery);
   //alert(cypher);
+  if(cypher.includes("'SID'")||cypher.includes("'TID'")){
+	cypher = replaceAll(cypher,"'SID'","SID");
+    cypher = replaceAll(cypher,"'TID'","TID");
+	cypher = matchStr + cypher;		
+  }
+  //alert(cypher);
+  //alert(visulizationQuery);  
   // Clear any existing result
   var head = document.getElementById("result-head"),
   body = document.getElementById("result-body"),

@@ -6,6 +6,8 @@ var node_ids = [];
 var input_motifs = [];
 var number_of_motifs = 1;
 var node_selection_order = [];
+var degVecStr = "";
+var nodeLabelsArr = "";
 
 function initCytoscape() {
 
@@ -282,32 +284,48 @@ function clean_up_motif() {
 var sources = [];
 var targets = [];
 
-function submit_button() {
-    var all = cy.edges();
-	var allnodes = cy.nodes();
-	var nodeLabelsArr = [];
+function updateMStr(allnodes){
+    var nodeLabels = [];
 	var degVec = [];
 	for (i=0;i<allnodes.length;i++){
 		var cnode = allnodes[i];
 		//var cnodeID = cy.getElementById(cnode['_private']['data']);
 		degVec.push(cnode.degree());
-		nodeLabelsArr.push(cnode['_private']['data']['name']);
+		nodeLabels.push(cnode['_private']['data']['name']);
 	}
 	for (i=0;i<degVec.length;i++){
 		for(j=i+1;j<degVec.length;j++){
-			if(degVec[i]>degVec[j]){
+			if(degVec[i]<degVec[j]){
 				var temint = degVec[i];
 				degVec[i] = degVec[j];
 				degVec[j] = temint;
-				var temstr = nodeLabelsArr[i];
-				nodeLabelsArr[i] = nodeLabelsArr[j];
-				nodeLabelsArr[j] = temstr;
+				var temstr = nodeLabels[i];
+				nodeLabels[i] = nodeLabels[j];
+				nodeLabels[j] = temstr;
 			}
 			
 		}
 	}
-	alert(degVec);
-	alert(nodeLabelsArr);
+	if(degVecStr.length>0){
+		degVecStr += "|";
+		nodeLabelsArr += "|";
+	}
+	for (i=0;i<degVec.length;i++){
+		degVecStr += degVec[i];	
+		nodeLabelsArr += nodeLabels[i];
+		if(i<degVec.length-1){
+			nodeLabelsArr += ",";
+		}
+	}
+	//alert(degVecStr);
+	//alert(nodeLabelsArr);	
+}
+
+function submit_button() {
+    var all = cy.edges();
+	var allnodes = cy.nodes();
+	updateMStr(allnodes);
+	
     for (i = 0; i < all.length; i++) {
         the_edge = all[i];
         var target = cy.getElementById(the_edge['_private']['data']['target']);
@@ -458,6 +476,9 @@ function motif_input_next_button() {
     number_of_motifs += 1;
     document.getElementById("motifNameDiv").innerHTML = "M" + number_of_motifs;
     var current_state = motif_input_cy.json();
+	var allnodes = motif_input_cy.nodes();
+	updateMStr(allnodes);
+	
     input_motifs.push(current_state);
     console.log(input_motifs.length, input_motifs[input_motifs.length - 1]);
     motif_input_cy.remove(motif_input_cy.elements("node"));

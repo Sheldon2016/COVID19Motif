@@ -46,8 +46,8 @@ In the following query examples, we demonstrate several use cases by motif M, wh
 * m-cypher:	
 ```
 MATCH (s:Virus) WHERE s.name="SARS-CoV-2"
-WITH s.nid+"" as SID
-RETURN MDISS('Drug,Virus,Disease,Symptom','4',SNID,'Virus')
+WITH s.id+"" as SID
+RETURN MDISS('Drug,Virus,Disease,Symptom','4',SID,'Virus')
 ```
 #### Q5: What are the significant motifs in the knowldge graph?
 * cypher:	NA

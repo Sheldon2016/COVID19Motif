@@ -62,9 +62,17 @@ RETURN MDIS('Drug,Virus,Disease,Symptom','4')
 MATCH (s:Virus) 
 WHERE s.name="SARS-CoV-2" 
 MATCH (t:Drug)
-CALL MFV(s,t,[M1,M2]) 
-YIELD s, t, vm 
-RETURN t.name, vm
+with s.id as SID, t.id as TID
+RETURN MFV([M1,M2],SID,TID) 
+```
+#### Q6: What is the motif feature vector for the Covid-19 virus?
+* cypher:	NA
+* m-cypher:	
+```
+MATCH (s:Virus) 
+WHERE s.name="SARS-CoV-2" 
+with s.id as SID
+RETURN MFV([M1,M2],SID) 
 ```
 #### Q7: What are the potential drugs for Covid-19 by MPPR ranking?
 * cypher:	NA
